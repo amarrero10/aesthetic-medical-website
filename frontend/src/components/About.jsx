@@ -45,32 +45,44 @@ function About() {
 
         <p className="text-2xl uppercase font-semibold mt-10">What we offer:</p>
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10">
-          <div className=" bg-sage rounded-md shadow-xl h-[300px] text-center text-offWhite">
+          <div className=" bg-sage rounded-md shadow-xl h-[400px] text-center text-offWhite">
             <FaWeightScale className=" mx-auto text-6xl mt-5 " />
-            Medical Weight Loss
-            <p>
-              Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-              Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-              Blah Blah
+            <p className="text-2xl my-3">Medical Weight Loss</p>
+            <p className=" text-center px-3 mb-5">
+              We harness the power of medications like semaglutides and tirzepatide in our
+              personalized approach to help every client achieve their ideal weight.
             </p>
+            <Link>
+              <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
+                Learn More
+              </button>
+            </Link>
           </div>
-          <div className=" bg-sage rounded-md shadow-xl h-[300px] text-center text-offWhite">
+          <div className=" bg-sage rounded-md shadow-xl h-[400px] text-center text-offWhite">
             <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
-            Vitamin Injections
-            <p>
-              Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-              Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-              Blah Blah Blah Blah
+            <p className="text-2xl my-3">Vitamin Injections</p>
+            <p className=" text-center px-3 mb-5">
+              We utilize B12 injections to boost metabolism and incorporate Fat Burners to support
+              effective weight management, helping you achieve your health and wellness goals.
             </p>
+            <Link>
+              <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
+                Learn More
+              </button>
+            </Link>
           </div>
-          <div className=" bg-sage rounded-md shadow-xl h-[300px] text-center text-offWhite">
+          <div className=" bg-sage rounded-md shadow-xl h-[400px] text-center text-offWhite">
             <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
-            Telehealth
-            <p>
-              Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-              Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-              Blah Blah
+            <p className="text-2xl my-3">Telehealth</p>
+            <p className=" text-center px-3 mb-5">
+              we are proud to offer the convenience of telehealth services, allowing you to access
+              expert guidance and support from the comfort of your own home.
             </p>
+            <Link>
+              <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
 
