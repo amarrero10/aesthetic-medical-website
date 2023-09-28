@@ -60,7 +60,7 @@ function About() {
             <p>
               Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
               Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-              Blah Blah
+              Blah Blah Blah Blah
             </p>
           </div>
           <div className=" bg-sage rounded-md shadow-xl h-[300px] text-center text-offWhite">
