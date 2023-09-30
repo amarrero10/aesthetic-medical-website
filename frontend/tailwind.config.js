@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     colors: {
       offWhite: "#EEEEEE",
+      navy: "#3f4760",
+      darkpurple: "#615586",
+      periwinkle: "#AA95d1",
+      teal: "#7DD1C1",
       sage: "#8a9a5b",
-      periwinkle: "#9999CC",
     },
     extend: {
       fontFamily: {

@@ -38,15 +38,17 @@ function Navigation() {
       </div>
 
       {isOpen && (
-        <div className="bg-sage text-offWhite py-4 px-2 sm:hidden absolute w-screen text-2xl z-10">
+        <div className="bg-darkpurple text-offWhite py-4 px-2 sm:hidden absolute w-screen text-2xl z-10">
           {/* Main Navigation Links */}
           <ul className="space-y-2">
             <Link to="/" onClick={closeMenu}>
               <li className="pb-1">Home</li>
             </Link>
+            <hr className=" text-periwinkle py-3" />
             <Link to="/about" onClick={closeMenu}>
               <li>About</li>
             </Link>
+            <hr className=" text-periwinkle py-3" />
             {/* First Link with Inner Menu */}
             <li>
               <button className="flex justify-between items-center w-full" onClick={toggleMenu}>
@@ -60,21 +62,25 @@ function Navigation() {
               {openMenu && (
                 <ul className="pl-4 space-y-2">
                   <Link to="/service1" onClick={closeMenu}>
-                    <li>Medical Weight Loss</li>
+                    <li>- Medical Weight Loss</li>
                   </Link>
+                  <hr className=" text-periwinkle py-3" />
                   <li>
-                    <Link to="/service2">Vitamin Injections</Link>
+                    <Link to="/service2">- Vitamin Injections</Link>
                   </li>
+                  <hr className=" text-periwinkle py-3" />
                   <li>
-                    <Link to="/service3">Telehealth</Link>
+                    <Link to="/service3">- Telehealth</Link>
                   </li>
                 </ul>
               )}
             </li>
+            <hr className=" text-periwinkle py-3" />
             {/* End First Link with Inner Menu */}
             <li onClick={closeMenu}>
               <Link to="/contact-us">Contact</Link>
             </li>
+            <hr className=" text-periwinkle py-3" />
             {/* Second Link with Inner Menu */}
             {/* <li>
               <button className="flex justify-between items-center w-full" onClick={toggleMenuTwo}>
@@ -103,6 +109,7 @@ function Navigation() {
             <li>
               <Link to="/somepath">Locations</Link>
             </li>
+            <hr className=" text-periwinkle py-3" />
             <li>
               <Link to="/somepath">Pricing</Link>
             </li>
@@ -118,7 +125,7 @@ function Navigation() {
             <h1>FMPM Weight Loss</h1>
           </Link>
         </div>
-        <div className="flex w-1/2 justify-between text-sage">
+        <div className="flex w-1/2 justify-between text-navy text-2xl">
           <Link to="/about">
             <p>About</p>
           </Link>
@@ -129,8 +136,10 @@ function Navigation() {
           <p>Our Team</p>
         </div>
         <div>
-          <Link to="/contact-us">
-            <button>Contact Us</button>
+          <Link to="/contact-us" className=" h-10">
+            <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md">
+              Get in touch
+            </button>
           </Link>
         </div>
       </div>

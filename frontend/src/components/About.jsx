@@ -45,7 +45,7 @@ function About() {
 
         <p className="text-2xl uppercase font-semibold mt-10">What we offer:</p>
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10">
-          <div className=" bg-sage rounded-md shadow-xl h-[400px] text-center text-offWhite">
+          <div className=" bg-teal rounded-md shadow-xl h-[400px] text-center text-offWhite">
             <FaWeightScale className=" mx-auto text-6xl mt-5 " />
             <p className="text-2xl my-3">Medical Weight Loss</p>
             <p className=" text-center px-3 mb-5">
@@ -58,7 +58,7 @@ function About() {
               </button>
             </Link>
           </div>
-          <div className=" bg-sage rounded-md shadow-xl h-[400px] text-center text-offWhite">
+          <div className=" bg-teal rounded-md shadow-xl h-[400px] text-center text-offWhite">
             <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
             <p className="text-2xl my-3">Vitamin Injections</p>
             <p className=" text-center px-3 mb-5">
@@ -71,7 +71,7 @@ function About() {
               </button>
             </Link>
           </div>
-          <div className=" bg-sage rounded-md shadow-xl h-[400px] text-center text-offWhite">
+          <div className=" bg-teal rounded-md shadow-xl h-[400px] text-center text-offWhite">
             <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
             <p className="text-2xl my-3">Telehealth</p>
             <p className=" text-center px-3 mb-5">
@@ -95,14 +95,14 @@ function About() {
           <div className="flex items-center ">
             <a
               href="tel:(727) 484-6999"
-              className="flex items-center text-sage text-xl mb-6 sm:mb-0"
+              className="flex items-center text-teal text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
               (727) 484-6999
             </a>
           </div>
           <Link to="/contact-us">
-            <button className=" bg-white py-3 px-5 border border-sage rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:text-offWhite">
+            <button className=" bg-white py-3 px-5 border border-teal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:text-offWhite">
               Contact Us
             </button>
           </Link>
