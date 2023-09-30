@@ -12,24 +12,25 @@ import TestimonialSlider from "./Testimonials/TestimonialSlider";
 function HomePage() {
   return (
     <>
-      <svg
-        className=" absolute -z-10 "
-        width="100%"
-        height="100%"
-        id="svg"
-        viewBox="0 0 1440 590"
-        xmlns="http://www.w3.org/2000/svg"
-        class="transition duration-300 ease-in-out delay-150"
-      >
-        <path
-          d="M 0,600 C 0,600 0,300 0,300 C 99.55980861244021,357.11961722488036 199.11961722488041,414.2392344497608 306,387 C 412.8803827751196,359.7607655502392 527.0813397129187,248.1626794258373 622,225 C 716.9186602870813,201.8373205741627 792.5550239234449,267.11004784689 887,287 C 981.4449760765551,306.88995215311 1094.6985645933014,281.3971291866029 1190,276 C 1285.3014354066986,270.6028708133971 1362.6507177033493,285.30143540669854 1440,300 C 1440,300 1440,0 1440,0 L 1440,600 Z"
-          stroke="none"
-          stroke-width="0"
-          fill="#7dd1c1"
-          fill-opacity="1"
-          class="transition-all duration-300 ease-in-out delay-150 path-0"
-        ></path>
-      </svg>
+      <div className=" absolute w-full -z-10 sm:top-56 top-[550px] ">
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 590"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,600 C 0,600 0,300 0,300 C 99.55980861244021,357.11961722488036 199.11961722488041,414.2392344497608 306,387 C 412.8803827751196,359.7607655502392 527.0813397129187,248.1626794258373 622,225 C 716.9186602870813,201.8373205741627 792.5550239234449,267.11004784689 887,287 C 981.4449760765551,306.88995215311 1094.6985645933014,281.3971291866029 1190,276 C 1285.3014354066986,270.6028708133971 1362.6507177033493,285.30143540669854 1440,300 C 1440,300 1440,0 1440,0 L 1440,600 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#7dd1c1"
+            fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+        </svg>
+      </div>
       <div>
         <div className="sm:flex grid w-screen sm:w-full p-2 justify-center items-center sm:h-[800px]">
           <div className=" h-[300px] w-full mb-10 grid sm:mr-2 mt-5">
@@ -68,7 +69,7 @@ function HomePage() {
             ></img>
           </div>
         </div>
-        <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] -mt-[108px]">
+        <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] sm:-mt-[108px]">
           <p className=" text-center sm:text-5xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9">
             A Little About Us
           </p>
