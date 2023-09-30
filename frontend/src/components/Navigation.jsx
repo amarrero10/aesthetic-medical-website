@@ -38,7 +38,7 @@ function Navigation() {
       </div>
 
       {isOpen && (
-        <div className="bg-sage text-offWhite py-4 px-2 sm:hidden absolute w-screen text-2xl">
+        <div className="bg-sage text-offWhite py-4 px-2 sm:hidden absolute w-screen text-2xl z-10">
           {/* Main Navigation Links */}
           <ul className="space-y-2">
             <Link to="/" onClick={closeMenu}>

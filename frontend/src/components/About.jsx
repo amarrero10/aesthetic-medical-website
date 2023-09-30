@@ -9,7 +9,7 @@ import portrait from "../assets/portrait.jpg";
 function About() {
   return (
     <>
-      <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md tracking-widest font-poppins">
+      <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md tracking-wider font-poppins">
         <h1 className="  font-extrabold text-3xl mb-3">
           ABOUT US<span className="text-periwinkle font-extrabold text-3xl">.</span>
         </h1>
