@@ -5,10 +5,11 @@ import { FaWeightScale } from "react-icons/fa6";
 import { BiSolidInjection } from "react-icons/bi";
 import { BsPersonVideo3 } from "react-icons/bs";
 import portrait from "../assets/portrait.jpg";
+import Footer from "./Footer";
 
 function About() {
   return (
-    <>
+    <div className="sm:mt-20 absolute">
       <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md tracking-wider font-poppins">
         <h1 className="  font-extrabold text-3xl mb-3">
           ABOUT US<span className="text-periwinkle font-extrabold text-3xl">.</span>
@@ -52,7 +53,7 @@ function About() {
               We harness the power of medications like semaglutides and tirzepatide in our
               personalized approach to help every client achieve their ideal weight.
             </p>
-            <Link>
+            <Link to="/services/medical-weight-loss">
               <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
                 Learn More
               </button>
@@ -65,7 +66,7 @@ function About() {
               We utilize B12 injections to boost metabolism and incorporate Fat Burners to support
               effective weight management, helping you achieve your health and wellness goals.
             </p>
-            <Link>
+            <Link to="/services/vitamin-injections">
               <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
                 Learn More
               </button>
@@ -78,7 +79,7 @@ function About() {
               we are proud to offer the convenience of telehealth services, allowing you to access
               expert guidance and support from the comfort of your own home.
             </p>
-            <Link>
+            <Link to="/services/telehealth">
               <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
                 Learn More
               </button>
@@ -94,11 +95,11 @@ function About() {
         <div className=" flex sm:flex-row flex-col md:w-[60%] mx-auto justify-between  items-center mt-3 py-4">
           <div className="flex items-center ">
             <a
-              href="tel:(727) 484-6999"
+              href="tel:(352) 340-5990"
               className="flex items-center text-teal text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
-              (727) 484-6999
+              (352) 340-5990
             </a>
           </div>
           <Link to="/contact-us">
@@ -108,7 +109,8 @@ function About() {
           </Link>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

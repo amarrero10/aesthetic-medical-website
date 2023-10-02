@@ -8,11 +8,12 @@ import { FaWeightScale } from "react-icons/fa6";
 import { BiSolidInjection } from "react-icons/bi";
 import { BsPersonVideo3 } from "react-icons/bs";
 import TestimonialSlider from "./Testimonials/TestimonialSlider";
+import Footer from "./Footer";
 
 function HomePage() {
   return (
-    <>
-      <div className=" absolute w-full -z-10 sm:top-56 top-[550px] ">
+    <div className="sm:mt-10">
+      <div className=" absolute w-full -z-10 sm:top-52 top-[550px] ">
         <svg
           width="100%"
           height="100%"
@@ -55,7 +56,7 @@ function HomePage() {
             </p>
             <div className=" flex justify-center sm:-mt-[80px]">
               <Link to="/contact-us" className="  mx-auto s">
-                <button className=" bg-white py-3 px-5 border border-teal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite mx-auto ">
+                <button className=" bg-white py-3 px-5 border-teal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto ">
                   Request Appointment
                 </button>
               </Link>
@@ -74,9 +75,10 @@ function HomePage() {
             A Little About Us
           </p>
           <p className=" text-center sm:text-xl sm:w-[550px] text-lg px-3 text-offWhite mt-8">
-            At FMPM Weight Loss, we're your partners in the pursuit of health and beauty. Meet our
+            At FMPM Weight Loss, we are your partners in the pursuit of health and beauty. Meet our
             dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about our mission to
-            empower your journey towards wellness.
+            empower your journey towards total body health and wellness with medical weight-loss
+            management.
           </p>
           <Link to="/about">
             <button className=" text-lg text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
@@ -141,24 +143,30 @@ function HomePage() {
           you!
         </p>
         <div className=" flex sm:flex-row sm:w-[33%] mx-auto sm:justify-between justify-around mt-3 sm:mt-7 py-4">
-          <div className="flex items-center mt-3">
+          <div className="flex items-center mt-3 relative">
             <a
-              href="tel:(727) 484-6999"
+              href="tel:(352) 340-5990"
               className="flex items-center text-teal text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
-              (727) 484-6999
+              (352) 340-5990
             </a>
           </div>
 
           <Link to="/contact-us">
-            <button className=" bg-white py-3 px-5 border border-teal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:text-offWhite z-10">
+            <button className=" bg-white py-3 px-5 border  border-teal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">
               Request Appointment
             </button>
           </Link>
+          {/* <img
+            src={wellness}
+            alt="some portrait"
+            className=" absolute h-[400px] opacity-30 rounded-full top-[2200px]  ml-[530px]"
+          ></img> */}
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

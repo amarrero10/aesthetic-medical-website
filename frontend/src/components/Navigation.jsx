@@ -1,25 +1,46 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useHistory } from "react-router-dom/cjs/react-router-dom";
 import Hamburger from "hamburger-react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 function Navigation() {
   const [isOpen, setOpen] = useState(false);
-  const [openMenuTwo, setOpenMenuTwo] = useState(false);
+  // const [openMenuTwo, setOpenMenuTwo] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  // const [showList, setShowList] = useState(false);
+  const history = useHistory();
+
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0); // Scroll to the top when the "Home" link is clicked
+  };
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
-  const toggleMenuTwo = () => {
-    setOpenMenuTwo(!openMenuTwo);
-  };
+  // const toggleMenuTwo = () => {
+  //   setOpenMenuTwo(!openMenuTwo);
+  // };
 
   const closeMenu = () => {
     setOpen(false);
     setOpenMenu(false);
-    setOpenMenuTwo(false);
+    // setOpenMenuTwo(false);
   };
+
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+
+  const handleRedirect = () => {
+    history.push("/services");
+  };
+
   return (
     <>
       {/* Mobile Menu */}
@@ -61,16 +82,16 @@ function Navigation() {
               </button>
               {openMenu && (
                 <ul className="pl-4 space-y-2">
-                  <Link to="/service1" onClick={closeMenu}>
+                  <Link to="/services/medical-weight-loss" onClick={closeMenu}>
                     <li>- Medical Weight Loss</li>
                   </Link>
                   <hr className=" text-periwinkle py-3" />
                   <li>
-                    <Link to="/service2">- Vitamin Injections</Link>
+                    <Link to="/services/vitamin-injections">- Vitamin Injections</Link>
                   </li>
                   <hr className=" text-periwinkle py-3" />
                   <li>
-                    <Link to="/service3">- Telehealth</Link>
+                    <Link to="/services/telehealth">- Telehealth</Link>
                   </li>
                 </ul>
               )}
@@ -81,6 +102,7 @@ function Navigation() {
               <Link to="/contact-us">Contact</Link>
             </li>
             <hr className=" text-periwinkle py-3" />
+
             {/* Second Link with Inner Menu */}
             {/* <li>
               <button className="flex justify-between items-center w-full" onClick={toggleMenuTwo}>
@@ -106,37 +128,71 @@ function Navigation() {
               )}
             </li> */}
             {/* End Second Link with Inner Menu */}
-            <li>
-              <Link to="/somepath">Locations</Link>
+            <li onClick={closeMenu}>
+              <Link to="/locations">Locations</Link>
             </li>
             <hr className=" text-periwinkle py-3" />
-            <li>
-              <Link to="/somepath">Pricing</Link>
+            <li onClick={closeMenu}>
+              <Link to="/pricing">Pricing</Link>
             </li>
+            <hr className=" text-periwinkle py-3" />
           </ul>
         </div>
       )}
       {/* End Mobile Menu */}
 
       {/* DESKTOP MENU */}
-      <div className="hidden sm:flex sm:items-center sm:justify-between sm:px-2 h-20 ">
+      <div className="hidden sm:flex sm:items-center sm:justify-between sm:px-2 h-20 top-0 fixed w-screen bg-offWhite z-30 border-[1px] border-b-periwinkle">
         <div>
           <Link to="/">
             <h1>FMPM Weight Loss</h1>
           </Link>
         </div>
-        <div className="flex w-1/2 justify-between text-navy text-2xl">
-          <Link to="/about">
-            <p>About</p>
+        <div className="flex w-1/2 justify-between text-navy text-2xl ">
+          <Link to="/" onClick={handleScrollToTop}>
+            <p className="hover:underline">Home</p>
           </Link>
-          <p>Weight Loss</p>
-          <p>Aesthetics</p>
-          <p>Wellness</p>
-          <p>Testimonials</p>
-          <p>Our Team</p>
+          <Link to="/about" onClick={handleScrollToTop}>
+            <p className="hover:underline">About Us</p>
+          </Link>
+          <div
+            className=" relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button onClick={handleRedirect} className="hover:underline">
+              Services
+            </button>
+            {/* <DropdownMenu /> */}
+            {isDropdownVisible && (
+              <ul className="absolute bg-offWhite w-[200px] mr-10">
+                <Link to="/services/medical-weight-loss" onClick={handleScrollToTop}>
+                  <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
+                    Medical Weight Loss
+                  </li>
+                </Link>
+                <Link to="/services/vitamin-injections" onClick={handleScrollToTop}>
+                  <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
+                    Vitamin Injections
+                  </li>
+                </Link>
+                <Link to="/services/telehealth" onClick={handleScrollToTop}>
+                  <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
+                    Telehealth
+                  </li>
+                </Link>
+              </ul>
+            )}
+          </div>
+          <Link to="/locations" onClick={handleScrollToTop}>
+            <p className="hover:underline">Locations</p>
+          </Link>
+          <Link to="/pricing" onClick={handleScrollToTop}>
+            <p className="hover:underline">Pricing</p>
+          </Link>
         </div>
         <div>
-          <Link to="/contact-us" className=" h-10">
+          <Link to="/contact-us" className=" h-10" onClick={handleScrollToTop}>
             <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md">
               Get in touch
             </button>

@@ -12,6 +12,12 @@ import About from "./components/About";
 import Accessibility from "./components/Accessibility";
 import Privacy from "./components/Privacy";
 import Terms from "./components/Terms";
+import Services from "./components/Services";
+import Vitamins from "./components/Vitamins";
+import WeightLoss from "./components/WeightLoss";
+import Telehealth from "./components/Telehealth";
+import Pricing from "./components/Pricing";
+import Locations from "./components/Locations";
 
 function App() {
   const dispatch = useDispatch();
@@ -34,8 +40,17 @@ function App() {
         <Route exact path="/about">
           <About />
         </Route>
+        <Route exact path="/services">
+          <Services />
+        </Route>
         <Route exact path="/privacy">
           <Privacy />
+        </Route>
+        <Route exact path="/pricing">
+          <Pricing />
+        </Route>
+        <Route exact path="/locations">
+          <Locations />
         </Route>
         <Route exact path="/contact-us">
           <Contact />
@@ -46,9 +61,17 @@ function App() {
         <Route exact path="/terms-and-conditions">
           <Terms />
         </Route>
+        <Route exact path="/services/telehealth">
+          <Telehealth />
+        </Route>
+        <Route exact path="/services/vitamin-injections">
+          <Vitamins />
+        </Route>
+        <Route exact path="/services/medical-weight-loss">
+          <WeightLoss />
+        </Route>
         <Redirect to="/" />
       </Switch>
-      <Footer />
     </>
   );
 }
