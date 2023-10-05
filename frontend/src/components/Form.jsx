@@ -73,7 +73,7 @@ function Form() {
   };
 
   return (
-    <div className=" mt-20">
+    <div className="mt-10">
       <form
         className="flex flex-col sm:w-2/3  w-11/12 mx-auto sm:bg-navy sm:text-offWhite sm:p-10 sm:rounded-lg sm:shadow-lg"
         onSubmit={submitHandler}

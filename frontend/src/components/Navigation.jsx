@@ -45,12 +45,15 @@ function Navigation() {
     <>
       {/* Mobile Menu */}
       <div className="flex justify-between items-center sm:hidden relative border-b-[1px] border-b-periwinkle py-3">
-        <Link to="/" className="">
+        <Link to="/" className="" onClick={closeMenu}>
           <h1 className="pl-2">FMPM Weight Loss</h1>
         </Link>
         <div className=" flex items-center">
           <Link to="/contact-us" className=" h-10">
-            <button className="mr-4 h-full bg-periwinkle text-offWhite px-3 rounded-md">
+            <button
+              className="mr-4 h-full bg-periwinkle text-offWhite px-3 rounded-md"
+              onClick={closeMenu}
+            >
               Get in touch
             </button>
           </Link>
@@ -72,12 +75,12 @@ function Navigation() {
             <hr className=" text-periwinkle py-3" />
             {/* First Link with Inner Menu */}
             <li>
-              <button className="flex justify-between items-center w-full" onClick={toggleMenu}>
+              <button className="flex justify-between items-center w-full" onClick={handleRedirect}>
                 Services
                 {openMenu ? (
-                  <FaChevronUp className="w-6 h-6" />
+                  <FaChevronUp className="w-6 h-6" onClick={toggleMenu} />
                 ) : (
-                  <FaChevronDown className="w-6 h-6" />
+                  <FaChevronDown className="w-6 h-6" onClick={toggleMenu} />
                 )}
               </button>
               {openMenu && (
