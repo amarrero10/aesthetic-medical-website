@@ -77,6 +77,7 @@ function Contact() {
           <div className="flex items-center w-full p-2">
             <FiUser className="h-6 w-6 mr-2" />
             <input
+              required
               id="name"
               type="text"
               name="name"
@@ -90,6 +91,7 @@ function Contact() {
           <div className="flex items-center w-full p-2">
             <FiMail className="h-6 w-6 mr-2" />
             <input
+              required
               id="email"
               type="email"
               name="email"
@@ -103,6 +105,7 @@ function Contact() {
           <div className="flex items-center w-full p-2">
             <FiMessageCircle className="h-6 w-6 mr-2" />
             <textarea
+              required
               id="message"
               placeholder="Enter your message"
               name="message"
@@ -119,19 +122,40 @@ function Contact() {
               name="phone"
               value={formState.phone || ""}
               onChange={changeHandler}
-              type="numeric"
+              type="number"
               placeholder="8131234567"
               className="w-full p-3 text-lg focus:outline-none focus:ring-sky-500 focus:ring-1"
             ></input>
           </div>
-          <m.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+          <button
             type="submit"
-            className="border border-blue-300 p-3 rounded-md w-1/2 mx-auto"
+            class="hidden relative sm:inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-periwinkle rounded-full hover:text-offWhite group hover:bg-navy w-[200px] mx-auto mt-10"
+          >
+            <span class="absolute left-0 block w-full h-0 transition-all bg-periwinkle opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+            <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </span>
+            <span class="relative">Submit</span>
+          </button>
+          <button
+            type="submit"
+            className="border border-periwinkle w-1/2 mx-auto mt-5 rounded-lg py-4 text-xl text-navy sm:hidden"
           >
             Submit
-          </m.button>
+          </button>
         </form>
       </div>
     </>

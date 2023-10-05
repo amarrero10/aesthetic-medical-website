@@ -36,8 +36,8 @@ function HomePage() {
         <div className="sm:flex grid w-screen sm:w-full p-2 justify-center items-center sm:h-[800px]">
           <div className=" h-[300px] w-full mb-10 grid sm:mr-2 mt-5">
             <div className=" flex justify-center">
-              <p className=" text-xl font-bold sm:text-3xl">Embark on a journey of </p>
-              <div className=" text-xl font-bold pl-1 sm:text-3xl text-periwinkle">
+              <p className=" text-xl font-bold sm:text-2xl">Embark on a journey of </p>
+              <div className=" text-xl font-bold pl-1 sm:text-2xl text-periwinkle">
                 <Typewriter
                   options={{
                     strings: [" Wellness", " Transformation", " Confidence"],
@@ -96,7 +96,7 @@ function HomePage() {
                 We harness the power of medications like semaglutides and tirzepatide in our
                 personalized approach to help every client achieve their ideal weight.
               </p>
-              <Link>
+              <Link to="/services/medical-weight-loss">
                 <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
                   Learn More
                 </button>
@@ -109,7 +109,7 @@ function HomePage() {
                 We utilize B12 injections to boost metabolism and incorporate Fat Burners to support
                 effective weight management, helping you achieve your health and wellness goals.
               </p>
-              <Link>
+              <Link to="/services/vitamin-injections">
                 <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
                   Learn More
                 </button>
@@ -122,7 +122,7 @@ function HomePage() {
                 we are proud to offer the convenience of telehealth services, allowing you to access
                 expert guidance and support from the comfort of your own home.
               </p>
-              <Link>
+              <Link to="/services/telehealth">
                 <button className=" text-lg bg-periwinkle border-offWhite border px-4 py-3 rounded-md mt-2">
                   Learn More
                 </button>

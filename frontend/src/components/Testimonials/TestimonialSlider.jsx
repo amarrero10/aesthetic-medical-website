@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import KeenSlider, { useKeenSlider } from "keen-slider/react";
+import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import testimonials from "./testimonials.js";
 

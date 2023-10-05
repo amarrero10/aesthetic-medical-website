@@ -22,9 +22,20 @@ function About() {
 
         <p className="font-extrabold text-3xl mb-3">OUR PROMISE</p>
         <p className="mb-3 text-justify tracking-widest">
-          Our dedicated team of professional, knowledgeable, and compassionate experts is here to
+          Our dedicated team of professional, knowledgeable, and compassionate experts are here to
           support you in achieving your weight loss goals. We are devoted to helping you not only
           shed pounds but also enhance your overall well-being, both inside and out.
+        </p>
+        <p className="font-extrabold text-3xl mb-3">PATIENT ARE AT THE HEART OF IT ALL</p>
+        <p className="mb-3 text-justify tracking-widest">
+          At FMPM Weight Loss, our unwavering commitment is to your well-being and satisfaction. We
+          understand that every individual is unique, and so are their needs when it comes to
+          medical weight loss and aesthetics. That's why we take pride in offering personalized
+          treatment plans, thorough consultations, and dedicated follow-up services. Our approach
+          isn't just about achieving results; it's about ensuring your comfort and confidence
+          throughout your journey with us. Your health, happiness, and satisfaction are at the heart
+          of everything we do, and we look forward to partnering with you on your path to a more
+          vibrant and confident you.
         </p>
         <img
           src={portrait}
