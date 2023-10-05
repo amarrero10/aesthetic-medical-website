@@ -74,12 +74,15 @@ function Form() {
 
   return (
     <div className=" mt-20">
-      <form className="flex flex-col  w-11/12 mx-auto bg-red-300" onSubmit={submitHandler}>
+      <form
+        className="flex flex-col sm:w-2/3  w-11/12 mx-auto sm:bg-navy sm:text-offWhite sm:p-10 sm:rounded-lg sm:shadow-lg"
+        onSubmit={submitHandler}
+      >
         <label htmlFor="name" className="text-xl ml-2">
           Name
         </label>
         <div className="flex items-center w-full p-2 relative">
-          <FiUser className="h-6 w-6 ml-1 absolute" />
+          <FiUser className="h-6 w-6 ml-1 absolute text-navy" />
           <input
             required
             id="name"
@@ -95,7 +98,7 @@ function Form() {
           Email
         </label>
         <div className="flex items-center w-full p-2 relative">
-          <FiMail className="h-6 w-6 ml-1 absolute" />
+          <FiMail className="h-6 w-6 ml-1 absolute text-navy" />
           <input
             required
             id="email"
@@ -111,7 +114,7 @@ function Form() {
           Message
         </label>
         <div className="flex items-center w-full p-2 relative">
-          <FiMessageCircle className="h-6 w-6 ml-1 absolute" />
+          <FiMessageCircle className="h-6 w-6 ml-1 absolute text-navy" />
           <textarea
             required
             style={{ resize: "none" }}
@@ -128,7 +131,7 @@ function Form() {
           Phone Number
         </label>
         <div className="flex items-center w-full p-2 relative">
-          <FiPhone className="h-6 w-6 ml-1 absolute" />
+          <FiPhone className="h-6 w-6 ml-1 absolute text-navy" />
           <input
             id="phone"
             name="phone"
@@ -144,7 +147,7 @@ function Form() {
         </div>
         <button
           type="submit"
-          class="hidden relative sm:inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-periwinkle rounded-full hover:text-offWhite group hover:bg-navy w-[200px] mx-auto mt-10"
+          class="hidden relative sm:inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-offwhite rounded-md hover:text-offWhite group hover:bg-navy w-[200px] mx-auto mt-10"
         >
           <span class="absolute left-0 block w-full h-0 transition-all bg-periwinkle opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
           <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
@@ -163,7 +166,7 @@ function Form() {
               ></path>
             </svg>
           </span>
-          <span class="relative">Submit</span>
+          <span class="relative"> {isSubmitting ? "Submitting..." : "Submit"}</span>
         </button>
         <button
           type="submit"
