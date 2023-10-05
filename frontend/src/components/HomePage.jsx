@@ -33,19 +33,19 @@ function HomePage() {
         </svg>
       </div>
       <div>
-        <div className="sm:flex grid w-screen sm:w-full p-2 justify-center items-center sm:h-[800px]">
+        <div className="sm:flex grid gap-5 sm:gap-0 w-screen sm:w-full p-2 justify-center items-center sm:h-[800px]">
           <div className=" h-[300px] w-full mb-10 grid sm:mr-2 mt-5">
             <div className=" flex justify-center">
-              <p className=" text-xl font-bold sm:text-2xl">Embark on a journey of </p>
-              <div className=" text-xl font-bold pl-1 sm:text-2xl text-periwinkle">
-                <Typewriter
-                  options={{
-                    strings: [" Wellness", " Transformation", " Confidence"],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </div>
+              <p className=" text-2xl font-bold sm:text-4xl">Embark on a journey of </p>
+            </div>
+            <div className=" text-2xl font-bold pl-1 sm:text-4xl text-periwinkle text-center">
+              <Typewriter
+                options={{
+                  strings: [" Wellness!", " Transformation!", " Confidence!"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </div>
             <p className=" text-center">
               We prioritize your unique needs to enhance your quality of life. Experience a
@@ -56,25 +56,25 @@ function HomePage() {
             </p>
             <div className=" flex justify-center sm:-mt-[80px]">
               <Link to="/contact-us" className="  mx-auto s">
-                <button className=" bg-white py-3 px-5 border-teal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto ">
+                <button className=" bg-white py-3 px-5 border border-teal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto  ">
                   Request Appointment
                 </button>
               </Link>
             </div>
           </div>
-          <div className=" h-[300px] sm:h-[600px] sm:w-[2200px] -mt-8">
+          <div className=" h-[320px] sm:h-[600px] sm:w-[2200px] -mt-8 w-full px-4">
             <img
               src={portrait}
               alt="portrait of ALgery Al-Hafi"
-              className=" max-h-full rounded-full shadow-2xl shadow-navy  w-3/4 mx-auto object-cover"
+              className=" max-h-full rounded-full shadow-2xl shadow-navy mx-auto object-cover w-full"
             ></img>
           </div>
         </div>
-        <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] sm:-mt-[108px]">
+        <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] sm:-mt-[108px] -mt-12">
           <p className=" text-center sm:text-5xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9">
             A Little About Us
           </p>
-          <p className=" text-center sm:text-xl sm:w-[550px] text-lg px-3 text-offWhite mt-8">
+          <p className=" text-center sm:text-xl sm:w-[550px] text-lg px-3 text-offWhite mt-9">
             At FMPM Weight Loss, we are your partners in the pursuit of health and beauty. Meet our
             dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about our mission to
             empower your journey towards total body health and wellness with medical weight-loss
