@@ -39,7 +39,7 @@ function About() {
         </p>
 
         <div className="flex flex-col sm:flex-row mt-5 justify-between items-center">
-          <div className=" w-1/2">
+          <div className=" sm:w-1/2">
             <img
               src={portrait}
               alt="Nurse Practioner at FMPM Weight Loss"
@@ -51,7 +51,7 @@ function About() {
             </div>
           </div>
 
-          <p className=" mt-1 text-center w-1/2 sm:px-3 sm:text-xl">
+          <p className=" mt-1 text-center sm:w-1/2 sm:px-3 sm:text-xl">
             Meet Algery Al-Hafi, APRN-BC, our Board-Certified Nurse Practitioner. With her extensive
             experience and expertise, Algery is dedicated to guiding you on your journey to a
             healthier and more beautiful you. She combines medical precision with a caring touch,

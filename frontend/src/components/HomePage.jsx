@@ -12,7 +12,7 @@ import Footer from "./Footer";
 
 function HomePage() {
   return (
-    <div className="sm:mt-10">
+    <div className="sm:mt-12">
       <div className=" absolute w-full -z-10 sm:top-52 top-[550px] ">
         <svg
           width="100%"
@@ -62,11 +62,11 @@ function HomePage() {
               </Link>
             </div>
           </div>
-          <div className=" h-[320px] sm:h-[600px] sm:w-[2200px] -mt-8 w-full px-4">
+          <div className=" h-[320px] sm:h-[690px]  -mt-8 w-full px-4">
             <img
               src={portrait}
               alt="portrait of ALgery Al-Hafi"
-              className=" max-h-full rounded-full shadow-2xl shadow-navy mx-auto object-cover w-full"
+              className=" h-full rounded-full shadow-2xl shadow-navy mx-auto object-cover w-full"
             ></img>
           </div>
         </div>
@@ -143,21 +143,21 @@ function HomePage() {
           you!
         </p>
         <div className=" flex sm:flex-row sm:w-[33%] mx-auto sm:justify-between justify-around mt-3 sm:mt-7 py-4">
-          <div className="flex items-center mt-3 relative">
+          <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mt-3 relative">
             <a
               href="tel:(352) 340-5990"
-              className="flex items-center text-teal text-xl mb-6 sm:mb-0"
+              className="flex  items-center text-teal text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
               (352) 340-5990
             </a>
+            <Link to="/contact-us">
+              <button className=" bg-white py-3 px-5 border  border-teal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">
+                Request Appointment
+              </button>
+            </Link>
           </div>
 
-          <Link to="/contact-us">
-            <button className=" bg-white py-3 px-5 border  border-teal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">
-              Request Appointment
-            </button>
-          </Link>
           {/* <img
             src={wellness}
             alt="some portrait"
