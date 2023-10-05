@@ -9,8 +9,8 @@ import Footer from "./Footer";
 
 function About() {
   return (
-    <div className="sm:mt-20 absolute">
-      <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md tracking-wider font-poppins">
+    <div className="sm:mt-20 absolute tracking-widest">
+      <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md  font-poppins">
         <h1 className="  font-extrabold text-3xl mb-3">
           ABOUT US<span className="text-periwinkle font-extrabold text-3xl">.</span>
         </h1>
@@ -26,7 +26,7 @@ function About() {
           support you in achieving your weight loss goals. We are devoted to helping you not only
           shed pounds but also enhance your overall well-being, both inside and out.
         </p>
-        <p className="font-extrabold text-3xl mb-3">PATIENT ARE AT THE HEART OF IT ALL</p>
+        <p className="font-extrabold text-3xl mb-3">PATIENTS ARE AT THE HEART OF IT ALL</p>
         <p className="mb-3 text-justify tracking-widest">
           At FMPM Weight Loss, our unwavering commitment is to your well-being and satisfaction. We
           understand that every individual is unique, and so are their needs when it comes to
@@ -37,27 +37,32 @@ function About() {
           of everything we do, and we look forward to partnering with you on your path to a more
           vibrant and confident you.
         </p>
-        <img
-          src={portrait}
-          alt="Nurse Practioner at FMPM Weight Loss"
-          className="w-2/3 mx-auto h-[400px] object-contain rounded-md mt-16"
-        ></img>
-        <div className=" bg-periwinkle text-offWhite text-center text-xl">
-          <p>Algery Al-Hafi</p>
-          <p>APRN-BC | Board Certfied Practioner</p>
+
+        <div className="flex flex-col sm:flex-row mt-5 justify-between items-center">
+          <div className=" w-1/2">
+            <img
+              src={portrait}
+              alt="Nurse Practioner at FMPM Weight Loss"
+              className="w-full  mx-auto h-[400px] object-cover rounded-md"
+            ></img>
+            <div className=" bg-periwinkle text-offWhite text-center text-xl py-4">
+              <p>Algery Al-Hafi</p>
+              <p>APRN-BC | Board Certfied Practioner</p>
+            </div>
+          </div>
+
+          <p className=" mt-1 text-center w-1/2 sm:px-3 sm:text-xl">
+            Meet Algery Al-Hafi, APRN-BC, our Board-Certified Nurse Practitioner. With her extensive
+            experience and expertise, Algery is dedicated to guiding you on your journey to a
+            healthier and more beautiful you. She combines medical precision with a caring touch,
+            ensuring you receive the highest level of care in your weight loss and aesthetic goals.
+            Trust Algery Al-Hafi to lead you towards your wellness aspirations.
+          </p>
         </div>
 
-        <p className=" mt-1 text-justify">
-          Meet Algery Al-Hafi, APRN-BC, our Board-Certified Nurse Practitioner. With her extensive
-          experience and expertise, Algery is dedicated to guiding you on your journey to a
-          healthier and more beautiful you. She combines medical precision with a caring touch,
-          ensuring you receive the highest level of care in your weight loss and aesthetic goals.
-          Trust Algery Al-Hafi to lead you towards your wellness aspirations.
-        </p>
-
-        <p className="text-2xl uppercase font-semibold mt-10">What we offer:</p>
+        <p className="text-2xl sm:text-3xl uppercase font-bold mt-10">Our Services</p>
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10">
-          <div className=" bg-teal rounded-md shadow-xl h-[400px] text-center text-offWhite">
+          <div className=" rounded-md shadow-xl h-[400px] text-center text-navy border">
             <FaWeightScale className=" mx-auto text-6xl mt-5 " />
             <p className="text-2xl my-3">Medical Weight Loss</p>
             <p className=" text-center px-3 mb-5">
@@ -65,12 +70,12 @@ function About() {
               personalized approach to help every client achieve their ideal weight.
             </p>
             <Link to="/services/medical-weight-loss">
-              <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
+              <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                 Learn More
               </button>
             </Link>
           </div>
-          <div className=" bg-teal rounded-md shadow-xl h-[400px] text-center text-offWhite">
+          <div className=" rounded-md shadow-xl h-[400px] text-center text-navy border">
             <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
             <p className="text-2xl my-3">Vitamin Injections</p>
             <p className=" text-center px-3 mb-5">
@@ -78,12 +83,12 @@ function About() {
               effective weight management, helping you achieve your health and wellness goals.
             </p>
             <Link to="/services/vitamin-injections">
-              <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
+              <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                 Learn More
               </button>
             </Link>
           </div>
-          <div className=" bg-teal rounded-md shadow-xl h-[400px] text-center text-offWhite">
+          <div className=" rounded-md shadow-xl h-[400px] text-center text-navy border">
             <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
             <p className="text-2xl my-3">Telehealth</p>
             <p className=" text-center px-3 mb-5">
@@ -91,7 +96,7 @@ function About() {
               expert guidance and support from the comfort of your own home.
             </p>
             <Link to="/services/telehealth">
-              <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2">
+              <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                 Learn More
               </button>
             </Link>
