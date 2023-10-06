@@ -107,7 +107,7 @@ function Services() {
         {/* END MOBILE SERVICES */}
         {/* DESKTOP SERVICES */}
         <div className="hidden sm:block sm:visible pt-10 text-navy">
-          <div className=" flex w-2/3 mx-auto h-[500px] shadow-2xl rounded-md">
+          <div className=" flex w-2/3 min-[2000px]:w-1/2 mx-auto h-[500px] shadow-2xl rounded-md">
             <div className=" w-1/2 flex flex-col items-center justify-between py-[50px]">
               <h2 className=" text-3xl font-semibold">Medical Weight Loss</h2>
               <div className=" px-5 text-center text-lg">
@@ -140,7 +140,7 @@ function Services() {
               ></img>
             </div>
           </div>
-          <div className=" flex w-2/3 mx-auto h-[500px] shadow-2xl rounded-md my-16">
+          <div className=" flex w-2/3 min-[2000px]:w-1/2 mx-auto h-[500px] shadow-2xl rounded-md my-16">
             <div className=" w-1/2 rounded-tr-md rounded-br-md">
               <img
                 className=" h-full object-cover rounded-tr-md rounded-br-md w-full"
@@ -172,7 +172,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className=" flex w-2/3 mx-auto h-[500px] shadow-2xl rounded-md">
+          <div className=" flex w-2/3 min-[2000px]:w-1/2 mx-auto h-[500px] shadow-2xl rounded-md">
             <div className=" w-1/2 flex flex-col items-center justify-between py-[50px]">
               <h2 className=" text-3xl font-semibold">Telehealth</h2>
               <div className=" px-5 text-center text-lg">

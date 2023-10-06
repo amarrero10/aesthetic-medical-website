@@ -166,7 +166,7 @@ function Form() {
               ></path>
             </svg>
           </span>
-          <span class="relative"> {isSubmitting ? "Submitting..." : "Submit"}</span>
+          <span class="relative text-offWhite"> {isSubmitting ? "Submitting..." : "Submit"}</span>
         </button>
         <button
           type="submit"

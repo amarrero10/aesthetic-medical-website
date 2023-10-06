@@ -6,28 +6,95 @@ import { BiSolidInjection } from "react-icons/bi";
 import { BsPersonVideo3 } from "react-icons/bs";
 import portrait from "../assets/portrait.jpg";
 import Footer from "./Footer";
+import { motion } from "framer-motion";
+const fadeInAnimationVariant = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 function About() {
   return (
     <div className="sm:mt-20 absolute tracking-widest">
       <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md  font-poppins">
-        <h1 className="  font-extrabold text-3xl mb-3">
+        <motion.h1
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className="  font-extrabold text-3xl mb-3"
+        >
           ABOUT US<span className="text-periwinkle font-extrabold text-3xl">.</span>
-        </h1>
-        <p className="mb-3 text-justify tracking-widest">
+        </motion.h1>
+        <motion.p
+          className="mb-3 text-justify tracking-widest"
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+        >
           At FMPM Weight Loss, our mission is to merge cutting-edge, evidence-based science with a
           comprehensive, holistic approach to deliver exceptional treatments that empower your
           journey towards improved health and wellness.
-        </p>
+        </motion.p>
 
-        <p className="font-extrabold text-3xl mb-3">OUR PROMISE</p>
-        <p className="mb-3 text-justify tracking-widest">
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          animate="animate"
+          // whileInView={}
+          viewport={{
+            once: true,
+          }}
+          className="font-extrabold text-3xl mb-3"
+        >
+          OUR PROMISE
+        </motion.p>
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          animate="animate"
+          // whileInView={}
+          viewport={{
+            once: true,
+          }}
+          className="mb-3 text-justify tracking-widest"
+        >
           Our dedicated team of professional, knowledgeable, and compassionate experts are here to
           support you in achieving your weight loss goals. We are devoted to helping you not only
           shed pounds but also enhance your overall well-being, both inside and out.
-        </p>
-        <p className="font-extrabold text-3xl mb-3">PATIENTS ARE AT THE HEART OF IT ALL</p>
-        <p className="mb-3 text-justify tracking-widest">
+        </motion.p>
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          animate="animate"
+          // whileInView={}
+          viewport={{
+            once: true,
+          }}
+          className="font-extrabold text-3xl mb-3"
+        >
+          PATIENTS ARE AT THE HEART OF IT ALL
+        </motion.p>
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          animate="animate"
+          // whileInView={}
+          viewport={{
+            once: true,
+          }}
+          className="mb-3 text-justify tracking-widest"
+        >
           At FMPM Weight Loss, our unwavering commitment is to your well-being and satisfaction. We
           understand that every individual is unique, and so are their needs when it comes to
           medical weight loss and aesthetics. That's why we take pride in offering personalized
@@ -36,9 +103,18 @@ function About() {
           throughout your journey with us. Your health, happiness, and satisfaction are at the heart
           of everything we do, and we look forward to partnering with you on your path to a more
           vibrant and confident you.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row mt-5 justify-between items-center">
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          animate="animate"
+          // whileInView={}
+          viewport={{
+            once: true,
+          }}
+          className="flex flex-col sm:flex-row mt-5 justify-between items-center"
+        >
           <div className=" sm:w-1/2">
             <img
               src={portrait}
@@ -58,10 +134,28 @@ function About() {
             ensuring you receive the highest level of care in your weight loss and aesthetic goals.
             Trust Algery Al-Hafi to lead you towards your wellness aspirations.
           </p>
-        </div>
+        </motion.div>
 
-        <p className="text-2xl sm:text-3xl uppercase font-bold mt-10">Our Services</p>
-        <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10">
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className="text-2xl sm:text-3xl uppercase font-bold mt-10"
+        >
+          Our Services
+        </motion.p>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10"
+        >
           <div className=" rounded-md shadow-xl h-[400px] text-center text-navy border">
             <FaWeightScale className=" mx-auto text-6xl mt-5 " />
             <p className="text-2xl my-3">Medical Weight Loss</p>
@@ -101,14 +195,30 @@ function About() {
               </button>
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <p className="text-justify mt-20 ">
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className="text-justify mt-20 "
+        >
           Ready to start your journey to a healthier you? Reach out to us today! We're here to help
           you achieve your weight loss goals. Contact us now and take the first step toward a better
           you!
-        </p>
-        <div className=" flex sm:flex-row flex-col md:w-[60%] mx-auto justify-between  items-center mt-3 py-4">
+        </motion.p>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" flex sm:flex-row flex-col md:w-[60%] mx-auto justify-between  items-center mt-3 py-4"
+        >
           <div className="flex items-center ">
             <a
               href="tel:(352) 340-5990"
@@ -123,7 +233,7 @@ function About() {
               Contact Us
             </button>
           </Link>
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </div>
