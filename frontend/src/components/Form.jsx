@@ -91,7 +91,7 @@ function Form() {
             value={formState.name || ""}
             onChange={changeHandler}
             placeholder="Enter your name"
-            className="w-full p-3 pl-9 text-lg focus:outline-none focus:ring-teal focus:ring-1"
+            className="w-full p-3 pl-9 text-lg focus:outline-none focus:ring-greenTeal focus:ring-1"
           ></input>
         </div>
         <label className="text-xl ml-2" htmlFor="email">
@@ -107,7 +107,7 @@ function Form() {
             value={formState.email || ""}
             placeholder="john@email.com"
             onChange={changeHandler}
-            className="w-full p-3 pl-9 text-lg focus:outline-none focus:ring-teal focus:ring-1"
+            className="w-full p-3 pl-9 text-lg focus:outline-none focus:ring-greenTeal focus:ring-1"
           ></input>
         </div>
         <label className="text-xl ml-2" htmlFor="message">
@@ -124,7 +124,7 @@ function Form() {
             name="message"
             value={formState.message || ""}
             onChange={changeHandler}
-            className="w-full p-3 text-lg focus:outline-none focus:ring-teal focus:ring-1 pl-9"
+            className="w-full p-3 text-lg focus:outline-none focus:ring-greenTeal focus:ring-1 pl-9"
           ></textarea>
         </div>
         <label className="text-xl ml-2" htmlFor="phone">
@@ -142,7 +142,7 @@ function Form() {
             }}
             type="tel"
             placeholder="8131234567"
-            className="w-full p-3 text-lg focus:outline-none focus:ring-teal focus:ring-1 pl-9"
+            className="w-full p-3 text-lg focus:outline-none focus:ring-greenTeal focus:ring-1 pl-9"
           />
         </div>
         <button

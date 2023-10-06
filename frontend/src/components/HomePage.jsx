@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
 import portrait from "../assets/portrait.jpg";
-import wellness from "../assets/wellness.jpg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
 import { FaWeightScale } from "react-icons/fa6";
@@ -56,7 +55,7 @@ function HomePage() {
             </p>
             <div className=" flex justify-center sm:-mt-[80px]">
               <Link to="/contact-us" className="  mx-auto s">
-                <button className=" bg-white py-3 px-5 border border-teal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto  ">
+                <button className=" bg-white py-3 px-5 border border-greenTeal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto  ">
                   Request Appointment
                 </button>
               </Link>
@@ -146,13 +145,13 @@ function HomePage() {
           <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mt-3 relative">
             <a
               href="tel:(352) 340-5990"
-              className="flex  items-center text-teal text-xl mb-6 sm:mb-0"
+              className="flex  items-center text-greenTeal text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
               (352) 340-5990
             </a>
             <Link to="/contact-us">
-              <button className=" bg-white py-3 px-5 border  border-teal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">
+              <button className=" bg-white py-3 px-5 border  border-greenTeal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">
                 Request Appointment
               </button>
             </Link>

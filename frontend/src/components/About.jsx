@@ -112,14 +112,14 @@ function About() {
           <div className="flex items-center ">
             <a
               href="tel:(352) 340-5990"
-              className="flex items-center text-teal text-xl mb-6 sm:mb-0"
+              className="flex items-center text-greenTeal text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
               (352) 340-5990
             </a>
           </div>
           <Link to="/contact-us">
-            <button className=" bg-white py-3 px-5 border border-teal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:text-offWhite">
+            <button className=" bg-white py-3 px-5 border border-greenTeal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:text-offWhite">
               Contact Us
             </button>
           </Link>

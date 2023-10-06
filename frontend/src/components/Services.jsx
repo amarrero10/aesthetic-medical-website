@@ -1,7 +1,5 @@
 import React from "react";
-import { BsTelephone } from "react-icons/bs";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import Contact from "./Contact";
 import Footer from "./Footer";
 import Form from "./Form";
 import weight from "../assets/weight-loss.jpg";

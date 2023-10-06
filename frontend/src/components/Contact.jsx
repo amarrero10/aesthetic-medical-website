@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { motion as m } from "framer-motion";
+import React from "react";
 import Form from "./Form";
 function Contact() {
   return (

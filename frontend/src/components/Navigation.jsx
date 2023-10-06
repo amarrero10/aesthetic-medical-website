@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom";
 import Hamburger from "hamburger-react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
