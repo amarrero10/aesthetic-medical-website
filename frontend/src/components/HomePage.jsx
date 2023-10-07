@@ -10,6 +10,17 @@ import TestimonialSlider from "./Testimonials/TestimonialSlider";
 import Footer from "./Footer";
 import { motion, useScroll } from "framer-motion";
 
+const fadeInAnimationVariant = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 function HomePage() {
   const { scrollYProgress } = useScroll();
   return (
@@ -18,8 +29,16 @@ function HomePage() {
         className="hidden sm:block bg-periwinkle fixed top-20 left-0 right-0 h-2 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
-      <div className="sm:mt-12">
-        <div className=" absolute w-full -z-10 sm:top-52 top-[550px] ">
+      <div className="sm:mt-12 max-w-[2000px] mx-auto">
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" absolute w-full min-[2000px]:w-[78.55%] -z-10 sm:top-52 top-[550px] "
+        >
           <svg
             width="100%"
             height="100%"
@@ -37,10 +56,18 @@ function HomePage() {
               class="transition-all duration-300 ease-in-out delay-150 path-0"
             ></path>
           </svg>
-        </div>
+        </motion.div>
         <div>
           <div className="sm:flex grid gap-5 sm:gap-0 w-screen sm:w-full p-2 justify-center items-center sm:h-[800px]">
-            <div className=" h-[300px] w-full mb-10 grid sm:mr-2 mt-5">
+            <motion.div
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" h-[300px] w-full mb-10 grid sm:mr-2 mt-5"
+            >
               <div className=" flex justify-center">
                 <p className=" text-2xl font-bold sm:text-4xl">Embark on a journey of </p>
               </div>
@@ -67,25 +94,49 @@ function HomePage() {
                   </button>
                 </Link>
               </div>
-            </div>
-            <div className=" h-[320px] sm:h-[690px]  -mt-8 w-full px-4">
+            </motion.div>
+            <motion.div
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" h-[320px] sm:h-[690px]  -mt-8 w-full px-4"
+            >
               <img
                 src={portrait}
                 alt="portrait of ALgery Al-Hafi"
                 className=" h-full rounded-full shadow-2xl shadow-navy mx-auto object-cover w-full"
               ></img>
-            </div>
+            </motion.div>
           </div>
           <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] sm:-mt-[108px] -mt-12">
-            <p className=" text-center sm:text-5xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9">
+            <motion.p
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" text-center sm:text-5xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9"
+            >
               A Little About Us
-            </p>
-            <p className=" text-center sm:text-xl sm:w-[550px] text-lg px-3 text-offWhite mt-9">
+            </motion.p>
+            <motion.p
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" text-center sm:text-xl sm:w-[550px] text-lg px-3 text-offWhite mt-9"
+            >
               At FMPM Weight Loss, we are your partners in the pursuit of health and beauty. Meet
               our dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about our mission to
               empower your journey towards total body health and wellness with medical weight-loss
               management.
-            </p>
+            </motion.p>
             <Link to="/about">
               <button className=" text-lg text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
                 More Information
@@ -93,9 +144,27 @@ function HomePage() {
             </Link>
           </div>
           <div>
-            <h2 className=" text-center mt-10 mb-8 text-2xl sm:text-6xl font-bold">Services</h2>
+            <motion.h2
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" text-center mt-10 mb-8 text-2xl sm:text-6xl font-bold"
+            >
+              Services
+            </motion.h2>
             <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10 px-2">
-              <div className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite">
+              <motion.div
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
+              >
                 <FaWeightScale className=" mx-auto text-6xl mt-5 " />
                 <p className="text-2xl my-3">Medical Weight Loss</p>
                 <p className=" text-center px-3 mb-5">
@@ -107,8 +176,16 @@ function HomePage() {
                     Learn More
                   </button>
                 </Link>
-              </div>
-              <div className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite">
+              </motion.div>
+              <motion.div
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
+              >
                 <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
                 <p className="text-2xl my-3">Vitamin Injections</p>
                 <p className=" text-center px-3 mb-5">
@@ -121,8 +198,16 @@ function HomePage() {
                     Learn More
                   </button>
                 </Link>
-              </div>
-              <div className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite">
+              </motion.div>
+              <motion.div
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
+              >
                 <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
                 <p className="text-2xl my-3">Telehealth</p>
                 <p className=" text-center px-3 mb-5">
@@ -134,22 +219,53 @@ function HomePage() {
                     Learn More
                   </button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
 
-          <div>
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+          >
             <TestimonialSlider />
-          </div>
-          <p className=" text-center text-3xl sm:text-5xl font-bold mb-3 text-periwinkle">
+          </motion.div>
+          <motion.p
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" text-center text-3xl sm:text-5xl font-bold mb-3 text-periwinkle"
+          >
             Contact Us
-          </p>
-          <p className="sm:text-center px-2 text-xl sm:w-[700px] mx-auto text-justify">
+          </motion.p>
+          <motion.p
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className="sm:text-center px-2 text-xl sm:w-[700px] mx-auto text-justify"
+          >
             Ready to start your journey to a healthier you? Reach out to us today! We're here to
             help you achieve your weight loss goals. Contact us now and take the first step toward a
             better you!
-          </p>
-          <div className=" flex sm:flex-row sm:w-[33%] mx-auto sm:justify-between justify-around mt-3 sm:mt-7 py-4">
+          </motion.p>
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" flex sm:flex-row sm:w-[33%] mx-auto sm:justify-between justify-around mt-3 sm:mt-7 py-4"
+          >
             <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mt-3 relative">
               <a
                 href="tel:(352) 340-5990"
@@ -170,10 +286,10 @@ function HomePage() {
             alt="some portrait"
             className=" absolute h-[400px] opacity-30 rounded-full top-[2200px]  ml-[530px]"
           ></img> */}
-          </div>
+          </motion.div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
