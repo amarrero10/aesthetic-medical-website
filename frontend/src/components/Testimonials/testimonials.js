@@ -1,25 +1,25 @@
 const testimonials = [
   {
     title: "Transformed My Life",
-    name: "Jane D.",
+    name: "Monique D.",
     quote:
       "Thanks to the incredible team, my life has been completely transformed. Their guidance and expertise are unmatched. I'm grateful for the fantastic support I received, and I've achieved my weight loss goals.",
   },
   {
     title: "Exceptional Aesthetic Care",
-    name: "John S.",
+    name: "Lydia S.",
     quote:
       "I received exceptional aesthetic care. The team provided me with personalized treatments, and I couldn't be happier with the results. Their aesthetic excellence is second to none.",
   },
   {
     title: "Incredibly Positive Experience",
-    name: "Mary K.",
+    name: "Maria K.",
     quote:
       "My experience has been incredibly positive. They offer transformative aesthetic treatments that have taken years off my appearance. Highly recommended!",
   },
   {
     title: "Life-Changing Support and Care",
-    name: "Robert L.",
+    name: "Will L.",
     quote:
       "I found the life-changing support and care I needed. The entire staff went above and beyond to help me with weight loss and boost my self-esteem.",
   },
@@ -49,7 +49,7 @@ const testimonials = [
   },
   {
     title: "Boosted Confidence",
-    name: "Olivia B.",
+    name: "Olivi B.",
     quote:
       "My confidence received a significant boost. The support and treatments I received have made a positive impact on my life.",
   },

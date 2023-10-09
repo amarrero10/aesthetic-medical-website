@@ -2,6 +2,10 @@ import React from "react";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import { Accordion } from "flowbite-react";
+import b12 from "../assets/b12.jpg";
+import fatBurner from "../assets/fat-burner.jpg";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { BsTelephone } from "react-icons/bs";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -18,18 +22,231 @@ function Vitamins() {
   return (
     <>
       <div className=" sm:mt-20">
-        <div className=" bg-navy text-offWhite text-center text-4xl ">
-          <p className=" pt-5">About Vitamin Injections</p>
-          <hr className=" w-1/3 mx-auto my-4 pb-5" />
-        </div>
-        <p className=" text-xl text-center w-1/2 mx-auto pb-10">
-          Are you showing signs of a vitamin deficiency? Are you looking for a way to get adequate
-          vitamins in your system without relying on an assortment of vitamin pills every day? Do
-          you feel drained, exhausted, or simply lacking in energy? If so, you might be the ideal
-          candidate for our personalized vitamin injections and B12 injections. Our clinicians and
-          master injectors deliver highly personalized vitamin infusions into your system to help
-          you maintain the optimal micronutrient balance.
-        </p>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" bg-navy text-offWhite text-center text-4xl "
+        >
+          <motion.h2
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" pt-5"
+          >
+            Vitamin Injections
+          </motion.h2>
+          <motion.hr
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" w-1/3 mx-auto my-4 pb-5"
+          />
+        </motion.div>
+
+        <motion.h2
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" text-center  text-3xl font-bold mb-3"
+        >
+          Vitamin B12 Injections
+        </motion.h2>
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" text-xl text-center sm:w-1/2 sm:px-0 px-3 mx-auto pb-10"
+        >
+          Experience the benefits of our personalized vitamin injections, including B12 injections,
+          and supercharge your energy levels without the hassle of daily pills. If you often find
+          yourself feeling fatigued or in need of an energy boost, we offer tailored vitamin
+          infusions designed to help you maintain the ideal micronutrient balance.
+        </motion.p>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" min-[2000px]:w-1/2 flex sm:flex-row flex-col sm:w-2/3 px-3 sm:px-0 mx-auto shadow-2xl mb-10 sm:h-[380px] rounded-md"
+        >
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" sm:w-1/2 "
+          >
+            <motion.img
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" h-full w-full object-cover rounded-tl-md rounded-bl-md"
+              src={b12}
+              alt="Energetic and carefree woman."
+            ></motion.img>
+          </motion.div>
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" flex flex-col justify-between py-10  sm:w-1/2 px-3 text-navy "
+          >
+            <motion.p
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" text-center"
+            >
+              FMPM Weight Loss offers vitamin B12 injections because they provide numerous benefits,
+              including boosting energy levels, enhancing brain function, promoting weight loss, and
+              more. Vitamin B12 injections also play a critical role in brain function, DNA
+              production, and red blood cell formation. They can be particularly beneficial for
+              individuals following vegan or vegetarian diets that may be deficient in vitamin B12.
+            </motion.p>
+            <motion.div
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className="flex items-center justify-center"
+            >
+              <Link to="/contact-us">
+                <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2 ">
+                  Request Appointment
+                </button>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+        <motion.h2
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" text-center  text-4xl font-bold mb-3 sm:mt-32 mt-12"
+        >
+          Fat Burners
+        </motion.h2>
+        <motion.p
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" text-xl text-center sm:w-1/2 px-3 sm:px-0 mx-auto pb-10"
+        >
+          if you're looking to expedite your weight loss journey, consider our range of highly
+          effective fat burners. We can provide you with the perfect combination of nutrients and
+          compounds to support your fitness goals. Achieve your health and wellness aspirations with
+          our comprehensive vitamin and fat burner solutions.
+        </motion.p>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" flex sm:flex-row flex-col px-3 sm:px-0 min-[2000px]:w-1/2 sm:w-2/3 mx-auto shadow-2xl mb-10 sm:h-[380px] rounded-md"
+        >
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" sm:w-1/2 "
+          >
+            <motion.img
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" h-full w-full object-cover rounded-tl-md rounded-bl-md"
+              src={fatBurner}
+              alt="Energetic and carefree woman."
+            ></motion.img>
+          </motion.div>
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className="  flex flex-col justify-between py-5  sm:w-1/2 px-3 text-navy "
+          >
+            <motion.p
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" text-center"
+            >
+              At FMPM Weight Loss, we provide specialized fat-burning injections designed to support
+              your weight loss journey. Our injections contain a unique blend of lipotropic
+              compounds, vitamins, minerals, and amino acids. These powerful ingredients work
+              together to boost your metabolism, enhance the breakdown of fat in the liver, and aid
+              in the removal of stored fat from your body. Our fat-burning injections can be a
+              valuable addition to your weight management plan, helping you achieve your goals for a
+              healthier, more vibrant you.
+            </motion.p>
+            <motion.div
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className="flex items-center justify-center"
+            >
+              <Link to="/contact-us">
+                <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2 ">
+                  Request Appointment
+                </button>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </motion.div>
         <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"
@@ -93,14 +310,16 @@ function Vitamins() {
                   difficult to distinguish from other health issues. Common symptoms of vitamin B12
                   deficiency include:
                 </p>
-                <ul class="list-disc ml-20 mt-5 text-sm text-gray-500 dark:text-gray-400">
-                  <li>Numbness or tingling in the hands, legs, or feet.</li>
-                  <li>Difficulty walking, stumbling, or balance problems.</li>
-                  <li>Anemia, characterized by a shortage of healthy red blood cells.</li>
-                  <li>An inflamed or swollen tongue.</li>
-                  <li>Challenges in clear thinking and reasoning.</li>
-                  <li>Memory lapses and forgetfulness.</li>
-                  <li>General weakness and persistent fatigue.</li>
+                <ul className=" list-disc ml-10 text-sm italic">
+                  <li className=" pt-3">Numbness or tingling in the hands, legs, or feet.</li>
+                  <li className=" pt-3">Difficulty walking, stumbling, or balance problems.</li>
+                  <li className=" pt-3">
+                    Anemia, characterized by a shortage of healthy red blood cells.
+                  </li>
+                  <li className=" pt-3">An inflamed or swollen tongue.</li>
+                  <li className=" pt-3">Challenges in clear thinking and reasoning.</li>
+                  <li className=" pt-3">Memory lapses and forgetfulness.</li>
+                  <li className=" pt-3">General weakness and persistent fatigue.</li>
                 </ul>
               </Accordion.Content>
             </Accordion.Panel>
@@ -131,27 +350,49 @@ function Vitamins() {
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
-            {/* <Accordion.Panel>
-              <Accordion.Title>What is Semaglutide?</Accordion.Title>
+            <Accordion.Panel>
+              <Accordion.Title>How Do Fat Burning Injections Work?</Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Semaglutide belongs to a class of medications known as glucagon-like peptide-1
-                  receptor agonists, or GLP-1 RAs. It mimics the GLP-1 hormone, released in the gut
-                  in response to eating.
+                  Fat-burning injections comprise a combination of vitamins, minerals, and amino
+                  acids designed to assist the body during the weight loss process. These compounds,
+                  referred to as lipotropics, facilitate the breakdown of fat within the liver. In
+                  the absence of lipotropics, fats and bile can accumulate in the liver, resulting
+                  in a sluggish fat metabolism and potential weight gain.
                 </p>
               </Accordion.Content>
-            </Accordion.Panel> */}
-            {/* <Accordion.Panel>
-              <Accordion.Title>How does Semaglutide work?</Accordion.Title>
+            </Accordion.Panel>
+            <Accordion.Panel>
+              <Accordion.Title>What is in a Fat Burning Injection?</Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Semaglutide works by mimicing the GLP-1 hormone. GLP-1 in higher amounts interacts
-                  with the parts of the brain that suppress your appetite and signal you to feel
-                  full. When used in conjunction with diet and exercise, it can cause significant
-                  weight loss.
+                <p className="mb-2 text-gray-500 dark:text-gray-400 text-lg">
+                  Discover the key components of fat-burning injections and their roles in your
+                  body:
                 </p>
+                <ul className=" list-disc ml-10 text-sm italic">
+                  <li className=" pt-3">
+                    Vitamin B12: Often referred to as the body's energy vitamin, Vitamin B12 is
+                    believed by some weight loss experts to have appetite-suppressing qualities. It
+                    also encourages the utilization of fat and carbohydrate stores.
+                  </li>
+                  <li className=" pt-3">
+                    Inositol: This essential vitamin plays a pivotal role in regulating fat and
+                    cholesterol metabolism within the body. Inositol also contributes to the
+                    prevention of arterial hardening.
+                  </li>
+                  <li className=" pt-3">
+                    Choline: Choline plays a vital role in reducing excess fat in the liver and
+                    supporting the body's natural hormone production.
+                  </li>
+                  <li className=" pt-3">
+                    Methionine: As an amino acid, Methionine aids in the removal of free radical
+                    cells, supports fat breakdown, aids digestion, and facilitates the removal of
+                    heavy metals from the body. It also boosts energy levels and promotes the
+                    development of lean muscle mass.
+                  </li>
+                </ul>
               </Accordion.Content>
-            </Accordion.Panel> */}
+            </Accordion.Panel>
             {/* <Accordion.Panel>
               <Accordion.Title>How is Semaglutide administered?</Accordion.Title>
               <Accordion.Content>
@@ -191,6 +432,60 @@ function Vitamins() {
               </Accordion.Content>
             </Accordion.Panel> */}
           </Accordion>
+        </motion.div>
+
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" text-center my-10"
+        >
+          <motion.p
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" text-3xl font-semibold italic"
+          >
+            Have more questions or excited to begin? Reach out to us today!{" "}
+          </motion.p>
+        </motion.div>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" flex sm:flex-row flex-col md:w-[60%] mx-auto justify-between  items-center mt-3 py-4"
+        >
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className="flex items-center "
+          >
+            <a
+              href="tel:(352) 340-5990"
+              className="flex items-center text-navy text-xl mb-6 sm:mb-0"
+            >
+              <BsTelephone className="mr-2" />
+              (352) 340-5990
+            </a>
+          </motion.div>
+          <Link to="/contact-us">
+            <button className="  py-3 px-5 border border-navy rounded-md text-navy font-semibold sm:hover:bg-periwinkle sm:hover:text-offWhite">
+              Request Appointment
+            </button>
+          </Link>
         </motion.div>
       </div>
       ;

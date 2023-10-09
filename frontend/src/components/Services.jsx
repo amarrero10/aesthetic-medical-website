@@ -22,17 +22,36 @@ function Services() {
   return (
     <>
       <div className="sm:mt-20 ">
-        <motion.h2
+        <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"
           whileInView="animate"
           viewport={{
             once: true,
           }}
-          className=" py-10 bg-navy text-offWhite text-center text-2xl mb-10"
+          className=" bg-navy text-offWhite text-center text-4xl "
         >
-          Our Services
-        </motion.h2>
+          <motion.h2
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" pt-5"
+          >
+            Medical Weight Loss
+          </motion.h2>
+          <motion.hr
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" w-1/3 mx-auto my-4 pb-5"
+          />
+        </motion.div>
         {/* MOBILE SERVICES */}
         <div className="sm:hidden">
           <div className="grid gap-5 px-3">

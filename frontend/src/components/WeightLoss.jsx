@@ -19,17 +19,36 @@ const fadeInAnimationVariant = {
 function WeightLoss() {
   return (
     <>
-      <motion.h2
+      <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
         whileInView="animate"
         viewport={{
           once: true,
         }}
-        className=" sm:mt-20 py-10 text-center text-3xl font-semibold bg-navy text-offWhite"
+        className=" sm:mt-20 bg-navy text-offWhite text-center text-4xl "
       >
-        Medical Weight Loss
-      </motion.h2>
+        <motion.h2
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" pt-5"
+        >
+          Medical Weight Loss
+        </motion.h2>
+        <motion.hr
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" w-1/3 mx-auto my-4 pb-5"
+        />
+      </motion.div>
       <motion.p
         variants={fadeInAnimationVariant}
         initial="initial"
