@@ -46,7 +46,7 @@ function Navigation() {
       {/* Mobile Menu */}
       <div className="flex justify-between items-center sm:hidden relative border-b-[1px] border-b-periwinkle py-3">
         <Link to="/" className="" onClick={closeMenu}>
-          <h1 className="pl-2">FMPM Weight Loss</h1>
+          <h1 className="pl-2">Spring Health and Wellness</h1>
         </Link>
         <div className=" flex items-center">
           <Link to="/contact-us" className=" h-10">
@@ -148,7 +148,7 @@ function Navigation() {
       <div className="hidden sm:flex sm:items-center sm:justify-between sm:px-2 h-20 top-0 fixed w-screen bg-offWhite z-30 border-[1px] border-b-periwinkle">
         <div>
           <Link to="/">
-            <h1>FMPM Weight Loss</h1>
+            <h1>Spring Health and Wellness</h1>
           </Link>
         </div>
         <div className="flex w-1/2 justify-between text-navy text-2xl ">
@@ -197,7 +197,7 @@ function Navigation() {
         <div>
           <Link to="/contact-us" className=" h-10" onClick={handleScrollToTop}>
             <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md">
-              Get in touch
+              Schedule Your Free Consultation
             </button>
           </Link>
         </div>

@@ -58,9 +58,9 @@ function WeightLoss() {
         }}
         className=" text-center px-3 sm:px-[300px] mt-10 sm:text-xl mb-10"
       >
-        At FMPM Weight Loss, we are here to support you on your journey to better health and
-        well-being. We understand that embarking on a weight loss journey can be a significant step,
-        and we're here to make it a positive and empowering experience for you.
+        At Spring Health and Wellness, we are here to support you on your journey to better health
+        and well-being. We understand that embarking on a weight loss journey can be a significant
+        step, and we're here to make it a positive and empowering experience for you.
       </motion.p>
 
       <motion.p
@@ -72,9 +72,10 @@ function WeightLoss() {
         }}
         className=" text-center px-3 sm:px-[300px] mt-10 sm:text-xl mb-10"
       >
-        Our dedicated team at FMPM Weight Loss is proud to offer you the latest advancements in
-        weight loss medications, including Semaglutide and Tirzepatide. These cutting-edge
-        treatments are designed to help you achieve your weight loss goals safely and effectively.
+        Our dedicated team at Spring Health and Wellness is proud to offer you the latest
+        advancements in weight loss medications, including Semaglutide and Tirzepatide. These
+        cutting-edge treatments are designed to help you achieve your weight loss goals safely and
+        effectively.
       </motion.p>
 
       <motion.div
@@ -132,36 +133,6 @@ function WeightLoss() {
           className="sm:w-2/3 w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy"
         >
           <Accordion.Panel>
-            <Accordion.Title>What is Tirzepatide?</Accordion.Title>
-            <Accordion.Content>
-              <p>
-                Tirzepatide is a single molecule that activates the body's receptors for GIP and
-                GLP-1, which are natural incretin hormones. Both GIP and GLP-1 receptors are found
-                in areas of the human brain important for appetite regulation. Tirzepatide has been
-                shown to decrease food intake and modulate fat utilization.
-              </p>
-            </Accordion.Content>
-          </Accordion.Panel>
-          <Accordion.Panel>
-            <Accordion.Title>How Does Tirzepatide Work? </Accordion.Title>
-            <Accordion.Content>
-              <p>
-                Tirzepatide works by activating both the GLP-1 and GIP receptors, which can lead to
-                increased feelings of fullness (satiety) and reduced food intake. This helps
-                patients manage their weight.
-              </p>
-            </Accordion.Content>
-          </Accordion.Panel>
-          <Accordion.Panel>
-            <Accordion.Title>How is Tirzepatide administered?</Accordion.Title>
-            <Accordion.Content>
-              <p className="mb-2 text-gray-500 dark:text-gray-400">
-                Tirzepatide is administered by injection and the dosing schedule can vary. Contact
-                us to set up a personalized plan!
-              </p>
-            </Accordion.Content>
-          </Accordion.Panel>
-          <Accordion.Panel>
             <Accordion.Title>What is Semaglutide?</Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400">
@@ -218,6 +189,36 @@ function WeightLoss() {
                   highest available dose.
                 </li>
               </ul>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>What is Tirzepatide?</Accordion.Title>
+            <Accordion.Content>
+              <p>
+                Tirzepatide is a single molecule that activates the body's receptors for GIP and
+                GLP-1, which are natural incretin hormones. Both GIP and GLP-1 receptors are found
+                in areas of the human brain important for appetite regulation. Tirzepatide has been
+                shown to decrease food intake and modulate fat utilization.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>How Does Tirzepatide Work? </Accordion.Title>
+            <Accordion.Content>
+              <p>
+                Tirzepatide works by activating both the GLP-1 and GIP receptors, which can lead to
+                increased feelings of fullness (satiety) and reduced food intake. This helps
+                patients manage their weight.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>How is Tirzepatide administered?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Tirzepatide is administered by injection and the dosing schedule can vary. Contact
+                us to set up a personalized plan!
+              </p>
             </Accordion.Content>
           </Accordion.Panel>
         </Accordion>

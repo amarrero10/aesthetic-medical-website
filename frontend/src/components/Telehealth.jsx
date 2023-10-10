@@ -56,9 +56,9 @@ function Telehealth() {
         }}
       >
         <p className=" sm:w-2/3 text-center text-3xl font-semibold mx-auto">
-          Embrace the convenience of telehealth services at FMPM Weight Loss. Through secure virtual
-          consultations, we are readily accessible, ensuring you receive expert care and guidance
-          from the comfort of your own space.
+          Embrace the convenience of telehealth services at Spring Health and Wellness. Through
+          secure virtual consultations, we are readily accessible, ensuring you receive expert care
+          and guidance from the comfort of your own space.
         </p>
         <div className=" mx-auto bg-[#FEFEFE] sm:w-1/4 shadow-2xl h-64 mt-5 px-2">
           <p className=" text-center pt-2 text-lg">

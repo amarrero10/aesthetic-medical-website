@@ -126,10 +126,10 @@ function Vitamins() {
               }}
               className=" text-center"
             >
-              FMPM Weight Loss offers vitamin B12 injections because they provide numerous benefits,
-              including boosting energy levels, enhancing brain function, promoting weight loss, and
-              more. Vitamin B12 injections also play a critical role in brain function, DNA
-              production, and red blood cell formation. They can be particularly beneficial for
+              Spring Health and Wellness offers vitamin B12 injections because they provide numerous
+              benefits, including boosting energy levels, enhancing brain function, promoting weight
+              loss, and more. Vitamin B12 injections also play a critical role in brain function,
+              DNA production, and red blood cell formation. They can be particularly beneficial for
               individuals following vegan or vegetarian diets that may be deficient in vitamin B12.
             </motion.p>
             <motion.div
@@ -222,11 +222,11 @@ function Vitamins() {
               }}
               className=" text-center"
             >
-              At FMPM Weight Loss, we provide specialized fat-burning injections designed to support
-              your weight loss journey. Our injections contain a unique blend of lipotropic
-              compounds, vitamins, minerals, and amino acids. These powerful ingredients work
-              together to boost your metabolism, enhance the breakdown of fat in the liver, and aid
-              in the removal of stored fat from your body. Our fat-burning injections can be a
+              At Spring Health and Wellness, we provide specialized fat-burning injections designed
+              to support your weight loss journey. Our injections contain a unique blend of
+              lipotropic compounds, vitamins, minerals, and amino acids. These powerful ingredients
+              work together to boost your metabolism, enhance the breakdown of fat in the liver, and
+              aid in the removal of stored fat from your body. Our fat-burning injections can be a
               valuable addition to your weight management plan, helping you achieve your goals for a
               healthier, more vibrant you.
             </motion.p>

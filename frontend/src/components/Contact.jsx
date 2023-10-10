@@ -1,5 +1,6 @@
 import React from "react";
 import Form from "./Form";
+import Footer from "./Footer";
 function Contact() {
   return (
     <div className="sm:mt-36">
@@ -10,6 +11,7 @@ function Contact() {
       </p>
       <p className=" text-center font-bold text-2xl">Send Us A Message.</p>
       <Form />
+      <Footer />
     </div>
   );
 }

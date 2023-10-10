@@ -28,7 +28,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-2 text-center">
-        <p>&copy; {new Date().getFullYear()} FMPM Weight Loss. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Spring Health and Wellness. All Rights Reserved.</p>
       </div>
       <div className="sm: text-center pb-2">
         <p>

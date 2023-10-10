@@ -40,7 +40,7 @@ function Services() {
             }}
             className=" pt-5"
           >
-            Medical Weight Loss
+            Our Services
           </motion.h2>
           <motion.hr
             variants={fadeInAnimationVariant}
@@ -68,8 +68,8 @@ function Services() {
                 <p className=" mt-3 px-1">
                   Embark on your journey to a healthier, happier you with our expert weight loss
                   services. Our dedicated team is committed to helping you reach your weight loss
-                  goals and improve your overall well-being. At our clinic, we offer Semaglutide and
-                  Tirzepatide.
+                  goals and improve your overall well-being. At our clinic, we offer treatments that
+                  fit everyone and every budget.
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
@@ -80,7 +80,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request Appointment
+                    Request A Free Consultation
                   </button>
                 </Link>
               </div>
@@ -98,7 +98,7 @@ function Services() {
                 <p className=" mt-3 px-1">
                   At our clinic, we understand that vitality and well-being are essential to living
                   your best life. Our specialized vitamin injections are designed to give you that
-                  extra boost of energy and support your overall health goals.
+                  extra boost of energy and support your overall weight loss and health goals.
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
@@ -109,7 +109,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request Appointment
+                    Request A Free Consultation
                   </button>
                 </Link>
               </div>
@@ -125,9 +125,10 @@ function Services() {
               <div className=" text-center">
                 <h2 className=" text-3xl font-semibold mt-4">Telehealth</h2>
                 <p className=" mt-3 px-1">
-                  At FMPM Weight Loss, we understand that your health and well-being are a top
-                  priority. That's why we offer telehealth services, providing you with a convenient
-                  and secure way to access healthcare from the comfort of your home or office.
+                  At Spring Health and Wellness, we understand that your health and well-being are a
+                  top priority. That's why we offer telehealth services, providing you with a
+                  convenient and secure way to access healthcare from the comfort of your home or
+                  office.
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
@@ -138,7 +139,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request Appointment
+                    Request A Free Consultation
                   </button>
                 </Link>
               </div>
@@ -196,8 +197,8 @@ function Services() {
                 >
                   Embark on your journey to a healthier, happier you with our expert weight loss
                   services. Our dedicated team is committed to helping you reach your weight loss
-                  goals and improve your overall well-being. At our clinic, we offer Semaglutide and
-                  Tirzepatide.
+                  goals and improve your overall well-being. At our clinic, we offer treatments that
+                  fit everyone and every budget.
                 </motion.p>
               </motion.div>
 
@@ -217,7 +218,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request Appointment
+                    Request A Free Consultation
                   </button>
                 </Link>
               </motion.div>
@@ -301,7 +302,7 @@ function Services() {
                 >
                   At our clinic, we understand that vitality and well-being are essential to living
                   your best life. Our specialized vitamin injections are designed to give you that
-                  extra boost of energy and support your overall health goals.
+                  extra boost of energy and support your overall weight loss and health goals.
                 </motion.p>
               </motion.div>
 
@@ -321,7 +322,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request Appointment
+                    Request A Free Consultation
                   </button>
                 </Link>
               </motion.div>
@@ -373,9 +374,10 @@ function Services() {
                     once: true,
                   }}
                 >
-                  At FMPM Weight Loss, we understand that your health and well-being are a top
-                  priority. That's why we offer telehealth services, providing you with a convenient
-                  and secure way to access healthcare from the comfort of your home or office.
+                  At Spring Health and Wellness, we understand that your health and well-being are a
+                  top priority. That's why we offer telehealth services, providing you with a
+                  convenient and secure way to access healthcare from the comfort of your home or
+                  office.
                 </motion.p>
               </motion.div>
 
@@ -395,7 +397,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request Appointment
+                    Request A Free Consultation
                   </button>
                 </Link>
               </motion.div>

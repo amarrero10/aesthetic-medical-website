@@ -42,9 +42,9 @@ function About() {
             once: true,
           }}
         >
-          At FMPM Weight Loss, our mission is to merge cutting-edge, evidence-based science with a
-          comprehensive, holistic approach to deliver exceptional treatments that empower your
-          journey towards improved health and wellness.
+          At Spring Health and Wellness, our mission is to merge cutting-edge, evidence-based
+          science with a comprehensive, holistic approach to deliver exceptional treatments that
+          empower your journey towards improved health and wellness.
         </motion.p>
 
         <motion.p
@@ -95,14 +95,14 @@ function About() {
           }}
           className="mb-3 text-justify tracking-widest"
         >
-          At FMPM Weight Loss, our unwavering commitment is to your well-being and satisfaction. We
-          understand that every individual is unique, and so are their needs when it comes to
-          medical weight loss and aesthetics. That's why we take pride in offering personalized
-          treatment plans, thorough consultations, and dedicated follow-up services. Our approach
-          isn't just about achieving results; it's about ensuring your comfort and confidence
-          throughout your journey with us. Your health, happiness, and satisfaction are at the heart
-          of everything we do, and we look forward to partnering with you on your path to a more
-          vibrant and confident you.
+          At Spring Health and Wellness, our unwavering commitment is to your well-being and
+          satisfaction. We understand that every individual is unique, and so are their needs when
+          it comes to medical weight loss and aesthetics. That's why we take pride in offering
+          personalized treatment plans, thorough consultations, and dedicated follow-up services.
+          Our approach isn't just about achieving results; it's about ensuring your comfort and
+          confidence throughout your journey with us. Your health, happiness, and satisfaction are
+          at the heart of everything we do, and we look forward to partnering with you on your path
+          to a more vibrant and confident you.
         </motion.p>
 
         <motion.div
@@ -118,7 +118,7 @@ function About() {
           <div className=" sm:w-1/2">
             <img
               src={portrait}
-              alt="Nurse Practioner at FMPM Weight Loss"
+              alt="Nurse Practioner at Spring Health and Wellness"
               className="w-full  mx-auto h-[400px] object-cover rounded-md"
             ></img>
             <div className=" bg-periwinkle text-offWhite text-center text-xl py-4">

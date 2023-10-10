@@ -81,11 +81,11 @@ function HomePage() {
                 />
               </div>
               <p className=" text-center">
-                We prioritize your unique needs to enhance your quality of life. Experience a
-                transformative approach to weight loss and well-being today!
+                We prioritize your unique health and wellness goals to enhance your qualilty of
+                life. Experience a transformative approach to weight loss and well-being today!
               </p>
               <p className=" text-darkpurple font-semibold text-center text-3xl sm:mb-20">
-                This is FMPM Weight Loss
+                This is Spring Health and Wellness
               </p>
               <div className=" flex justify-center sm:-mt-[80px]">
                 <Link to="/contact-us" className="  mx-auto s">
@@ -121,7 +121,7 @@ function HomePage() {
               }}
               className=" text-center sm:text-5xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9"
             >
-              A Little About Us
+              About Us
             </motion.p>
             <motion.p
               variants={fadeInAnimationVariant}
@@ -132,10 +132,10 @@ function HomePage() {
               }}
               className=" text-center sm:text-xl sm:w-[550px] text-lg px-3 text-offWhite mt-9"
             >
-              At FMPM Weight Loss, we are your partners in the pursuit of health and beauty. Meet
-              our dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about our mission to
-              empower your journey towards total body health and wellness with medical weight-loss
-              management.
+              At Spring Health and Wellness, we are your partners in the pursuit of health and
+              beauty. Meet our dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about
+              our mission to empower your journey towards total body health and wellness with
+              medical weight-loss management.
             </motion.p>
             <Link to="/about">
               <button className=" text-lg text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
@@ -168,8 +168,9 @@ function HomePage() {
                 <FaWeightScale className=" mx-auto text-6xl mt-5 " />
                 <p className="text-2xl my-3">Medical Weight Loss</p>
                 <p className=" text-center px-3 mb-5">
-                  We harness the power of medications like semaglutides and tirzepatide in our
-                  personalized approach to help every client achieve their ideal weight.
+                  We harness the power of medications like Semaglutides, Tirzepatide, and
+                  Phentermine in our personalized approach to help every client achieve their ideal
+                  weight.
                 </p>
                 <Link to="/services/medical-weight-loss">
                   <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
@@ -211,8 +212,8 @@ function HomePage() {
                 <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
                 <p className="text-2xl my-3">Telehealth</p>
                 <p className=" text-center px-3 mb-5">
-                  we are proud to offer the convenience of telehealth services, allowing you to
-                  access expert guidance and support from the comfort of your own home.
+                  We are proud to offer the convenience of telehealth services, allowing you to
+                  access expert guidance and support for your healthcare needs from anywhere.
                 </p>
                 <Link to="/services/telehealth">
                   <button className=" text-lg bg-periwinkle border-offWhite border px-4 py-3 rounded-md mt-2">
@@ -254,8 +255,8 @@ function HomePage() {
             className="sm:text-center px-2 text-xl sm:w-[700px] mx-auto text-justify"
           >
             Ready to start your journey to a healthier you? Reach out to us today! We're here to
-            help you achieve your weight loss goals. Contact us now and take the first step toward a
-            better you!
+            help you achieve your weight loss goals. Contact us now and take the first step towards
+            a better you!
           </motion.p>
           <motion.div
             variants={fadeInAnimationVariant}
