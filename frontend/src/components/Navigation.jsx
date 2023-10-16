@@ -135,10 +135,10 @@ function Navigation() {
               <Link to="/locations">Locations</Link>
             </li>
             <hr className=" text-periwinkle py-3" />
-            <li onClick={closeMenu}>
+            {/* <li onClick={closeMenu}>
               <Link to="/pricing">Pricing</Link>
             </li>
-            <hr className=" text-periwinkle py-3" />
+            <hr className=" text-periwinkle py-3" /> */}
           </ul>
         </div>
       )}
@@ -190,9 +190,9 @@ function Navigation() {
           <Link to="/locations" onClick={handleScrollToTop}>
             <p className="hover:underline">Locations</p>
           </Link>
-          <Link to="/pricing" onClick={handleScrollToTop}>
+          {/* <Link to="/pricing" onClick={handleScrollToTop}>
             <p className="hover:underline">Pricing</p>
-          </Link>
+          </Link> */}
         </div>
         <div>
           <Link to="/contact-us" className=" h-10" onClick={handleScrollToTop}>

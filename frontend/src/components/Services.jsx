@@ -5,6 +5,7 @@ import Form from "./Form";
 import weight from "../assets/weight-loss.jpg";
 import injection from "../assets/injection.jpg";
 import virtual from "../assets/virtual.jpg";
+import vial from "../assets/vial.jpg";
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariant = {
@@ -88,7 +89,7 @@ function Services() {
             <div className=" flex flex-col items-center justify-between h-[800px] shadow-md bg-[#fefefe] rounded-md">
               <div className=" h-1/2 w-full">
                 <img
-                  src={injection}
+                  src={vial}
                   alt="a cardboard sign to promote wight loss"
                   className=" rounded-tl-md rounded-tr-md object-cover h-full w-full"
                 ></img>
@@ -259,8 +260,8 @@ function Services() {
             >
               <img
                 className=" h-full object-cover rounded-tr-md rounded-br-md w-full"
-                src={injection}
-                alt="injectable"
+                src={vial}
+                alt="Doctor Inserting Syringe "
               ></img>
             </motion.div>
             <motion.div

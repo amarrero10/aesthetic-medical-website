@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { BsTelephone } from "react-icons/bs";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
+import semag from "../assets/semag.jpg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -18,7 +19,7 @@ const fadeInAnimationVariant = {
 
 function WeightLoss() {
   return (
-    <>
+    <div>
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -62,22 +63,73 @@ function WeightLoss() {
         and well-being. We understand that embarking on a weight loss journey can be a significant
         step, and we're here to make it a positive and empowering experience for you.
       </motion.p>
-
-      <motion.p
+      <img
+        className=" object-cover sm:h-[780px] mx-auto shadow-xl px-3 sm:px-0"
+        src={semag}
+        alt="Woman Measuring Waistline With a Pink Tape Measure"
+      ></img>
+      <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
         whileInView="animate"
         viewport={{
           once: true,
         }}
-        className=" text-center px-3 sm:px-[300px] mt-10 sm:text-xl mb-10"
+        className=" grid sm:gap-14 gap-32 sm:grid-cols-3 sm:w-3/4 2xl:w-2/3 sm:mx-auto my-20"
       >
-        Our dedicated team at Spring Health and Wellness is proud to offer you the latest
-        advancements in weight loss medications, including Semaglutide and Tirzepatide. These
-        cutting-edge treatments are designed to help you achieve your weight loss goals safely and
-        effectively.
-      </motion.p>
-
+        <div className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0">
+          <div className=" h-full text-center py-5">
+            <h2 className=" text-3xl font-semibold">Semaglutide</h2>
+            <p className=" text-xl py-8 px-3 italic">
+              When it comes to managing your weight, discovering an effective solution can be quite
+              a journey. If you're on the lookout for a safe and proven method to reach your weight
+              loss goals, consider semaglutide. This injectable medication, taken once a week,
+              offers a viable approach for addressing obesity and has garnered support from multiple
+              research studies.
+            </p>
+            <Link to="/contact-us">
+              <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                Request A Free Consultation
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0">
+          <div className=" h-full text-center py-5">
+            <h2 className=" text-3xl font-semibold">Tirzepatide</h2>
+            <p className=" text-xl py-8 px-3 italic">
+              As a part of our comprehensive approach to supporting your journey toward achieving
+              your healthy weight loss goals, we offer a range of medical tools and interventions.
+              These recognized medical aids encompass appetite suppressants and vitamin injections,
+              such as Tirzepatide, which effectively reduces food intake by lowering appetite,
+              slowing the digestion of food in the stomach, and helping decrease body fat
+              percentage.
+            </p>
+            <Link to="/contact-us">
+              <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                Request A Free Consultation
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0">
+          <div className=" h-full text-center py-5">
+            <h2 className=" text-3xl font-semibold">Phentermine</h2>
+            <p className=" text-xl py-8 px-3 italic">
+              As a component of our holistic strategy to assist you in reaching your healthy weight
+              loss objectives, we provide various medically recognized interventions. One of these
+              interventions is the use of Phentermine, taken as a pill, which works by effectively
+              curbing your appetite, promoting a sense of fullness, and aiding in the reduction of
+              your body fat percentage.
+            </p>
+            <Link to="/contact-us">
+              <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                Request A Free Consultation
+              </button>
+            </Link>
+          </div>
+        </div>
+      </motion.div>
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -120,6 +172,7 @@ function WeightLoss() {
           We've shared some of the most frequently asked questions to help you out!
         </motion.p>
       </motion.div>
+
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -127,10 +180,11 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
+        className=" flex flex-col sm:flex-row sm:h-[900px] justify-around mx-auto"
       >
         <Accordion
           collapseAll
-          className="sm:w-2/3 w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy"
+          className="sm:w-[600px] w-full px-2 sm:px-0 shadow-2xl mt-10 text-navy h-fit"
         >
           <Accordion.Panel>
             <Accordion.Title>What is Semaglutide?</Accordion.Title>
@@ -162,6 +216,68 @@ function WeightLoss() {
             </Accordion.Content>
           </Accordion.Panel>
           <Accordion.Panel>
+            <Accordion.Title>Where is Semaglutide injected?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Semaglutide is an injectable medication designed for weight management, typically
+                administered in the abdominal area or 'love handles.' At Spring Health and Wellness,
+                we offer Semaglutide injections as an integral part of our comprehensive weight loss
+                program. Semaglutide operates by emulating the effects of a hormone known as GLP-1,
+                which plays a role in regulating blood sugar and controlling appetite. Through its
+                appetite-reducing properties and the promotion of a sense of fullness, Semaglutide
+                can be a valuable tool in your weight loss journey. At Spring Health and Wellness,
+                our team of healthcare professionals administers Semaglutide injections and closely
+                monitors your progress, adjusting your dosage as necessary to help you attain your
+                weight loss objectives.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>When will I see results?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Semaglutide is a prescription medication prescribed for weight loss in adults who
+                are dealing with obesity or being overweight while also having at least one
+                weight-related health concern. This medication is administered via a weekly
+                injection. Upon commencing semaglutide treatment, it's important to note that
+                significant weight loss may not become noticeable for a few weeks, and it is
+                advisable to maintain this treatment for a minimum of 16 weeks to assess its
+                effectiveness. The duration of semaglutide's effects can vary from person to person,
+                influenced by factors such as individual metabolism, dietary choices, and exercise
+                routines.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>Why is Semaglutide taken once a week?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Opting for a once-weekly Semaglutide dosage is preferred over daily regimens due to
+                its proven effectiveness and enhanced convenience for patients. With a longer
+                half-life, Semaglutide remains in the body for an extended period, ensuring a
+                continuous supply of weight loss benefits. Moreover, the simplicity of the
+                once-weekly Semaglutide injection makes it a convenient and user-friendly choice for
+                individuals committed to realizing their weight loss objectives.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>Why is Semaglutide so costly?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Semaglutide is a medication utilized for the treatment of obesity, and its cost can
+                be relatively high for several reasons. Firstly, the drug is relatively new to the
+                market, and limited availability often results in elevated prices. Additionally, as
+                an injectable medication, it involves additional manufacturing processes, further
+                contributing to its cost. Lastly, the relatively high price of Semaglutide reflects
+                its remarkable effectiveness, offering the potential for substantial weight loss
+                results for patients. Nevertheless, at Spring Health and Wellness, we provide
+                cost-effective pricing options and tailor-made treatment plans, making Semaglutide
+                more accessible to individuals in need of this beneficial treatment.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          {/* <Accordion.Panel>
             <Accordion.Title>
               What is the difference between Tirzepatide and Semaglutide?
             </Accordion.Title>
@@ -190,7 +306,12 @@ function WeightLoss() {
                 </li>
               </ul>
             </Accordion.Content>
-          </Accordion.Panel>
+          </Accordion.Panel> */}
+        </Accordion>
+        <Accordion
+          collapseAll
+          className="sm:w-[600px] w-full px-2 sm:px-0 shadow-2xl mt-10 text-navy h-fit"
+        >
           <Accordion.Panel>
             <Accordion.Title>What is Tirzepatide?</Accordion.Title>
             <Accordion.Content>
@@ -221,9 +342,64 @@ function WeightLoss() {
               </p>
             </Accordion.Content>
           </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title> Who is a good candidate for Tirzepatide?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Tirzepatide is typically prescribed for adults diagnosed with type 2 diabetes.
+                However, in some cases, healthcare providers may prescribe it off-label for weight
+                management purposes, in combination with dietary modifications and regular exercise.
+                This extended usage is considered for adults classified as obese (with a BMI of 30
+                or higher) or overweight (with a BMI between 27 and 29), provided they have at least
+                one weight-related medical condition, such as high blood pressure or high
+                cholesterol.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>What is Phentermine?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Phentermine is a prescription medication that is commonly used as an appetite
+                suppressant. It is primarily prescribed to help individuals with obesity or those
+                who are significantly overweight as part of a comprehensive weight loss program.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>How does Phentermine work?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Phentermine works by stimulating the hypothalamus gland in return affecting certain
+                neurotransmitters to decrease appetite.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>How often and when should I take phentermine?</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                Many patients typically begin their Phentermine regimen by taking a half of a 37.5mg
+                tablet once a day for the initial two weeks. After this initial period, the dosage
+                is often increased to a full 37.5mg tablet taken daily. For optimal hunger control
+                throughout the day and to ensure the medication's effects wear off before bedtime,
+                it is generally recommended to take the pill around 9 or 10 am in the morning.
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title>Who is Phentermine typically prescribed to?</Accordion.Title>
+            <Accordion.Content>
+              <p>
+                Phentermine is one of several medications that are FDA-approved to help treat
+                obesity. Usually, phentermine can be prescribed if your body mass index (BMI) is
+                higher than 30 kg/m2 or higher than 27 kg/m2 with other health conditions. It’s
+                important to know that the medication should be used in addition to a healthy diet
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
         </Accordion>
       </motion.div>
-
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -278,7 +454,7 @@ function WeightLoss() {
         </Link>
       </motion.div>
       <Footer />
-    </>
+    </div>
   );
 }
 
