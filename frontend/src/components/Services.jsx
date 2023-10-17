@@ -3,7 +3,6 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Footer from "./Footer";
 import Form from "./Form";
 import weight from "../assets/weight-loss.jpg";
-import injection from "../assets/injection.jpg";
 import virtual from "../assets/virtual.jpg";
 import vial from "../assets/vial.jpg";
 import { motion } from "framer-motion";

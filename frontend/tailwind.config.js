@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['"Poppins"', "sans-serif"],
+        garamond: ['"Cormorant Garamond", "sans-serif"'],
       },
     },
   },

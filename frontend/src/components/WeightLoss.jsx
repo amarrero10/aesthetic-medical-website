@@ -63,11 +63,17 @@ function WeightLoss() {
         and well-being. We understand that embarking on a weight loss journey can be a significant
         step, and we're here to make it a positive and empowering experience for you.
       </motion.p>
-      <img
+      <motion.img
+        variants={fadeInAnimationVariant}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
         className=" object-cover sm:h-[780px] mx-auto shadow-xl px-3 sm:px-0"
         src={semag}
         alt="Woman Measuring Waistline With a Pink Tape Measure"
-      ></img>
+      ></motion.img>
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -75,10 +81,26 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
-        className=" grid sm:gap-14 gap-32 sm:grid-cols-3 sm:w-3/4 2xl:w-2/3 sm:mx-auto my-20"
+        className=" grid sm:gap-14 gap-32 sm:grid-cols-3 sm:w-3/4 2xl:w-2/3 px-3 sm:px-0 sm:mx-auto my-20"
       >
-        <div className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0">
-          <div className=" h-full text-center py-5">
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" flex shadow-xl sm:mt-0 items-center justify-center  rounded-md"
+        >
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" h-full text-center py-5"
+          >
             <h2 className=" text-3xl font-semibold">Semaglutide</h2>
             <p className=" text-xl py-8 px-3 italic">
               When it comes to managing your weight, discovering an effective solution can be quite
@@ -92,10 +114,26 @@ function WeightLoss() {
                 Request A Free Consultation
               </button>
             </Link>
-          </div>
-        </div>
-        <div className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0">
-          <div className=" h-full text-center py-5">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0"
+        >
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" h-full text-center py-5"
+          >
             <h2 className=" text-3xl font-semibold">Tirzepatide</h2>
             <p className=" text-xl py-8 px-3 italic">
               As a part of our comprehensive approach to supporting your journey toward achieving
@@ -110,10 +148,26 @@ function WeightLoss() {
                 Request A Free Consultation
               </button>
             </Link>
-          </div>
-        </div>
-        <div className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0">
-          <div className=" h-full text-center py-5">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0"
+        >
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" h-full text-center py-5"
+          >
             <h2 className=" text-3xl font-semibold">Phentermine</h2>
             <p className=" text-xl py-8 px-3 italic">
               As a component of our holistic strategy to assist you in reaching your healthy weight
@@ -127,8 +181,8 @@ function WeightLoss() {
                 Request A Free Consultation
               </button>
             </Link>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </motion.div>
       <motion.div
         variants={fadeInAnimationVariant}
@@ -180,7 +234,7 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
-        className=" flex flex-col sm:flex-row sm:h-[900px] justify-around mx-auto"
+        className=" flex flex-col sm:flex-row sm:h-[900px] justify-around mx-auto 2xl:w-2/3 px-3 sm:px-0"
       >
         <Accordion
           collapseAll
