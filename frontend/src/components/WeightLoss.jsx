@@ -5,6 +5,7 @@ import { BsTelephone } from "react-icons/bs";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
 import semag from "../assets/semag.jpg";
+import molecules from "../assets/molecules.jpg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -70,8 +71,8 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
-        className=" object-cover sm:h-[780px] mx-auto shadow-xl px-3 sm:px-0"
-        src={semag}
+        className=" object-cover h-[400px] 2xl:h-[800px]  mx-auto shadow-xl sm:px-0"
+        src={molecules}
         alt="Woman Measuring Waistline With a Pink Tape Measure"
       ></motion.img>
       <motion.div

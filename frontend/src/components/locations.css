@@ -1,9 +1,18 @@
 .app {
   height: 800px;
   width: 800px;
+  margin: 0 auto;
 }
 
 .map-container {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    height: 350px; /* Change the height to 350px or less */
+    width: 350px; /* Change the width to 350px or less */
+  }
 }

@@ -5,6 +5,7 @@ import Form from "./Form";
 import weight from "../assets/weight-loss.jpg";
 import virtual from "../assets/virtual.jpg";
 import vial from "../assets/vial.jpg";
+import scale from "../assets/scale.jpg";
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariant = {
@@ -58,7 +59,7 @@ function Services() {
             <div className=" flex flex-col items-center justify-between h-[800px] shadow-md bg-[#fefefe] rounded-md">
               <div className=" h-1/2">
                 <img
-                  src={weight}
+                  src={scale}
                   alt="a cardboard sign to promote wight loss"
                   className=" rounded-tl-md rounded-tr-md object-cover h-full"
                 ></img>
@@ -234,7 +235,7 @@ function Services() {
             >
               <img
                 className=" h-full object-cover rounded-tr-md rounded-br-md"
-                src={weight}
+                src={scale}
                 alt="a cardboard sign to promote wight loss"
               ></img>
             </motion.div>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Accordion } from "flowbite-react";
 import b12 from "../assets/b12.jpg";
 import fatBurner from "../assets/fat-burner.jpg";
+import yogaMan from "../assets/yoga-man.jpg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
 

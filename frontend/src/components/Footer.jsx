@@ -4,7 +4,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Footer() {
   return (
-    <div className=" bg-greenTeal text-offWhite">
+    <div className=" bg-greenTeal text-navy">
       <div className="flex flex-col items-center my-4">
         <div className="flex items-center mt-3 ">
           <a href="tel:(352) 340-5990" className="flex items-center text-xl mb-6">
