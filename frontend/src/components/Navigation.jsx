@@ -151,7 +151,7 @@ function Navigation() {
             <h1>Spring Health and Wellness</h1>
           </Link>
         </div>
-        <div className="flex w-1/2 justify-between text-navy text-2xl ">
+        <div className="flex w-1/2 justify-between text-navy text-3xl ">
           <Link to="/" onClick={handleScrollToTop}>
             <p className="hover:underline">Home</p>
           </Link>
@@ -196,7 +196,7 @@ function Navigation() {
         </div>
         <div>
           <Link to="/contact-us" className=" h-10" onClick={handleScrollToTop}>
-            <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md">
+            <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md text-lg font-extrabold">
               Schedule Your Free Consultation
             </button>
           </Link>

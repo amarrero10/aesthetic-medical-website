@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Form from "./Form";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
+import { PiPlantFill } from "react-icons/pi";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -81,7 +82,7 @@ function Locations() {
             viewport={{
               once: true,
             }}
-            className=" pt-5"
+            className=" py-5 text-[70px]"
           >
             Locations
           </motion.h2>
@@ -95,12 +96,22 @@ function Locations() {
             className=" w-1/3 mx-auto my-4 pb-5"
           />
         </motion.div>
-        <div className=" flex sm:flex-row flex-col items-center justify-between  sm:w-2/3 mx-auto">
-          <div className=" text-navy h-full sm:w-1/2 mb-10 sm:mb-0">
-            <p className=" text-4xl text-center sm:text-left">
+        <div className=" flex sm:flex-row flex-col items-center justify-between  sm:w-2/3 mx-auto sm:mt-20">
+          <div className=" text-navy h-full sm:w-1/2 mb-10 sm:mb-0 mr-10 border border-navy py-24 pl-9">
+            <p className=" text-5xl font-semibold text-center sm:text-center mb-10">
               Start your journey to a better you today with Spring Health and Wellness!
             </p>
-            <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mt-3 mx-auto sm:pb-14 mb-5 sm:mb-0">
+            <PiPlantFill className=" text-6xl mx-auto mb-10" />
+            <p className=" text-4xl mb-4 text-center sm:text-left ">
+              Discover our convenient locations to help you achieve your health and wellness goals:
+            </p>
+            <ul>
+              <li className=" list-disc ml-20 text-3xl italic">Spring Hill</li>
+              <li className=" list-disc ml-20 text-3xl italic">New Port Richey</li>
+              <li className=" list-disc ml-20 text-3xl italic">Clearwater</li>
+              <li className=" list-disc ml-20 text-3xl italic">St. Petersburg</li>
+            </ul>
+            <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mx-auto mb-5 sm:mt-14">
               <a
                 href="tel:(352) 340-5990"
                 className="flex  items-center text-navy text-2xl mb-6 sm:mb-0 border border-navy p-3 rounded-md"
@@ -114,16 +125,6 @@ function Locations() {
                 </button>
               </Link>
             </div>
-
-            <p className=" text-4xl mb-4 text-center sm:text-left ">
-              Discover our convenient locations to help you achieve your health and wellness goals:
-            </p>
-            <ul>
-              <li className=" list-disc ml-20 text-3xl italic">Spring Hill</li>
-              <li className=" list-disc ml-20 text-3xl italic">Pasco</li>
-              <li className=" list-disc ml-20 text-3xl italic">Pinellas</li>
-              <li className=" list-disc ml-20 text-3xl italic">Tampa</li>
-            </ul>
           </div>
 
           <div className="app">

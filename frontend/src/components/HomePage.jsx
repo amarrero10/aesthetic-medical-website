@@ -37,7 +37,7 @@ function HomePage() {
           viewport={{
             once: true,
           }}
-          className=" absolute w-full min-[2000px]:w-[78.55%] -z-10 sm:top-52 top-[550px] "
+          className=" absolute w-full min-[2000px]:w-[78.55%] -z-10 sm:top-52 top-[610px] "
         >
           <svg
             width="100%"
@@ -69,9 +69,9 @@ function HomePage() {
               className=" h-[300px] w-full mb-10 grid sm:mr-2 mt-5"
             >
               <div className=" flex justify-center">
-                <p className=" text-2xl font-bold sm:text-4xl">Embark on a journey of </p>
+                <p className=" text-2xl font-bold sm:text-6xl">Embark on a journey of </p>
               </div>
-              <div className=" text-2xl font-bold pl-1 sm:text-4xl text-periwinkle text-center">
+              <div className=" text-2xl font-bold pl-1 sm:text-6xl text-periwinkle text-center sm:my-4">
                 <Typewriter
                   options={{
                     strings: [" Wellness!", " Transformation!", " Confidence!"],
@@ -80,11 +80,11 @@ function HomePage() {
                   }}
                 />
               </div>
-              <p className=" text-center">
+              <p className=" text-center text-2xl sm:mb-4">
                 We prioritize your unique health and wellness goals to enhance your qualilty of
                 life. Experience a transformative approach to weight loss and well-being today!
               </p>
-              <p className=" text-darkpurple font-semibold text-center text-3xl sm:mb-20">
+              <p className=" text-darkpurple font-semibold text-center text-3xl sm:mb-24">
                 This is Spring Health and Wellness
               </p>
               <div className=" flex justify-center sm:-mt-[80px]">
@@ -107,11 +107,11 @@ function HomePage() {
               <img
                 src={portrait}
                 alt="portrait of ALgery Al-Hafi"
-                className=" h-full rounded-full shadow-2xl shadow-navy mx-auto object-cover w-full"
+                className=" h-full rounded-full shadow-2xl shadow-navy mx-auto object-cover w-full mt-10 sm:mt-0"
               ></img>
             </motion.div>
           </div>
-          <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] sm:-mt-[108px] -mt-12">
+          <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] sm:-mt-[108px]">
             <motion.p
               variants={fadeInAnimationVariant}
               initial="initial"
@@ -119,7 +119,7 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center sm:text-5xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9"
+              className=" text-center sm:text-6xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9"
             >
               About Us
             </motion.p>
@@ -130,7 +130,7 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center sm:text-xl sm:w-[550px] text-lg px-3 text-offWhite mt-9"
+              className=" text-center sm:text-2xl sm:w-[550px] px-3 text-offWhite mt-9"
             >
               At Spring Health and Wellness, we are your partners in the pursuit of health and
               beauty. Meet our dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about
@@ -138,7 +138,7 @@ function HomePage() {
               medical weight-loss management.
             </motion.p>
             <Link to="/about">
-              <button className=" text-lg text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
+              <button className=" text-xl text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
                 More Information
               </button>
             </Link>
@@ -166,14 +166,14 @@ function HomePage() {
                 className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
               >
                 <FaWeightScale className=" mx-auto text-6xl mt-5 " />
-                <p className="text-2xl my-3">Medical Weight Loss</p>
-                <p className=" text-center px-3 mb-5">
+                <p className="text-3xl my-3">Medical Weight Loss</p>
+                <p className=" text-center text-xl px-3 mb-5">
                   We harness the power of medications like Semaglutides, Tirzepatide, and
                   Phentermine in our personalized approach to help every client achieve their ideal
                   weight.
                 </p>
                 <Link to="/services/medical-weight-loss">
-                  <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
+                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
                     Learn More
                   </button>
                 </Link>
@@ -188,14 +188,14 @@ function HomePage() {
                 className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
               >
                 <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
-                <p className="text-2xl my-3">Vitamin Injections</p>
-                <p className=" text-center px-3 mb-5">
+                <p className="text-3xl my-3">Vitamin Injections</p>
+                <p className=" text-center px-3 mb-5 text-xl">
                   We utilize B12 injections to boost metabolism and incorporate Fat Burners to
                   support effective weight management, helping you achieve your health and wellness
                   goals.
                 </p>
                 <Link to="/services/vitamin-injections">
-                  <button className=" text-lg bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
+                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
                     Learn More
                   </button>
                 </Link>
@@ -210,13 +210,13 @@ function HomePage() {
                 className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
               >
                 <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
-                <p className="text-2xl my-3">Telehealth</p>
-                <p className=" text-center px-3 mb-5">
+                <p className="text-3xl my-3">Telehealth</p>
+                <p className=" text-center px-3 mb-5 text-xl">
                   We are proud to offer the convenience of telehealth services, allowing you to
                   access expert guidance and support for your healthcare needs from anywhere.
                 </p>
                 <Link to="/services/telehealth">
-                  <button className=" text-lg bg-periwinkle border-offWhite border px-4 py-3 rounded-md mt-2">
+                  <button className=" text-xl bg-periwinkle border-offWhite border px-4 py-3 rounded-md mt-8">
                     Learn More
                   </button>
                 </Link>
@@ -241,10 +241,17 @@ function HomePage() {
             viewport={{
               once: true,
             }}
-            className=" text-center text-3xl sm:text-5xl font-bold mb-3 text-periwinkle"
+            className=" text-center text-3xl sm:text-6xl font-bold mb-3 text-periwinkle"
           >
             Contact Us
           </motion.p>
+          <a
+            href="tel:(352) 340-5990"
+            className="flex  items-center justify-center mx-auto text-navy text-xl mb-6 sm:mb-3 border border-navy p-3 w-fit"
+          >
+            <BsTelephone className="mr-2" />
+            (352) 340-5990
+          </a>
           <motion.p
             variants={fadeInAnimationVariant}
             initial="initial"
@@ -252,7 +259,7 @@ function HomePage() {
             viewport={{
               once: true,
             }}
-            className="sm:text-center px-2 text-xl sm:w-[700px] mx-auto text-justify"
+            className="sm:text-center px-2 text-xl sm:text-2xl sm:w-[700px] mx-auto text-justify"
           >
             Ready to start your journey to a healthier you? Reach out to us today! We're here to
             help you achieve your weight loss goals. Contact us now and take the first step towards
@@ -267,14 +274,7 @@ function HomePage() {
             }}
             className=" flex sm:flex-row sm:w-[33%] mx-auto sm:justify-between justify-around mt-3 sm:mt-7 py-4"
           >
-            <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mt-3 relative">
-              <a
-                href="tel:(352) 340-5990"
-                className="flex  items-center text-greenTeal text-xl mb-6 sm:mb-0"
-              >
-                <BsTelephone className="mr-2" />
-                (352) 340-5990
-              </a>
+            <div className=" mx-auto mt-3 text-xl">
               <Link to="/contact-us">
                 <button className=" bg-white py-3 px-5 border  border-greenTeal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">
                   Request Appointment

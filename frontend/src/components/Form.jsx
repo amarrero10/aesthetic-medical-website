@@ -78,7 +78,7 @@ function Form() {
         className="flex flex-col sm:w-2/3  w-11/12 mx-auto sm:bg-navy sm:text-offWhite sm:p-10 sm:rounded-lg sm:shadow-lg"
         onSubmit={submitHandler}
       >
-        <label htmlFor="name" className="text-xl ml-2">
+        <label htmlFor="name" className="text-xl sm:text-3xl ml-2">
           Name
         </label>
         <div className="flex items-center w-full p-2 relative">
@@ -91,10 +91,10 @@ function Form() {
             value={formState.name || ""}
             onChange={changeHandler}
             placeholder="Enter your name"
-            className="w-full p-3 pl-9 text-lg text-navy focus:outline-none focus:ring-greenTeal focus:ring-1"
+            className="w-full p-3 pl-9 text-lg sm:text-2xl text-navy focus:outline-none focus:ring-greenTeal focus:ring-1"
           ></input>
         </div>
-        <label className="text-xl ml-2" htmlFor="email">
+        <label className="text-xl sm:text-3xl ml-2" htmlFor="email">
           Email
         </label>
         <div className="flex items-center w-full p-2 relative">
@@ -107,14 +107,14 @@ function Form() {
             value={formState.email || ""}
             placeholder="john@email.com"
             onChange={changeHandler}
-            className="w-full p-3 pl-9 text-lg text-navy focus:outline-none focus:ring-greenTeal focus:ring-1"
+            className="w-full p-3 pl-9 text-lg sm:text-2xl text-navy focus:outline-none focus:ring-greenTeal focus:ring-1"
           ></input>
         </div>
-        <label className="text-xl ml-2" htmlFor="message">
+        <label className="text-xl sm:text-3xl ml-2" htmlFor="message">
           Message
         </label>
         <div className="flex items-center w-full p-2 relative">
-          <FiMessageCircle className="h-6 w-6 ml-1 absolute text-navy" />
+          <FiMessageCircle className="h-6 w-6 ml-1 absolute top-6 text-navy" />
           <textarea
             required
             style={{ resize: "none" }}
@@ -124,10 +124,10 @@ function Form() {
             name="message"
             value={formState.message || ""}
             onChange={changeHandler}
-            className="w-full p-3 text-lg text-navy focus:outline-none focus:ring-greenTeal focus:ring-1 pl-9"
+            className="w-full p-3 text-lg sm:text-2xl text-navy focus:outline-none focus:ring-greenTeal focus:ring-1 pl-9"
           ></textarea>
         </div>
-        <label className="text-xl ml-2" htmlFor="phone">
+        <label className="text-xl sm:text-3xl ml-2" htmlFor="phone">
           Phone Number
         </label>
         <div className="flex items-center w-full p-2 relative">
@@ -142,7 +142,7 @@ function Form() {
             }}
             type="tel"
             placeholder="3523405990"
-            className="w-full p-3 text-lg text-navy focus:outline-none focus:ring-greenTeal focus:ring-1 pl-9"
+            className="w-full p-3 text-lg sm:text-2xl text-navy focus:outline-none focus:ring-greenTeal focus:ring-1 pl-9"
           />
         </div>
         <button

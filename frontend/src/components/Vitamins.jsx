@@ -5,6 +5,7 @@ import { Accordion } from "flowbite-react";
 import b12 from "../assets/b12.jpg";
 import fatBurner from "../assets/fat-burner.jpg";
 import yogaMan from "../assets/yoga-man.jpg";
+import runningMan from "../assets/man-running.jpg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
 
@@ -30,7 +31,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" bg-navy text-offWhite text-center text-4xl "
+          className=" bg-navy text-offWhite text-center text-[70px] "
         >
           <motion.h2
             variants={fadeInAnimationVariant}
@@ -61,7 +62,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-center  text-3xl font-bold mb-3"
+          className=" text-center  text-3xl sm:text-5xl sm:mt-28 font-bold mb-3"
         >
           Vitamin B12 Injections
         </motion.h2>
@@ -72,7 +73,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-xl text-center sm:w-1/2 sm:px-0 px-3 mx-auto pb-10"
+          className=" text-xl sm:text-2xl text-center sm:w-1/2 sm:px-0 px-3 mx-auto pb-10"
         >
           Experience the benefits of our personalized vitamin injections, including B12 injections,
           and supercharge your energy levels without the hassle of daily pills. If you often find
@@ -105,7 +106,7 @@ function Vitamins() {
                 once: true,
               }}
               className=" h-full w-full object-cover rounded-tl-md rounded-bl-md"
-              src={b12}
+              src={runningMan}
               alt="Energetic and carefree woman."
             ></motion.img>
           </motion.div>
@@ -125,7 +126,7 @@ function Vitamins() {
               viewport={{
                 once: true,
               }}
-              className=" text-center"
+              className=" text-center text-xl mt-10"
             >
               Spring Health and Wellness offers vitamin B12 injections because they provide numerous
               benefits, including boosting energy levels, enhancing brain function, promoting weight
@@ -143,7 +144,7 @@ function Vitamins() {
               className="flex items-center justify-center"
             >
               <Link to="/contact-us">
-                <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2 ">
+                <button className=" text-xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2 ">
                   Request Appointment
                 </button>
               </Link>
@@ -157,7 +158,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-center  text-4xl font-bold mb-3 sm:mt-32 mt-12"
+          className=" text-center  text-3xl sm:text-5xl font-bold mb-3 sm:mt-0 mt-12"
         >
           Fat Burners
         </motion.h2>
@@ -168,9 +169,9 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-xl text-center sm:w-1/2 px-3 sm:px-0 mx-auto pb-10"
+          className=" text-xl sm:text-2xl text-center sm:w-1/2 px-3 sm:px-0 mx-auto pb-10"
         >
-          if you're looking to expedite your weight loss journey, consider our range of highly
+          If you're looking to expedite your weight loss journey, consider our range of highly
           effective fat burners. We can provide you with the perfect combination of nutrients and
           compounds to support your fitness goals. Achieve your health and wellness aspirations with
           our comprehensive vitamin and fat burner solutions.
@@ -221,7 +222,7 @@ function Vitamins() {
               viewport={{
                 once: true,
               }}
-              className=" text-center"
+              className=" text-center sm:text-xl sm:mt-8"
             >
               At Spring Health and Wellness, we provide specialized fat-burning injections designed
               to support your weight loss journey. Our injections contain a unique blend of
@@ -241,7 +242,7 @@ function Vitamins() {
               className="flex items-center justify-center"
             >
               <Link to="/contact-us">
-                <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2 ">
+                <button className=" text-xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2 ">
                   Request Appointment
                 </button>
               </Link>
@@ -255,7 +256,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-4xl sm:text-center font-bold sm:w-full mx-auto mb-1 px-3 sm:px-0 italic text-offWhite bg-darkpurple py-10 "
+          className=" text-6xl sm:text-center font-bold sm:w-full mx-auto mb-1 px-3 sm:px-0 italic text-offWhite bg-darkpurple py-10 "
         >
           <motion.p
             variants={fadeInAnimationVariant}
@@ -274,7 +275,7 @@ function Vitamins() {
             viewport={{
               once: true,
             }}
-            className=" text-2xl pt-4"
+            className=" text-3xl pt-4"
           >
             Can't find the answer you're looking for?
           </motion.p>
@@ -285,7 +286,7 @@ function Vitamins() {
             viewport={{
               once: true,
             }}
-            className=" text-2xl pt-4"
+            className=" text-3xl pt-4"
           >
             We've shared some of the most frequently asked questions to help you out!
           </motion.p>
@@ -300,7 +301,7 @@ function Vitamins() {
         >
           <Accordion
             collapseAll
-            className="sm:w-2/3 w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy"
+            className="sm:w-2/3 sm:text-2xl w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy"
           >
             <Accordion.Panel>
               <Accordion.Title>What are the symptoms of B12 deficiency?</Accordion.Title>
@@ -311,7 +312,7 @@ function Vitamins() {
                   difficult to distinguish from other health issues. Common symptoms of vitamin B12
                   deficiency include:
                 </p>
-                <ul className=" list-disc ml-10 text-sm italic">
+                <ul className=" list-disc ml-10 text-xl italic">
                   <li className=" pt-3">Numbness or tingling in the hands, legs, or feet.</li>
                   <li className=" pt-3">Difficulty walking, stumbling, or balance problems.</li>
                   <li className=" pt-3">
@@ -366,11 +367,11 @@ function Vitamins() {
             <Accordion.Panel>
               <Accordion.Title>What is in a Fat Burning Injection?</Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400 text-lg">
+                <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl">
                   Discover the key components of fat-burning injections and their roles in your
                   body:
                 </p>
-                <ul className=" list-disc ml-10 text-sm italic">
+                <ul className=" list-disc ml-10 text-xl italic">
                   <li className=" pt-3">
                     Vitamin B12: Often referred to as the body's energy vitamin, Vitamin B12 is
                     believed by some weight loss experts to have appetite-suppressing qualities. It

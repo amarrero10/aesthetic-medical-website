@@ -20,11 +20,11 @@ function TestimonialSlider() {
       <div class="mx-auto xl:w-full sm:max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
           <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+            <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-5xl">
               Don't just take our word for it...
             </h2>
 
-            <p class="mt-4 text-navy">
+            <p class="mt-4 text-navy sm:text-xl">
               We're thrilled to share some heartfelt testimonials from our satisfied customers.
               Their kind words speak volumes about their experiences with us.
             </p>
@@ -54,7 +54,7 @@ function TestimonialSlider() {
                       <div>
                         <div class="flex gap-0.5 text-navy">
                           <svg
-                            class="h-5 w-5"
+                            class="h-7 w-7"
                             fill="#8a9a5b"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ function TestimonialSlider() {
                           </svg>
 
                           <svg
-                            class="h-5 w-5"
+                            class="h-7 w-7"
                             fill="#8a9a5b"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ function TestimonialSlider() {
                           </svg>
 
                           <svg
-                            class="h-5 w-5"
+                            class="h-7 w-7"
                             fill="#8a9a5b"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ function TestimonialSlider() {
                           </svg>
 
                           <svg
-                            class="h-5 w-5"
+                            class="h-7 w-7"
                             fill="#8a9a5b"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ function TestimonialSlider() {
                           </svg>
 
                           <svg
-                            class="h-5 w-5"
+                            class="h-7 w-7"
                             fill="#8a9a5b"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -99,17 +99,17 @@ function TestimonialSlider() {
                           </svg>
                         </div>
                         <div class="mt-4">
-                          <p class="text-xl font-bold  sm:text-3xl text-navy">
+                          <p class="text-xl font-bold  sm:text-4xl text-navy">
                             {testimonial.title}
                           </p>
 
-                          <p class="mt-4 leading-relaxed sm:w-[600px] text-justify sm:text-left mr-8 text-navy">
+                          <p class="mt-4 leading-relaxed sm:w-[600px] text-justify sm:text-left sm:text-xl mr-8 text-navy">
                             {testimonial.quote}
                           </p>
                         </div>
                       </div>
 
-                      <footer class="text-periwinkle mt-4 text-sm font-medium  sm:mt-6 ">
+                      <footer class="text-periwinkle mt-4 text-xl font-medium  sm:mt-6 ">
                         &mdash; {testimonial.name}
                       </footer>
                     </blockquote>
@@ -152,7 +152,7 @@ function Arrow(props) {
         id={props.left ? "keen-slider-previous" : "keen-slider-next"}
       >
         <svg
-          className={`h-5 w-5 ${props.left ? "-rotate-180 transform" : ""}`}
+          className={`h-7 w-7 ${props.left ? "-rotate-180 transform" : ""}`}
           fill="none"
           stroke="#FEFEFE"
           viewBox="0 0 24 24"
@@ -178,7 +178,7 @@ function DesktopArrow(props) {
         id={props.left ? "keen-slider-previous" : "keen-slider-next"}
       >
         <svg
-          className={`h-5 w-5 ${props.left ? "-rotate-180 transform" : ""}`}
+          className={`h-7 w-7 ${props.left ? "-rotate-180 transform" : ""}`}
           fill="none"
           stroke="#FEFEFE"
           viewBox="0 0 24 24"
@@ -196,9 +196,9 @@ export default TestimonialSlider;
 //   <div class="keen-slider__slide">
 //     <blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
 //       <div>
-//         <div class="flex gap-0.5 text-green-500">
+//         <div class="flex gap-0.5 text-green-700">
 //           <svg
-//             class="h-5 w-5"
+//             class="h-7 w-5"
 //             fill="#8a9a5b"
 //             viewBox="0 0 20 20"
 //             xmlns="http://www.w3.org/2000/svg"

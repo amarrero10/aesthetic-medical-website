@@ -30,7 +30,7 @@ function Services() {
           viewport={{
             once: true,
           }}
-          className=" bg-navy text-offWhite text-center text-4xl "
+          className=" bg-navy text-offWhite text-center text-[70px] "
         >
           <motion.h2
             variants={fadeInAnimationVariant}
@@ -175,7 +175,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" text-3xl font-semibold"
+                className=" text-6xl font-semibold"
               >
                 Medical Weight Loss
               </motion.h2>
@@ -186,7 +186,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" px-5 text-center text-lg"
+                className=" px-5 text-center text-2xl"
               >
                 <motion.p
                   variants={fadeInAnimationVariant}
@@ -213,12 +213,12 @@ function Services() {
                 className=" flex flex-col items-center justify-between w-full px-2"
               >
                 <Link to="/services/medical-weight-loss">
-                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     More Information
                   </button>
                 </Link>
                 <Link to="/contact-us">
-                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     Request A Free Consultation
                   </button>
                 </Link>
@@ -280,7 +280,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" text-3xl font-semibold"
+                className=" text-6xl font-semibold"
               >
                 Vitamin Injections
               </motion.h2>
@@ -291,7 +291,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" px-5 text-center text-lg"
+                className=" px-5 text-center text-2xl"
               >
                 <motion.p
                   variants={fadeInAnimationVariant}
@@ -317,12 +317,12 @@ function Services() {
                 className=" flex flex-col items-center justify-between w-full px-2"
               >
                 <Link to="/services/vitamin-injections">
-                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     More Information
                   </button>
                 </Link>
                 <Link to="/contact-us">
-                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     Request A Free Consultation
                   </button>
                 </Link>
@@ -354,7 +354,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" text-3xl font-semibold"
+                className=" text-6xl font-semibold"
               >
                 Telehealth
               </motion.h2>
@@ -365,7 +365,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" px-5 text-center text-lg"
+                className=" px-5 text-center text-2xl"
               >
                 <motion.p
                   variants={fadeInAnimationVariant}
@@ -392,12 +392,12 @@ function Services() {
                 className=" flex flex-col items-center justify-between w-full px-2"
               >
                 <Link to="/services/telehealth">
-                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     More Information
                   </button>
                 </Link>
                 <Link to="/contact-us">
-                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     Request A Free Consultation
                   </button>
                 </Link>
@@ -421,7 +421,7 @@ function Services() {
             viewport={{
               once: true,
             }}
-            className=" text-center mt-20 sm:text-3xl text-2xl"
+            className=" text-center mt-20 sm:text-4xl text-2xl"
           >
             Ready to get started? Fill out the form below and we will be happy to connect with you!
           </motion.h2>
