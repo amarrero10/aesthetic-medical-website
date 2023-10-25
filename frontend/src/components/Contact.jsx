@@ -1,19 +1,61 @@
 import React from "react";
 import Form from "./Form";
 import Footer from "./Footer";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariant = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 function Contact() {
   return (
-    <div className="h-screen">
-      <div className="sm:mt-36 mb-36">
-        <p className="sm:hidden text-center">CONTACT US</p>
-        <h2 className="sm:hidden font-bold text-2xl text-center">We've been waiting for you.</h2>
-        <p className="sm:hidden text-center text-lg">
-          We want to hear from you. Let us know how we can help.
-        </p>
-        <p className=" text-center font-bold text-5xl">Send Us A Message.</p>
+    <div>
+      <motion.div
+        variants={fadeInAnimationVariant}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+        className=" sm:mt-20 bg-navy text-offWhite text-center text-4xl sm:text-[70px] "
+      >
+        <motion.h1
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" p-8"
+        >
+          Terms and Conditions
+        </motion.h1>
+        <motion.hr
+          variants={fadeInAnimationVariant}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          className=" w-1/3 mx-auto my-4 pb-5"
+        />
+      </motion.div>
+      <div className="sm:mt-14  mt-5">
+        <p className=" text-center font-bold text-5xl mb-5">Send Us A Message.</p>
+        <h2 className=" font-bold text-2xl text-center">
+          Fill out the form below to schedule your free consultation and start your jounrey to a
+          better you!
+        </h2>
         <Form />
       </div>
-      <div className="-bottom-40">
+      <div className="sm:absolute sm:bottom-0 sm:w-full">
         <Footer />
       </div>
     </div>

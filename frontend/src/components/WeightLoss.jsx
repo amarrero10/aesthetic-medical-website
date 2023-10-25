@@ -268,7 +268,7 @@ function WeightLoss() {
             <Accordion.Title>How does Semaglutide work?</Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl">
-                Semaglutide works by mimicing the GLP-1 hormone. GLP-1 in higher amounts interacts
+                Semaglutide works by mimicking the GLP-1 hormone. GLP-1 in higher amounts interacts
                 with the parts of the brain that suppress your appetite and signal you to feel full.
                 When used in conjunction with diet and exercise, it can cause significant weight
                 loss.
@@ -279,7 +279,10 @@ function WeightLoss() {
             <Accordion.Title>How is Semaglutide administered?</Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl">
-                Semaglutide is administered by injection and the dosing is weekly.
+                Semaglutide is a prescription medication prescribed for weight loss in adults who
+                are dealing with obesity or being overweight while also having at least one
+                weight-related health concern. This medication is administered via a weekly
+                injection.
               </p>
             </Accordion.Content>
           </Accordion.Panel>
@@ -304,15 +307,11 @@ function WeightLoss() {
             <Accordion.Title>When will I see results?</Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl">
-                Semaglutide is a prescription medication prescribed for weight loss in adults who
-                are dealing with obesity or being overweight while also having at least one
-                weight-related health concern. This medication is administered via a weekly
-                injection. Upon commencing semaglutide treatment, it's important to note that
-                significant weight loss may not become noticeable for a few weeks, and it is
-                advisable to maintain this treatment for a minimum of 16 weeks to assess its
-                effectiveness. The duration of semaglutide's effects can vary from person to person,
-                influenced by factors such as individual metabolism, dietary choices, and exercise
-                routines.
+                Upon commencing semaglutide treatment, it's important to note that significant
+                weight loss may not become noticeable for a few weeks, and it is advisable to
+                maintain this treatment for a minimum of 16 weeks to assess its effectiveness. The
+                duration of semaglutide's effects can vary from person to person, influenced by
+                factors such as individual metabolism, dietary choices, and exercise routines.
               </p>
             </Accordion.Content>
           </Accordion.Panel>
@@ -451,7 +450,7 @@ function WeightLoss() {
                 tablet once a day for the initial two weeks. After this initial period, the dosage
                 is often increased to a full 37.5mg tablet taken daily. For optimal hunger control
                 throughout the day and to ensure the medication's effects wear off before bedtime,
-                it is generally recommended to take the pill around 9 or 10 am in the morning.
+                it is generally recommended to take the pill in the morning.
               </p>
             </Accordion.Content>
           </Accordion.Panel>

@@ -102,12 +102,12 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" h-[320px] sm:h-[690px]  -mt-8 w-full px-4"
+              className=" h-[320px] sm:h-[690px] rounded-[50%]  -mt-8 w-full 2xl:w-[82%] px-4"
             >
               <img
                 src={portrait}
-                alt="portrait of ALgery Al-Hafi"
-                className=" h-full rounded-full shadow-2xl shadow-navy mx-auto object-cover w-full mt-10 sm:mt-0"
+                alt="portrait of Algery Al-Hafi"
+                className=" h-full rounded-[50%] shadow-2xl shadow-navy mx-auto object-cover w-full mt-10 sm:mt-0"
               ></img>
             </motion.div>
           </div>
@@ -119,7 +119,7 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center sm:text-6xl text-2xl font-bold text-offWhite pb-2 tracking-wider mt-9"
+              className=" text-center sm:text-6xl text-4xl font-bold text-offWhite pb-2 tracking-wider mt-9"
             >
               About Us
             </motion.p>
@@ -130,7 +130,7 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center sm:text-2xl sm:w-[550px] px-3 text-offWhite mt-9"
+              className=" text-center sm:text-2xl sm:w-[550px] px-3 text-offWhite mt-9 text-xl"
             >
               At Spring Health and Wellness, we are your partners in the pursuit of health and
               beauty. Meet our dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about
@@ -151,7 +151,7 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center mt-10 mb-8 text-2xl sm:text-6xl font-bold"
+              className=" text-center mt-10 mb-8 text-4xl sm:text-6xl font-bold"
             >
               Services
             </motion.h2>
@@ -245,13 +245,19 @@ function HomePage() {
           >
             Contact Us
           </motion.p>
-          <a
-            href="tel:(352) 340-5990"
+          <motion.a
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            href="tel:727-548-6100p208"
             className="flex  items-center justify-center mx-auto text-navy text-xl mb-6 sm:mb-3 border border-navy p-3 w-fit"
           >
             <BsTelephone className="mr-2" />
-            (352) 340-5990
-          </a>
+            (727) 548-6100 ext. 208
+          </motion.a>
           <motion.p
             variants={fadeInAnimationVariant}
             initial="initial"

@@ -96,8 +96,8 @@ function Locations() {
             className=" w-1/3 mx-auto my-4 pb-5"
           />
         </motion.div>
-        <div className=" flex sm:flex-row flex-col items-center justify-between  sm:w-2/3 mx-auto sm:mt-20">
-          <div className=" text-navy h-full sm:w-1/2 mb-10 sm:mb-0 mr-10 border border-navy py-24 pl-9">
+        <div className=" flex sm:flex-row flex-col items-center justify-between  sm:w-2/3 mx-auto sm:mt-20 px-3 sm:px-0">
+          <div className=" text-navy h-full sm:w-1/2 mb-10 sm:mb-0 sm:mr-10 border border-navy py-24 sm:pl-9">
             <p className=" text-5xl font-semibold text-center sm:text-center mb-10">
               Start your journey to a better you today with Spring Health and Wellness!
             </p>
@@ -113,11 +113,11 @@ function Locations() {
             </ul>
             <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mx-auto mb-5 sm:mt-14">
               <a
-                href="tel:(352) 340-5990"
+                href="tel:727-548-6100p208"
                 className="flex  items-center text-navy text-2xl mb-6 sm:mb-0 border border-navy p-3 rounded-md"
               >
                 <BsTelephone className="mr-2" />
-                (352) 340-5990
+                (727) 548-6100 ext. 208
               </a>
               <Link to="/contact-us">
                 <button className=" bg-white py-3 px-5 border text-xl  border-greenTeal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">

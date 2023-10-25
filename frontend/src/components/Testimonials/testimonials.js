@@ -49,7 +49,7 @@ const testimonials = [
   },
   {
     title: "Boosted Confidence",
-    name: "Olivi B.",
+    name: "Olivia B.",
     quote:
       "My confidence received a significant boost. The support and treatments I received have made a positive impact on my life.",
   },

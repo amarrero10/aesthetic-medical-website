@@ -62,7 +62,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-center  text-3xl sm:text-5xl sm:mt-28 font-bold mb-3"
+          className=" text-center  text-4xl sm:text-5xl sm:mt-28 font-bold mb-3"
         >
           Vitamin B12 Injections
         </motion.h2>
@@ -75,10 +75,10 @@ function Vitamins() {
           }}
           className=" text-xl sm:text-2xl text-center sm:w-1/2 sm:px-0 px-3 mx-auto pb-10"
         >
-          Experience the benefits of our personalized vitamin injections, including B12 injections,
-          and supercharge your energy levels without the hassle of daily pills. If you often find
-          yourself feeling fatigued or in need of an energy boost, we offer tailored vitamin
-          infusions designed to help you maintain the ideal micronutrient balance.
+          Experience the benefits of our personalized vitamin B12 injections, and supercharge your
+          energy levels without the hassle of daily pills. If you often find yourself feeling
+          fatigued or in need of an energy boost, we offer tailored vitamin infusions designed to
+          help you maintain the ideal micronutrient balance.
         </motion.p>
         <motion.div
           variants={fadeInAnimationVariant}
@@ -87,7 +87,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" min-[2000px]:w-1/2 flex sm:flex-row flex-col sm:w-2/3 px-3 sm:px-0 mx-auto shadow-2xl mb-10 sm:h-[380px] rounded-md"
+          className=" min-[2000px]:w-1/2 flex sm:flex-row flex-col sm:w-2/3 px-3 sm:px-0 mx-auto shadow-xl mb-10 sm:h-[380px] rounded-md"
         >
           <motion.div
             variants={fadeInAnimationVariant}
@@ -151,6 +151,7 @@ function Vitamins() {
             </motion.div>
           </motion.div>
         </motion.div>
+
         <motion.h2
           variants={fadeInAnimationVariant}
           initial="initial"
@@ -158,7 +159,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-center  text-3xl sm:text-5xl font-bold mb-3 sm:mt-0 mt-12"
+          className=" text-center  text-4xl sm:text-5xl font-bold mb-3 sm:mt-0 mt-36"
         >
           Fat Burners
         </motion.h2>
@@ -222,7 +223,7 @@ function Vitamins() {
               viewport={{
                 once: true,
               }}
-              className=" text-center sm:text-xl sm:mt-8"
+              className=" text-center sm:text-xl text-xl sm:mt-8"
             >
               At Spring Health and Wellness, we provide specialized fat-burning injections designed
               to support your weight loss journey. Our injections contain a unique blend of
@@ -301,7 +302,7 @@ function Vitamins() {
         >
           <Accordion
             collapseAll
-            className="sm:w-2/3 sm:text-2xl w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy"
+            className="sm:w-2/3 sm:text-2xl text-xl w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy"
           >
             <Accordion.Panel>
               <Accordion.Title>What are the symptoms of B12 deficiency?</Accordion.Title>
@@ -345,10 +346,10 @@ function Vitamins() {
                   other day for the second week, and every three to four days for the next month.
                 </p>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Once your vitamin B12 deficiency is under control, you only need a recommended
-                  dose of 100 mcg once a month to maintain the results. As previously stated, it
-                  will depend on the severity of the deficiency in each individual — we can
-                  customize a plan that will work best for you.
+                  Once your vitamin B12 deficiency is contolled, you only need a recommended dose of
+                  100 mcg once a month to maintain the results. Doses will depend on the severity of
+                  the deficiency in each individual — we can customize a plan that will work best
+                  for you.
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
@@ -476,11 +477,11 @@ function Vitamins() {
             className="flex items-center "
           >
             <a
-              href="tel:(352) 340-5990"
+              href="tel:727-548-6100p208"
               className="flex items-center text-navy text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
-              (352) 340-5990
+              (727) 548-6100 ext. 208
             </a>
           </motion.div>
           <Link to="/contact-us">

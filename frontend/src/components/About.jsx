@@ -24,7 +24,7 @@ const fadeInAnimationVariant = {
 function About() {
   return (
     <div className="sm:mt-44 absolute tracking-widest">
-      <PiPlantFill className=" text-center rounded-full m-5 text-[60px] text-navy mx-auto -mt-10 mb-16 " />
+      <PiPlantFill className=" text-center rounded-full m-5 text-[60px] text-navy mx-auto sm:-mt-10 sm:mb-16 " />
       <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md ">
         <motion.h1
           variants={fadeInAnimationVariant}
@@ -123,7 +123,7 @@ function About() {
             <img
               src={portrait}
               alt="Nurse Practioner at Spring Health and Wellness"
-              className="w-full  mx-auto h-[400px] object-cover rounded-md"
+              className="w-full  mx-auto h-[400px] 2xl:h-[630px] object-cover rounded-md"
             ></img>
             <div className=" bg-periwinkle text-offWhite text-center text-3xl py-4">
               <p>Algery Al-Hafi</p>
@@ -235,11 +235,11 @@ function About() {
         >
           <div className="flex items-center ">
             <a
-              href="tel:(352) 340-5990"
+              href="tel:727-548-6100p208"
               className="flex items-center text-navy border border-navy p-3 rounded-md text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
-              (352) 340-5990
+              (727) 548-6100 ext. 208
             </a>
           </div>
           <Link to="/contact-us">
