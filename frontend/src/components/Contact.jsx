@@ -35,7 +35,7 @@ function Contact() {
           }}
           className=" p-8"
         >
-          Terms and Conditions
+          Contacts
         </motion.h1>
         <motion.hr
           variants={fadeInAnimationVariant}
