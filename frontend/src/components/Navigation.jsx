@@ -45,7 +45,7 @@ function Navigation() {
   return (
     <>
       {/* Mobile Menu */}
-      <div className="flex justify-between items-center sm:hidden relative border-b-[1px] border-b-periwinkle py-3">
+      <div className="flex justify-between items-center sm:hidden relative border-b-[1px] bg-[#fff] border-b-periwinkle py-3">
         <Link to="/" className="" onClick={closeMenu}>
           <img className=" h-14 pl-2" src={logo} alt="logo for Spring Health and Wellness"></img>
         </Link>
@@ -63,13 +63,13 @@ function Navigation() {
       </div>
 
       {isOpen && (
-        <div className="bg-darkpurple text-offWhite py-4 px-2 sm:hidden absolute w-screen text-2xl z-10">
+        <div className="bg-[#015657] text-offWhite py-4 px-2 sm:hidden absolute w-screen text-2xl z-10">
           {/* Main Navigation Links */}
           <ul className="space-y-2">
             <Link to="/" onClick={closeMenu}>
               <li className="pb-1">Home</li>
             </Link>
-            <hr className=" text-periwinkle py-3" />
+            <hr className=" text-[#015657] py-3" />
             <Link to="/about" onClick={closeMenu}>
               <li>About</li>
             </Link>
@@ -146,13 +146,13 @@ function Navigation() {
       {/* End Mobile Menu */}
 
       {/* DESKTOP MENU */}
-      <div className="hidden sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-2 top-0 fixed w-screen z-30 border-[1px] bg-[#FFFFFF] border-b-periwinkle">
+      <div className="hidden sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-2 top-0 fixed w-screen z-30 border-[1px] bg-[#FFFFFF] border-b-[#015657]">
         <div>
           <Link to="/">
             <img className="w-36" src={logo} alt="logo for Spring Health and Wellness"></img>
           </Link>
         </div>
-        <div className="flex w-1/2 justify-between text-navy text-3xl ">
+        <div className="flex w-1/2 justify-between text-[#015657] text-4xl ">
           <Link to="/" onClick={handleScrollToTop}>
             <p className="hover:underline">Home</p>
           </Link>

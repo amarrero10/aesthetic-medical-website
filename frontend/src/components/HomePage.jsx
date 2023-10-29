@@ -9,6 +9,7 @@ import { BsPersonVideo3 } from "react-icons/bs";
 import TestimonialSlider from "./Testimonials/TestimonialSlider";
 import Footer from "./Footer";
 import { motion, useScroll } from "framer-motion";
+import { ReactComponent as Vortex } from "../assets/vortex.svg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -26,7 +27,7 @@ function HomePage() {
   return (
     <>
       <motion.div
-        className="hidden sm:block bg-periwinkle fixed top-20 left-0 right-0 h-2 origin-[0%]"
+        className="hidden sm:block bg-[#015657] fixed top-[146px] left-0 right-0 h-2 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
       <div className="sm:mt-36 max-w-[2000px] mx-auto">
@@ -39,23 +40,8 @@ function HomePage() {
           }}
           className=" absolute w-full min-[2000px]:w-[78.55%] -z-10 sm:top-52 top-[610px] "
         >
-          <svg
-            width="100%"
-            height="100%"
-            id="svg"
-            viewBox="0 0 1440 590"
-            xmlns="http://www.w3.org/2000/svg"
-            class="transition duration-300 ease-in-out delay-150"
-          >
-            <path
-              d="M 0,600 C 0,600 0,300 0,300 C 99.55980861244021,357.11961722488036 199.11961722488041,414.2392344497608 306,387 C 412.8803827751196,359.7607655502392 527.0813397129187,248.1626794258373 622,225 C 716.9186602870813,201.8373205741627 792.5550239234449,267.11004784689 887,287 C 981.4449760765551,306.88995215311 1094.6985645933014,281.3971291866029 1190,276 C 1285.3014354066986,270.6028708133971 1362.6507177033493,285.30143540669854 1440,300 C 1440,300 1440,0 1440,0 L 1440,600 Z"
-              stroke="none"
-              stroke-width="0"
-              fill="#7dd1c1"
-              fill-opacity="1"
-              class="transition-all duration-300 ease-in-out delay-150 path-0"
-            ></path>
-          </svg>
+          <Vortex className=" sm:-mt-[300px] -mt-[620px] h-[600px] sm:h-full w-full mix-blend-color-dodge opacity-30" />
+          {/* 2xl:w-[1120px] -mt-[262px] */}
         </motion.div>
         <div>
           <div className="sm:flex grid gap-5 sm:gap-0 w-screen sm:w-full p-2 justify-center items-center sm:h-[800px]">
@@ -143,7 +129,7 @@ function HomePage() {
               </button>
             </Link>
           </div>
-          <div>
+          <div className=" bg-[#fff] h-[600px] -mt-10">
             <motion.h2
               variants={fadeInAnimationVariant}
               initial="initial"
@@ -151,7 +137,7 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center mt-10 mb-8 text-4xl sm:text-6xl font-bold"
+              className=" text-center mt-10 mb-8 text-4xl pt-10 sm:text-6xl font-bold"
             >
               Services
             </motion.h2>
