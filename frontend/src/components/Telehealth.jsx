@@ -19,7 +19,7 @@ const fadeInAnimationVariant = {
 
 function Telehealth() {
   return (
-    <div className="mt-20">
+    <div className="sm:mt-36">
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -27,7 +27,7 @@ function Telehealth() {
         viewport={{
           once: true,
         }}
-        className=" bg-navy text-offWhite text-center text-[70px] "
+        className=" bg-[#015657] text-offWhite text-center text-[70px] "
       >
         <motion.h2
           variants={fadeInAnimationVariant}

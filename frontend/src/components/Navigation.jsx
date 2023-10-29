@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom";
 import Hamburger from "hamburger-react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 function Navigation() {
   const [isOpen, setOpen] = useState(false);
@@ -46,7 +47,7 @@ function Navigation() {
       {/* Mobile Menu */}
       <div className="flex justify-between items-center sm:hidden relative border-b-[1px] border-b-periwinkle py-3">
         <Link to="/" className="" onClick={closeMenu}>
-          <h1 className="pl-2">Spring Health and Wellness</h1>
+          <img className=" h-14 pl-2" src={logo} alt="logo for Spring Health and Wellness"></img>
         </Link>
         <div className=" flex items-center">
           <Link to="/contact-us" className=" h-10">
@@ -145,10 +146,10 @@ function Navigation() {
       {/* End Mobile Menu */}
 
       {/* DESKTOP MENU */}
-      <div className="hidden sm:flex sm:items-center sm:justify-between sm:px-2 h-20 top-0 fixed w-screen bg-offWhite z-30 border-[1px] border-b-periwinkle">
+      <div className="hidden sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-2 top-0 fixed w-screen z-30 border-[1px] bg-[#FFFFFF] border-b-periwinkle">
         <div>
           <Link to="/">
-            <h1>Spring Health and Wellness</h1>
+            <img className="w-36" src={logo} alt="logo for Spring Health and Wellness"></img>
           </Link>
         </div>
         <div className="flex w-1/2 justify-between text-navy text-3xl ">

@@ -65,7 +65,7 @@ function Locations() {
 
   return (
     <>
-      <div className=" sm:my-20">
+      <div className=" sm:my-36 ">
         <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"
@@ -73,7 +73,7 @@ function Locations() {
           viewport={{
             once: true,
           }}
-          className=" bg-navy text-offWhite text-center text-4xl "
+          className=" bg-[#015657] text-offWhite text-center text-4xl py-2 mb-4 sm:mb-0 "
         >
           <motion.h2
             variants={fadeInAnimationVariant}
@@ -82,7 +82,7 @@ function Locations() {
             viewport={{
               once: true,
             }}
-            className=" py-5 text-[70px]"
+            className=" pt-12 pb-4 text-[70px]"
           >
             Locations
           </motion.h2>

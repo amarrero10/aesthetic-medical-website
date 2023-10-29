@@ -23,7 +23,7 @@ const fadeInAnimationVariant = {
 
 function About() {
   return (
-    <div className="sm:mt-44 absolute tracking-widest">
+    <div className="sm:mt-64 absolute tracking-widest">
       <PiPlantFill className=" text-center rounded-full m-5 text-[60px] text-navy mx-auto sm:-mt-10 sm:mb-16 " />
       <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md ">
         <motion.h1

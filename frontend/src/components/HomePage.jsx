@@ -29,7 +29,7 @@ function HomePage() {
         className="hidden sm:block bg-periwinkle fixed top-20 left-0 right-0 h-2 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
-      <div className="sm:mt-12 max-w-[2000px] mx-auto">
+      <div className="sm:mt-36 max-w-[2000px] mx-auto">
         <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"

@@ -35,7 +35,7 @@ function Contact() {
           }}
           className=" p-8"
         >
-          Contacts
+          Contact Us
         </motion.h1>
         <motion.hr
           variants={fadeInAnimationVariant}

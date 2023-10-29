@@ -15,7 +15,7 @@ const fadeInAnimationVariant = {
 
 function Accessibility() {
   return (
-    <div className=" sm:mt-20">
+    <div className=" sm:mt-36">
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -23,7 +23,7 @@ function Accessibility() {
         viewport={{
           once: true,
         }}
-        className=" sm:mt-20 bg-navy text-offWhite text-center text-4xl sm:text-[70px] "
+        className=" sm:mt-20 bg-[#015657] text-offWhite text-center text-4xl sm:text-[70px] "
       >
         <motion.h1
           variants={fadeInAnimationVariant}

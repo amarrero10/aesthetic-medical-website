@@ -29,7 +29,7 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
-        className=" sm:mt-20 bg-navy text-offWhite text-center text-4xl sm:text-[70px] "
+        className=" sm:mt-36 bg-[#015657] text-offWhite text-center text-4xl sm:text-[70px] "
       >
         <motion.h2
           variants={fadeInAnimationVariant}
