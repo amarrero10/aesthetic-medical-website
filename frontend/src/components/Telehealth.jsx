@@ -4,6 +4,7 @@ import Form from "./Form";
 import Footer from "./Footer";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { ReactComponent as Arrow } from "../assets/arrow.svg";
 import { FaAirbnb } from "react-icons/fa6";
 
 const fadeInAnimationVariant = {
@@ -50,6 +51,7 @@ function Telehealth() {
           className=" w-1/3 mx-auto my-4 pb-5"
         />
       </motion.div>
+
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -141,6 +143,8 @@ function Telehealth() {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
+
+      <Arrow className="absolute 2xl:w-[300px] sm:w-[300px] sm:top-[305px] 2xl:top-[280px] 2xl:right-[1830px] sm:right-[1290px] -z-10 invisible sm:visible" />
       <Form />
       <Footer />
     </div>

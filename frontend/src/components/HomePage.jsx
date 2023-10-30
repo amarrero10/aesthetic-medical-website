@@ -129,7 +129,7 @@ function HomePage() {
               </button>
             </Link>
           </div>
-          <div className=" bg-[#fff] h-[600px] -mt-10">
+          <div className=" bg-[#fff] sm:h-[600px] -mt-10">
             <motion.h2
               variants={fadeInAnimationVariant}
               initial="initial"
