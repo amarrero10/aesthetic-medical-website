@@ -75,7 +75,7 @@ function HomePage() {
               </p>
               <div className=" flex justify-center sm:-mt-[80px]">
                 <Link to="/contact-us" className="  mx-auto s">
-                  <button className=" bg-white py-3 px-5 border border-greenTeal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto  ">
+                  <button className=" bg-white py-3 px-5 border border-greenTeal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto sm:text-xl ">
                     Request Appointment
                   </button>
                 </Link>
@@ -149,7 +149,7 @@ function HomePage() {
                 viewport={{
                   once: true,
                 }}
-                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-navy"
               >
                 <FaWeightScale className=" mx-auto text-6xl mt-5 " />
                 <p className="text-3xl my-3">Medical Weight Loss</p>
@@ -159,7 +159,7 @@ function HomePage() {
                   weight.
                 </p>
                 <Link to="/services/medical-weight-loss">
-                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
+                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
                     Learn More
                   </button>
                 </Link>
@@ -171,7 +171,7 @@ function HomePage() {
                 viewport={{
                   once: true,
                 }}
-                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-navy"
               >
                 <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
                 <p className="text-3xl my-3">Vitamin Injections</p>
@@ -181,7 +181,7 @@ function HomePage() {
                   goals.
                 </p>
                 <Link to="/services/vitamin-injections">
-                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-offWhite border ">
+                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
                     Learn More
                   </button>
                 </Link>
@@ -193,7 +193,7 @@ function HomePage() {
                 viewport={{
                   once: true,
                 }}
-                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-offWhite"
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-navy"
               >
                 <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
                 <p className="text-3xl my-3">Telehealth</p>
@@ -202,7 +202,7 @@ function HomePage() {
                   access expert guidance and support for your healthcare needs from anywhere.
                 </p>
                 <Link to="/services/telehealth">
-                  <button className=" text-xl bg-periwinkle border-offWhite border px-4 py-3 rounded-md mt-8">
+                  <button className=" text-xl bg-periwinkle border-navy border px-4 py-3 rounded-md mt-8">
                     Learn More
                   </button>
                 </Link>

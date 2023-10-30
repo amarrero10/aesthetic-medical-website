@@ -6,8 +6,8 @@ module.exports = {
     colors: {
       offWhite: "#EEEEEE",
       navy: "#3f4760",
-      darkpurple: "#615586",
-      periwinkle: "#AA95d1",
+      darkpurple: "#015657",
+      periwinkle: "#00BFFF",
       greenTeal: "#7DD1C1",
       sage: "#8a9a5b",
     },
