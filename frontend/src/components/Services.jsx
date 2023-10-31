@@ -7,6 +7,7 @@ import virtual from "../assets/virtual.jpg";
 import vial from "../assets/vial.jpg";
 import scale from "../assets/scale.jpg";
 import { motion } from "framer-motion";
+import { ReactComponent as Leaves } from "../assets/leaves.svg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -150,6 +151,8 @@ function Services() {
         {/* END MOBILE SERVICES */}
         {/* DESKTOP SERVICES */}
         <div className="hidden sm:block sm:visible pt-10 text-navy">
+          <Leaves className=" absolute -z-10" />
+          <Leaves className=" absolute -z-10 top-[1640px] 2xl:hidden" />
           <motion.div
             variants={fadeInAnimationVariant}
             initial="initial"
@@ -157,7 +160,7 @@ function Services() {
             viewport={{
               once: true,
             }}
-            className=" flex w-2/3 min-[2000px]:w-1/2 mx-auto h-[500px] shadow-2xl rounded-md"
+            className=" flex w-2/3 min-[2000px]:w-1/2 mx-auto h-[500px] shadow-2xl rounded-md bg-white"
           >
             <motion.div
               variants={fadeInAnimationVariant}
@@ -166,7 +169,7 @@ function Services() {
               viewport={{
                 once: true,
               }}
-              className=" w-1/2 flex flex-col items-center justify-between py-[50px]"
+              className=" w-1/2 flex flex-col items-center justify-between py-[50px] bg-white"
             >
               <motion.h2
                 variants={fadeInAnimationVariant}
@@ -210,7 +213,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" flex flex-col items-center justify-between w-full px-2"
+                className=" flex flex-col items-center justify-between w-full px-2 bg-white"
               >
                 <Link to="/services/medical-weight-loss">
                   <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
@@ -271,7 +274,7 @@ function Services() {
               viewport={{
                 once: true,
               }}
-              className=" w-1/2 flex flex-col items-center justify-between py-[50px]"
+              className=" w-1/2 flex flex-col items-center justify-between py-[50px] bg-white"
             >
               <motion.h2
                 variants={fadeInAnimationVariant}
@@ -314,7 +317,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" flex flex-col items-center justify-between w-full px-2"
+                className=" flex flex-col items-center justify-between w-full px-2 bg-white"
               >
                 <Link to="/services/vitamin-injections">
                   <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
@@ -345,7 +348,7 @@ function Services() {
               viewport={{
                 once: true,
               }}
-              className=" w-1/2 flex flex-col items-center justify-between py-[50px]"
+              className=" w-1/2 flex flex-col items-center justify-between py-[50px] bg-white"
             >
               <motion.h2
                 variants={fadeInAnimationVariant}
@@ -389,7 +392,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" flex flex-col items-center justify-between w-full px-2"
+                className=" flex flex-col items-center justify-between w-full px-2 bg-white"
               >
                 <Link to="/services/telehealth">
                   <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">

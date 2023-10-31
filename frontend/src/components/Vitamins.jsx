@@ -23,7 +23,7 @@ const fadeInAnimationVariant = {
 function Vitamins() {
   return (
     <>
-      <div className=" sm:mt-36">
+      <div className=" sm:mt-36 bg-[#fff3e4]">
         <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"
@@ -96,7 +96,7 @@ function Vitamins() {
             viewport={{
               once: true,
             }}
-            className=" sm:w-1/2 "
+            className=" sm:w-1/2 bg-white"
           >
             <motion.img
               variants={fadeInAnimationVariant}
@@ -117,7 +117,7 @@ function Vitamins() {
             viewport={{
               once: true,
             }}
-            className=" flex flex-col justify-between py-10  sm:w-1/2 px-3 text-navy "
+            className=" flex flex-col justify-between py-10  sm:w-1/2 px-3 text-navy bg-white"
           >
             <motion.p
               variants={fadeInAnimationVariant}
@@ -170,7 +170,7 @@ function Vitamins() {
           viewport={{
             once: true,
           }}
-          className=" text-xl sm:text-2xl text-center sm:w-1/2 px-3 sm:px-0 mx-auto pb-10"
+          className=" text-xl sm:text-2xl text-center sm:w-1/2 px-3 sm:px-0 mx-auto pb-10 "
         >
           If you're looking to expedite your weight loss journey, consider our range of highly
           effective fat burners. We can provide you with the perfect combination of nutrients and
@@ -193,7 +193,7 @@ function Vitamins() {
             viewport={{
               once: true,
             }}
-            className=" sm:w-1/2 "
+            className=" sm:w-1/2 bg-white"
           >
             <motion.img
               variants={fadeInAnimationVariant}
@@ -214,7 +214,7 @@ function Vitamins() {
             viewport={{
               once: true,
             }}
-            className="  flex flex-col justify-between py-5  sm:w-1/2 px-3 text-navy "
+            className="  flex flex-col justify-between py-5  sm:w-1/2 px-3 text-navy bg-white "
           >
             <motion.p
               variants={fadeInAnimationVariant}
@@ -302,7 +302,7 @@ function Vitamins() {
         >
           <Accordion
             collapseAll
-            className="sm:w-2/3 sm:text-2xl text-xl w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy"
+            className="sm:w-2/3 sm:text-2xl text-xl w-full px-2 sm:px-0 shadow-2xl mx-auto mt-10 text-navy bg-white"
           >
             <Accordion.Panel>
               <Accordion.Title>What are the symptoms of B12 deficiency?</Accordion.Title>

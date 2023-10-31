@@ -21,7 +21,7 @@ const fadeInAnimationVariant = {
 
 function WeightLoss() {
   return (
-    <div>
+    <div className="bg-[#fff3e4] ">
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -113,7 +113,7 @@ function WeightLoss() {
             viewport={{
               once: true,
             }}
-            className=" h-full text-center py-5"
+            className=" h-full text-center py-5 bg-white"
           >
             <h2 className=" text-5xl font-semibold">Semaglutide</h2>
             <p className=" text-2xl py-8 px-3 italic">
@@ -146,7 +146,7 @@ function WeightLoss() {
             viewport={{
               once: true,
             }}
-            className=" h-full text-center py-5"
+            className=" h-full text-center py-5 bg-white"
           >
             <h2 className=" text-5xl font-semibold">Tirzepatide</h2>
             <p className=" text-2xl py-8 px-3 italic">
@@ -180,7 +180,7 @@ function WeightLoss() {
             viewport={{
               once: true,
             }}
-            className=" h-full text-center py-5"
+            className=" h-full text-center py-5 bg-white"
           >
             <h2 className=" text-5xl font-semibold">Phentermine</h2>
             <p className=" text-2xl py-8 px-3 italic">
@@ -252,7 +252,7 @@ function WeightLoss() {
       >
         <Accordion
           collapseAll
-          className=" text-3xl 2xl:w-[800px] sm:w-[600px] w-full px-2 sm:px-0 shadow-2xl mt-10 text-navy h-fit"
+          className=" text-3xl 2xl:w-[800px] sm:w-[600px] w-full px-2 sm:px-0 shadow-2xl mt-10 text-navy h-fit bg-white"
         >
           <Accordion.Panel>
             <Accordion.Title>What is Semaglutide?</Accordion.Title>
@@ -377,7 +377,7 @@ function WeightLoss() {
         </Accordion>
         <Accordion
           collapseAll
-          className="2xl:w-[800px] sm:w-[600px] w-full px-2 sm:px-0 shadow-2xl mt-10 text-navy h-fit text-3xl"
+          className="2xl:w-[800px] sm:w-[600px] w-full px-2 sm:px-0 shadow-2xl mt-10 text-navy h-fit text-3xl bg-white"
         >
           <Accordion.Panel>
             <Accordion.Title>What is Tirzepatide?</Accordion.Title>

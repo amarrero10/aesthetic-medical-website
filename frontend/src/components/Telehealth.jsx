@@ -20,7 +20,7 @@ const fadeInAnimationVariant = {
 
 function Telehealth() {
   return (
-    <div className="sm:mt-36">
+    <div className="sm:mt-36 bg-[#faf8f3]">
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
