@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import portrait from "../assets/portrait.jpg";
+import portrait from "../assets/algery-red3.jpg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
 import { FaWeightScale } from "react-icons/fa6";
@@ -44,7 +44,7 @@ function HomePage() {
           {/* 2xl:w-[1120px] -mt-[262px] */}
         </motion.div>
         <div>
-          <div className="sm:flex grid gap-5 sm:gap-0 w-screen sm:w-full p-2 justify-center items-center sm:h-[800px]">
+          <div className="sm:flex grid gap-5 sm:gap-0 w-screen sm:w-full p-2 justify-around items-center sm:h-[800px]">
             <motion.div
               variants={fadeInAnimationVariant}
               initial="initial"
@@ -52,12 +52,12 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" h-[300px] w-full mb-10 grid sm:mr-2 mt-5"
+              className=" h-[300px]  mb-10 grid sm:mr-2 mt-5 2xl:ml-44"
             >
               <div className=" flex justify-center">
                 <p className=" text-2xl font-bold sm:text-6xl">Embark on a journey of </p>
               </div>
-              <div className=" text-2xl font-bold pl-1 sm:text-6xl text-periwinkle text-center sm:my-4">
+              <div className=" text-2xl font-bold pl-1 sm:text-6xl text-periwinkle text-center sm:my-4 pb-5 sm:pb-0">
                 <Typewriter
                   options={{
                     strings: [" Wellness!", " Transformation!", " Confidence!"],
@@ -66,16 +66,16 @@ function HomePage() {
                   }}
                 />
               </div>
-              <p className=" text-center text-2xl sm:mb-4">
+              <p className=" text-center text-2xl sm:mb-4 sm:w-[700px] pb-5 sm:pb-0">
                 We prioritize your unique health and wellness goals to enhance your qualilty of
                 life. Experience a transformative approach to weight loss and well-being today!
               </p>
               <p className=" text-darkpurple font-semibold text-center text-3xl sm:mb-24">
                 This is Spring Health and Wellness
               </p>
-              <div className=" flex justify-center sm:-mt-[80px]">
-                <Link to="/contact-us" className="  mx-auto s">
-                  <button className=" bg-white py-3 px-5 border border-greenTeal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto sm:text-xl ">
+              <div className=" flex justify-center sm:-mt-[80px] mt-5">
+                <Link to="/contact-us" className="  mx-auto ">
+                  <button className=" bg-white py-3 px-5 border border-greenTeal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto sm:text-xl  ">
                     Request Appointment
                   </button>
                 </Link>
@@ -88,16 +88,16 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" h-[320px] sm:h-[690px] rounded-[50%]  -mt-8 w-full 2xl:w-[82%] px-4"
+              className=" sm:h-[800px]  px-4 sm:w-[650px] w-[350px] mx-auto rounded-xl"
             >
               <img
                 src={portrait}
                 alt="portrait of Algery Al-Hafi"
-                className=" h-full rounded-[50%] shadow-2xl shadow-navy mx-auto object-cover w-full mt-10 sm:mt-0"
+                className=" shadow-2xl shadow-navy  sm:h-[800px] sm:w-[650px] w-[350px] mx-auto bg-navy mt-16 sm:mt-10 rounded-xl"
               ></img>
             </motion.div>
           </div>
-          <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] sm:-mt-[108px]">
+          <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] mt-20">
             <motion.p
               variants={fadeInAnimationVariant}
               initial="initial"

@@ -4,10 +4,11 @@ import { BsTelephone } from "react-icons/bs";
 import { FaWeightScale } from "react-icons/fa6";
 import { BiSolidInjection } from "react-icons/bi";
 import { BsPersonVideo3 } from "react-icons/bs";
-import portrait from "../assets/portrait.jpg";
+import portrait from "../assets/algery-green.jpg";
 import Footer from "./Footer";
 import { IoLeafOutline } from "react-icons/io5";
 import { PiPlantFill } from "react-icons/pi";
+import { ReactComponent as Flurry } from "../assets/flurry.svg";
 
 import { motion } from "framer-motion";
 const fadeInAnimationVariant = {
@@ -23,8 +24,16 @@ const fadeInAnimationVariant = {
 
 function About() {
   return (
-    <div className="sm:mt-64 absolute tracking-widest">
+    <div className="sm:mt-64 absolute tracking-widest font-bold">
+      <Flurry className=" absolute -z-10 2xl:-top-32 -top-[210px]" />
+      <Flurry className=" absolute -z-[9] 2xl:-top-32 -top-[210px] sm:top-[850px] right-[25px] hidden sm:block" />
+      <Flurry className=" absolute -z-10 sm:-top-32 sm:hidden" />
+      <Flurry className=" absolute -z-[9] sm:-top-32 top-[360px] sm:hidden" />
+      <Flurry className=" absolute -z-10 sm:-top-32 top-[820px] sm:hidden" />
+      <Flurry className=" absolute -z-10 sm:-top-32 sm:hidden" />
+
       <PiPlantFill className=" text-center rounded-full m-5 text-[60px] text-navy mx-auto sm:-mt-10 sm:mb-16 " />
+
       <div className="px-2 sm:w-3/4 mx-auto mt-6 rounded-md ">
         <motion.h1
           variants={fadeInAnimationVariant}
@@ -125,7 +134,7 @@ function About() {
               alt="Nurse Practioner at Spring Health and Wellness"
               className="w-full  mx-auto h-[400px] 2xl:h-[630px] object-cover rounded-md"
             ></img>
-            <div className=" bg-periwinkle text-offWhite text-center text-3xl py-4">
+            <div className=" bg-periwinkle text-navy text-center text-3xl py-4">
               <p>Algery Al-Hafi</p>
               <p>APRN-BC | Board Certfied Practioner</p>
             </div>
@@ -139,67 +148,68 @@ function About() {
             Trust Algery Al-Hafi to lead you towards your wellness aspirations.
           </p>
         </motion.div>
-
-        <motion.p
-          variants={fadeInAnimationVariant}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-          className="text-2xl sm:text-5xl uppercase font-bold mt-20 text-center sm:mb-14"
-        >
-          Our Services
-        </motion.p>
-        <motion.div
-          variants={fadeInAnimationVariant}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-          className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10"
-        >
-          <div className=" rounded-md shadow-xl h-[400px] text-center text-navy border">
-            <FaWeightScale className=" mx-auto text-6xl mt-5 " />
-            <p className="text-3xl my-3">Medical Weight Loss</p>
-            <p className=" text-center px-3 mb-5 text-xl">
-              We harness the power of medications like semaglutides and tirzepatide in our
-              personalized approach to help every client achieve their ideal weight.
-            </p>
-            <Link to="/services/medical-weight-loss">
-              <button className=" text-xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                Learn More
-              </button>
-            </Link>
-          </div>
-          <div className=" rounded-md shadow-xl h-[400px] text-center text-navy border">
-            <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
-            <p className="text-3xl my-3">Vitamin Injections</p>
-            <p className=" text-center px-3 mb-5 text-xl">
-              We utilize B12 injections to boost metabolism and incorporate Fat Burners to support
-              effective weight management, helping you achieve your health and wellness goals.
-            </p>
-            <Link to="/services/vitamin-injections">
-              <button className=" text-xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                Learn More
-              </button>
-            </Link>
-          </div>
-          <div className=" rounded-md shadow-xl h-[400px] text-center text-navy border">
-            <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
-            <p className="text-3xl my-3">Telehealth</p>
-            <p className=" text-center px-3 mb-5 text-xl">
-              we are proud to offer the convenience of telehealth services, allowing you to access
-              expert guidance and support from the comfort of your own home.
-            </p>
-            <Link to="/services/telehealth">
-              <button className=" text-xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                Learn More
-              </button>
-            </Link>
-          </div>
-        </motion.div>
+        <div className=" bg-[#F3E9DC] py-16 mt-10 px-5">
+          <motion.p
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className="text-2xl sm:text-6xl uppercase font-bold text-center sm:mb-14 text-navy"
+          >
+            Our Services
+          </motion.p>
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10"
+          >
+            <div className=" rounded-md shadow-xl h-[430px] text-center text-navy border bg-white">
+              <FaWeightScale className=" mx-auto text-6xl mt-5 " />
+              <p className="text-3xl my-3">Medical Weight Loss</p>
+              <p className=" text-center px-3 mb-5 text-xl">
+                We harness the power of medications like semaglutides and tirzepatide in our
+                personalized approach to help every client achieve their ideal weight.
+              </p>
+              <Link to="/services/medical-weight-loss">
+                <button className=" text-xl text-navy bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+            <div className=" rounded-md shadow-xl h-[430px] text-center text-navy border bg-white">
+              <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
+              <p className="text-3xl my-3">Vitamin Injections</p>
+              <p className=" text-center px-3 mb-5 text-xl">
+                We utilize B12 injections to boost metabolism and incorporate Fat Burners to support
+                effective weight management, helping you achieve your health and wellness goals.
+              </p>
+              <Link to="/services/vitamin-injections">
+                <button className=" text-xl text-navy bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+            <div className=" rounded-md shadow-xl h-[430px] text-center text-navy border bg-white">
+              <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
+              <p className="text-3xl my-3">Telehealth</p>
+              <p className=" text-center px-3 mb-5 text-xl">
+                we are proud to offer the convenience of telehealth services, allowing you to access
+                expert guidance and support from the comfort of your own home.
+              </p>
+              <Link to="/services/telehealth">
+                <button className=" text-xl text-navy bg-periwinkle px-4 py-3 rounded-md mt-2">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
 
         <motion.p
           variants={fadeInAnimationVariant}
@@ -236,7 +246,7 @@ function About() {
           <div className="flex items-center ">
             <a
               href="tel:727-548-6100p208"
-              className="flex items-center text-navy border border-navy p-3 rounded-md text-xl mb-6 sm:mb-0"
+              className="flex items-center text-navy border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0"
             >
               <BsTelephone className="mr-2" />
               (727) 548-6100 ext. 208

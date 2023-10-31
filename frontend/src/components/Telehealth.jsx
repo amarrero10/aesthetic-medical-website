@@ -55,11 +55,11 @@ function Telehealth() {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#615586", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #615586" }}
+          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
           iconStyle={{
-            background: "#3f4760",
-            color: "#fefefe",
+            background: "#89C400",
+            color: "#3F4760",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -81,11 +81,11 @@ function Telehealth() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#615586", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #615586" }}
+          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
           iconStyle={{
-            background: "#3f4760",
-            color: "#fefefe",
+            background: "#89C400",
+            color: "#3F4760",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -102,11 +102,11 @@ function Telehealth() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#615586", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #615586" }}
+          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
           iconStyle={{
-            background: "#3f4760",
-            color: "#fefefe",
+            background: "#89C400",
+            color: "#3F4760",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -124,11 +124,11 @@ function Telehealth() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#615586", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #615586" }}
+          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
           iconStyle={{
-            background: "#3f4760",
-            color: "#fefefe",
+            background: "#89C400",
+            color: "#3F4760",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -143,8 +143,6 @@ function Telehealth() {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
-
-      <Arrow className="absolute 2xl:w-[300px] sm:w-[300px] sm:top-[305px] 2xl:top-[280px] 2xl:right-[1830px] sm:right-[1290px] -z-10 invisible sm:visible" />
       <Form />
       <Footer />
     </div>
