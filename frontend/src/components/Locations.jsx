@@ -32,24 +32,26 @@ function Locations() {
       lng: -82.6284413736912,
       name: "Spring Hill Location",
       address: "5270 Applegate Dr, Spring Hill, FL 34606",
+      phone: "(727) 548-6100 ext. 208",
     },
     {
       lat: 28.208274068627233,
       lng: -82.67745381602516,
-      name: "Spring Hill Location",
-      address: "5270 Applegate Dr, Spring Hill, FL 34606",
+      name: "Trinity/New Port Richey Location",
+      address: "8139 FL-54, New Port Richey, FL 34655",
+      phone: "(727) 548-6100 ext. 208",
     },
     {
       lat: 27.821497726533536,
       lng: -82.72277368719645,
-      name: "Spring Hill Location",
-      address: "5270 Applegate Dr, Spring Hill, FL 34606",
+      name: "St. Petersburg Location",
+      address: "6333 54th Ave N, St. Petersburg, FL 33709",
+      phone: "(727) 548-6100 ext. 208",
     },
     {
       lat: 27.948626126461225,
       lng: -82.78777134671049,
-      name: "Spring Hill Location",
-      address: "5270 Applegate Dr, Spring Hill, FL 34606",
+      phone: "(727) 548-6100 ext. 208",
     },
   ];
 
@@ -96,7 +98,7 @@ function Locations() {
             className=" w-1/3 mx-auto my-4 pb-5"
           />
         </motion.div>
-        <div className=" flex sm:flex-row flex-col items-center justify-between  sm:w-2/3 mx-auto sm:mt-20 px-3 sm:px-0">
+        <div className=" flex sm:flex-row flex-col items-center justify-between  sm:w-full mx-auto sm:mt-20 px-3 sm:px-4">
           <div className=" text-navy h-full sm:w-1/2 mb-10 sm:mb-0 sm:mr-10 border border-navy py-24 sm:pl-9">
             <p className=" text-5xl font-semibold text-center sm:text-center mb-10">
               Start your journey to a better you today with Spring Health and Wellness!
@@ -145,8 +147,9 @@ function Locations() {
                       selectedMarker.lng === marker.lng && (
                         <InfoWindow position={{ lat: marker.lat, lng: marker.lng }}>
                           <div>
-                            <h3>{marker.name}</h3>
-                            <p>{marker.address}</p>
+                            <h3>{marker.name ? marker.name : ""}</h3>
+                            <p>{marker.address ? marker.address : ""}</p>
+                            <p>{marker.phone ? marker.phone : ""}</p>
                           </div>
                         </InfoWindow>
                       )}
@@ -158,8 +161,8 @@ function Locations() {
         </div>
         <p className=" text-center text-4xl w-2/3 mx-auto mt-20">
           Ready to embark on your path to a healthier, happier you? Simply complete the form below
-          and we will reach out to you to schedule a complimentary consultation with our team at
-          Spring Health and Wellness!
+          and we will reach out to you to schedule a consultation with our team at Spring Health and
+          Wellness!
         </p>
         <Form />
       </div>

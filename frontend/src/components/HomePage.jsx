@@ -60,7 +60,7 @@ function HomePage() {
                 </p>
               </div>
 
-              <p className=" text-center text-2xl sm:mb-4 sm:w-[700px] pb-5 sm:pb-0">
+              <p className=" text-center text-2xl sm:mb-4 sm:w-[700px] pb-5 sm:pb-0 2xl:ml-28 sm:ml-20">
                 Our expert providers are here to guide you in achieving your weight-loss goals. Take
                 your body to the next level and transform your life.
               </p>

@@ -178,7 +178,7 @@ function Services() {
                 viewport={{
                   once: true,
                 }}
-                className=" text-6xl font-semibold"
+                className=" text-6xl font-semibold text-center"
               >
                 Medical Weight Loss
               </motion.h2>

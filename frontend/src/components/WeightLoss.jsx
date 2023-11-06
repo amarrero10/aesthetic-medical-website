@@ -1,10 +1,9 @@
 "use client";
 import { Accordion } from "flowbite-react";
 import Footer from "./Footer";
-import { BsTelephone } from "react-icons/bs";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
-import running from "../assets/running.jpg";
+import weightloss from "../assets/weightloss.jpg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -83,7 +82,7 @@ function WeightLoss() {
           once: true,
         }}
         className=" object-cover h-[375px] sm:h-[650px] w-[1000px]  mx-auto shadow-2xl sm:px-0"
-        src={running}
+        src={weightloss}
         alt="couple running together"
       ></motion.img>
       <motion.div

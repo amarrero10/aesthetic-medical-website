@@ -50,8 +50,8 @@ function Contact() {
       <div className="sm:mt-14  mt-5 mb-20">
         <p className=" text-center font-bold text-5xl mb-5">Send Us A Message.</p>
         <h2 className=" font-bold text-2xl text-center">
-          Fill out the form below to schedule your free consultation and start your jounrey to a
-          better you!
+          Fill out the form below to schedule your consultation and start your journey to a better
+          you!
         </h2>
         <Form />
       </div>
