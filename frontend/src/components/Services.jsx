@@ -70,8 +70,8 @@ function Services() {
                 <p className=" mt-3 px-1">
                   Embark on your journey to a healthier, happier you with our expert weight loss
                   services. Our dedicated team is committed to helping you reach your weight loss
-                  goals and improve your overall well-being. At our clinic, we offer treatments that
-                  fit everyone and every budget.
+                  goals and improve your overall well-being. At our clinic, we cater to the
+                  individual.
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
@@ -82,7 +82,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request A Free Consultation
+                    Contact Us Today
                   </button>
                 </Link>
               </div>
@@ -111,7 +111,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request A Free Consultation
+                    Contact Us Today
                   </button>
                 </Link>
               </div>
@@ -141,7 +141,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request A Free Consultation
+                    Contact Us Today
                   </button>
                 </Link>
               </div>
@@ -201,8 +201,8 @@ function Services() {
                 >
                   Embark on your journey to a healthier, happier you with our expert weight loss
                   services. Our dedicated team is committed to helping you reach your weight loss
-                  goals and improve your overall well-being. At our clinic, we offer treatments that
-                  fit everyone and every budget.
+                  goals and improve your overall well-being. At our clinic, we cater to the
+                  individual.
                 </motion.p>
               </motion.div>
 
@@ -222,7 +222,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request A Free Consultation
+                    Contact Us Today
                   </button>
                 </Link>
               </motion.div>
@@ -326,7 +326,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request A Free Consultation
+                    Contact Us Today
                   </button>
                 </Link>
               </motion.div>
@@ -401,7 +401,7 @@ function Services() {
                 </Link>
                 <Link to="/contact-us">
                   <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
-                    Request A Free Consultation
+                    Contact Us Today
                   </button>
                 </Link>
               </motion.div>

@@ -5,9 +5,9 @@ import { Accordion } from "flowbite-react";
 import b12 from "../assets/b12.jpg";
 import fatBurner from "../assets/fat-burner.jpg";
 import yogaMan from "../assets/yoga-man.jpg";
-import runningMan from "../assets/man-running.jpg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
+import running from "../assets/running.jpg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -23,7 +23,7 @@ const fadeInAnimationVariant = {
 function Vitamins() {
   return (
     <>
-      <div className=" sm:mt-36 bg-[#fff3e4]">
+      <div className=" sm:mt-36 bg-[#fff3e4] pb-4">
         <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"
@@ -106,7 +106,7 @@ function Vitamins() {
                 once: true,
               }}
               className=" h-full w-full object-cover rounded-tl-md rounded-bl-md"
-              src={runningMan}
+              src={running}
               alt="Energetic and carefree woman."
             ></motion.img>
           </motion.div>
@@ -152,104 +152,6 @@ function Vitamins() {
           </motion.div>
         </motion.div>
 
-        <motion.h2
-          variants={fadeInAnimationVariant}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-          className=" text-center  text-4xl sm:text-5xl font-bold mb-3 sm:mt-0 mt-36"
-        >
-          Fat Burners
-        </motion.h2>
-        <motion.p
-          variants={fadeInAnimationVariant}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-          className=" text-xl sm:text-2xl text-center sm:w-1/2 px-3 sm:px-0 mx-auto pb-10 "
-        >
-          If you're looking to expedite your weight loss journey, consider our range of highly
-          effective fat burners. We can provide you with the perfect combination of nutrients and
-          compounds to support your fitness goals. Achieve your health and wellness aspirations with
-          our comprehensive vitamin and fat burner solutions.
-        </motion.p>
-        <motion.div
-          variants={fadeInAnimationVariant}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-          className=" flex sm:flex-row flex-col px-3 sm:px-0 min-[2000px]:w-1/2 sm:w-2/3 mx-auto shadow-2xl mb-10 sm:h-[380px] rounded-md"
-        >
-          <motion.div
-            variants={fadeInAnimationVariant}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            className=" sm:w-1/2 bg-white"
-          >
-            <motion.img
-              variants={fadeInAnimationVariant}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              className=" h-full w-full object-cover rounded-tl-md rounded-bl-md"
-              src={fatBurner}
-              alt="Energetic and carefree woman."
-            ></motion.img>
-          </motion.div>
-          <motion.div
-            variants={fadeInAnimationVariant}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            className="  flex flex-col justify-between py-5  sm:w-1/2 px-3 text-navy bg-white "
-          >
-            <motion.p
-              variants={fadeInAnimationVariant}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              className=" text-center sm:text-xl text-xl sm:mt-8"
-            >
-              At Spring Health and Wellness, we provide specialized fat-burning injections designed
-              to support your weight loss journey. Our injections contain a unique blend of
-              lipotropic compounds, vitamins, minerals, and amino acids. These powerful ingredients
-              work together to boost your metabolism, enhance the breakdown of fat in the liver, and
-              aid in the removal of stored fat from your body. Our fat-burning injections can be a
-              valuable addition to your weight management plan, helping you achieve your goals for a
-              healthier, more vibrant you.
-            </motion.p>
-            <motion.div
-              variants={fadeInAnimationVariant}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              className="flex items-center justify-center"
-            >
-              <Link to="/contact-us">
-                <button className=" text-xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2 ">
-                  Request Appointment
-                </button>
-              </Link>
-            </motion.div>
-          </motion.div>
-        </motion.div>
         <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"
@@ -353,7 +255,7 @@ function Vitamins() {
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
-            <Accordion.Panel>
+            {/* <Accordion.Panel>
               <Accordion.Title>How Do Fat Burning Injections Work?</Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
@@ -395,7 +297,7 @@ function Vitamins() {
                   </li>
                 </ul>
               </Accordion.Content>
-            </Accordion.Panel>
+            </Accordion.Panel> */}
             {/* <Accordion.Panel>
               <Accordion.Title>How is Semaglutide administered?</Accordion.Title>
               <Accordion.Content>
@@ -478,7 +380,7 @@ function Vitamins() {
           >
             <a
               href="tel:727-548-6100p208"
-              className="flex items-center text-navy text-xl mb-6 sm:mb-0"
+              className="flex items-center text-navy text-xl mb-6 sm:mb-0  border border-navy  p-3"
             >
               <BsTelephone className="mr-2" />
               (727) 548-6100 ext. 208
@@ -491,8 +393,9 @@ function Vitamins() {
           </Link>
         </motion.div>
       </div>
-      ;
-      <Footer />
+      <div className=" -mt-4">
+        <Footer />
+      </div>
     </>
   );
 }

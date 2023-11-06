@@ -103,11 +103,13 @@ function Locations() {
             </p>
             <PiPlantFill className=" text-6xl mx-auto mb-10" />
             <p className=" text-4xl mb-4 text-center sm:text-left ">
-              Discover our convenient locations to help you achieve your health and wellness goals:
+              *Discover our convenient locations to help you achieve your health and wellness goals:
             </p>
             <ul>
+              <li className=" list-disc ml-20 text-3xl italic">Tampa Bay</li>
               <li className=" list-disc ml-20 text-3xl italic">Spring Hill</li>
               <li className=" list-disc ml-20 text-3xl italic">New Port Richey</li>
+              <li className=" list-disc ml-20 text-3xl italic">Trinity</li>
               <li className=" list-disc ml-20 text-3xl italic">Clearwater</li>
               <li className=" list-disc ml-20 text-3xl italic">St. Petersburg</li>
             </ul>
@@ -125,6 +127,7 @@ function Locations() {
                 </button>
               </Link>
             </div>
+            <p className=" text-xl">*Telehealth services available for all locations.</p>
           </div>
 
           <div className="app">

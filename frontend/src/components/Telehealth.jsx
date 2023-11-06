@@ -4,8 +4,8 @@ import Form from "./Form";
 import Footer from "./Footer";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { ReactComponent as Arrow } from "../assets/arrow.svg";
-import { FaAirbnb } from "react-icons/fa6";
+import { ReactComponent as Leaves } from "../assets/leaves.svg";
+import portrait from "../assets/algery-red5.jpg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -20,7 +20,8 @@ const fadeInAnimationVariant = {
 
 function Telehealth() {
   return (
-    <div className="sm:mt-36 bg-[#faf8f3]">
+    <div className="sm:mt-36 relative">
+      <Leaves className="absolute top-24 -z-10 h-[1890px] left-[190px] hidden sm:block" />
       <motion.div
         variants={fadeInAnimationVariant}
         initial="initial"
@@ -28,7 +29,7 @@ function Telehealth() {
         viewport={{
           once: true,
         }}
-        className=" bg-[#015657] text-offWhite text-center text-[70px] "
+        className=" bg-[#015657] text-offWhite text-center text-[70px]"
       >
         <motion.h2
           variants={fadeInAnimationVariant}
@@ -52,98 +53,112 @@ function Telehealth() {
         />
       </motion.div>
 
-      <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
-          iconStyle={{
-            background: "#89C400",
-            color: "#3F4760",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: `"Poppins", sans-serif`,
-            fontSize: "40px",
-          }}
-          icon={"1"}
-        >
-          <h3 className="vertical-timeline-element-title text-3xl">Make An Appointment</h3>
-          <p className="vertical-timeline-element-subtitle">
-            Call us at{" "}
-            <a href="tel:727-548-6100p208" className=" underline">
-              {" "}
-              (727) 548-6100 ext. 208
-            </a>{" "}
-            and ask for a virtual telehealth appointment, and one will be scheduled for you. Or fill
-            out the form below and we will reach out to you within 24 hours.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
-          iconStyle={{
-            background: "#89C400",
-            color: "#3F4760",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: `"Poppins", sans-serif`,
-            fontSize: "40px",
-          }}
-          icon={"2"}
-        >
-          <h3 className="vertical-timeline-element-title text-3xl">Meet The Team</h3>
-          <p className="vertical-timeline-element-subtitle">
-            Join us for a virtual appointment with our experienced team. Together, we'll craft a
-            personalized treatment plan to help you achieve your weight loss goals.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
-          iconStyle={{
-            background: "#89C400",
-            color: "#3F4760",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: `"Poppins", sans-serif`,
-            fontSize: "40px",
-          }}
-          icon={"3"}
-        >
-          <h3 className="vertical-timeline-element-title text-3xl">Get Your Medication</h3>
+      <div className=" flex flex-col sm:flex-row items-center justify-center">
+        <div className=" sm:w-2/3 sm:ml-36">
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              iconStyle={{
+                background: "#015657",
+                color: "#fefefe",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontFamily: `"Poppins", sans-serif`,
+                fontSize: "40px",
+              }}
+              icon={"1"}
+            >
+              <h3 className="vertical-timeline-element-title text-3xl">Make An Appointment</h3>
+              <p className="vertical-timeline-element-subtitle">
+                Call us at{" "}
+                <a href="tel:727-548-6100p208" className=" underline">
+                  {" "}
+                  (727) 548-6100 ext. 208
+                </a>{" "}
+                and ask for a virtual telehealth appointment, and one will be scheduled for you. Or
+                fill out the form below and we will reach out to you within 24 hours.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              iconStyle={{
+                background: "#015657",
+                color: "#fefefe",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontFamily: `"Poppins", sans-serif`,
+                fontSize: "40px",
+              }}
+              icon={"2"}
+            >
+              <h3 className="vertical-timeline-element-title text-3xl">Meet The Team</h3>
+              <p className="vertical-timeline-element-subtitle">
+                Join us for a virtual appointment with our experienced team. Together, we'll craft a
+                personalized treatment plan to help you achieve your weight loss goals.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              iconStyle={{
+                background: "#015657",
+                color: "#fefefe",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontFamily: `"Poppins", sans-serif`,
+                fontSize: "40px",
+              }}
+              icon={"3"}
+            >
+              <h3 className="vertical-timeline-element-title text-3xl">Get Your Medication</h3>
 
-          <p className="vertical-timeline-element-subtitle">
-            For your convenience, your newly prescribed medication will be delivered straight to
-            your door.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-          contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
-          iconStyle={{
-            background: "#89C400",
-            color: "#3F4760",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: `"Poppins", sans-serif`,
-            fontSize: "40px",
-          }}
-          icon={"4"}
-        >
-          <h3 className="vertical-timeline-element-title text-3xl">Progress Check In</h3>
-          <p className="vertical-timeline-element-subtitle">
-            Check in with us and adjust your plan as needed.
-          </p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
+              <p className="vertical-timeline-element-subtitle">
+                For your convenience, your newly prescribed medication will be delivered straight to
+                your door.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
+              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              iconStyle={{
+                background: "#015657",
+                color: "#fefefe",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontFamily: `"Poppins", sans-serif`,
+                fontSize: "40px",
+              }}
+              icon={"4"}
+            >
+              <h3 className="vertical-timeline-element-title text-3xl">Progress Check In</h3>
+              <p className="vertical-timeline-element-subtitle">
+                Check in with us and adjust your plan as needed.
+              </p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
+        <div className=" sm:w-2/3 ">
+          <div className=" w-full">
+            <img
+              src={portrait}
+              alt=""
+              className="sm:w-1/2  mx-auto h-[400px] 2xl:h-[630px] object-cover img "
+            ></img>
+          </div>
+        </div>
+      </div>
       <Form />
+
       <Footer />
     </div>
   );

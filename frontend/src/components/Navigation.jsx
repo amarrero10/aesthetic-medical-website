@@ -49,15 +49,12 @@ function Navigation() {
         <Link to="/" className="" onClick={closeMenu}>
           <img className=" h-14 pl-2" src={logo} alt="logo for Spring Health and Wellness"></img>
         </Link>
-        <div className=" flex items-center">
-          <Link to="/contact-us" className=" h-10">
-            <button
-              className="mr-4 h-full bg-periwinkle text-offWhite px-3 rounded-md"
-              onClick={closeMenu}
-            >
+        <div className=" flex items-center h-10">
+          <a href="tel:727-548-6100p208">
+            <button className="mr-4   bg-periwinkle text-offWhite px-6 py-4 rounded-md text-lg font-extrabold">
               Get in touch
             </button>
-          </Link>
+          </a>
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
@@ -191,16 +188,19 @@ function Navigation() {
           <Link to="/locations" onClick={handleScrollToTop}>
             <p className="hover:underline">Locations</p>
           </Link>
+          <Link to="/contact-us" onClick={handleScrollToTop}>
+            <p className="hover:underline">Contact Us</p>
+          </Link>
           {/* <Link to="/pricing" onClick={handleScrollToTop}>
             <p className="hover:underline">Pricing</p>
           </Link> */}
         </div>
         <div>
-          <Link to="/contact-us" className=" h-10" onClick={handleScrollToTop}>
+          <a href="tel:727-548-6100p208">
             <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md text-lg font-extrabold">
-              Schedule Your Free Consultation
+              Limited time promotion now!
             </button>
-          </Link>
+          </a>
         </div>
       </div>
 

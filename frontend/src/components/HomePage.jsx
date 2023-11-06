@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import portrait from "../assets/algery-red3.jpg";
+import portrait from "../assets/algery-green5.jpg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
 import { FaWeightScale } from "react-icons/fa6";
@@ -55,20 +55,14 @@ function HomePage() {
               className=" h-[300px]  mb-10 grid sm:mr-2 mt-5 2xl:ml-44"
             >
               <div className=" flex justify-center">
-                <p className=" text-2xl font-bold sm:text-6xl">Embark on a journey of </p>
+                <p className=" text-2xl font-extrabold sm:text-4xl text-center text-periwinkle">
+                  SPRING INTO YOUR WEIGHT-LOSS JOURNEY TODAY!
+                </p>
               </div>
-              <div className=" text-2xl font-bold pl-1 sm:text-6xl text-periwinkle text-center sm:my-4 pb-5 sm:pb-0">
-                <Typewriter
-                  options={{
-                    strings: [" Wellness!", " Transformation!", " Confidence!"],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </div>
+
               <p className=" text-center text-2xl sm:mb-4 sm:w-[700px] pb-5 sm:pb-0">
-                We prioritize your unique health and wellness goals to enhance your qualilty of
-                life. Experience a transformative approach to weight loss and well-being today!
+                Our expert providers are here to guide you in achieving your weight-loss goals. Take
+                your body to the next level and transform your life.
               </p>
               <p className=" text-darkpurple font-semibold text-center text-3xl sm:mb-24">
                 This is Spring Health and Wellness
@@ -79,6 +73,15 @@ function HomePage() {
                     Request Appointment
                   </button>
                 </Link>
+              </div>
+              <div className="flex items-center mx-auto ">
+                <a
+                  href="tel:727-548-6100p208"
+                  className="flex items-center text-navy border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0"
+                >
+                  <BsTelephone className="mr-2" />
+                  (727) 548-6100 ext. 208
+                </a>
               </div>
             </motion.div>
             <motion.div
@@ -149,14 +152,14 @@ function HomePage() {
                 viewport={{
                   once: true,
                 }}
-                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-navy"
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center "
               >
                 <FaWeightScale className=" mx-auto text-6xl mt-5 " />
                 <p className="text-3xl my-3">Medical Weight Loss</p>
                 <p className=" text-center text-xl px-3 mb-5">
-                  We harness the power of medications like Semaglutides, Tirzepatide, and
-                  Phentermine in our personalized approach to help every client achieve their ideal
-                  weight.
+                  We harness the power of weight-loss medications like Semaglutide and Tirzepatide
+                  in our personalized approach to help every client achieve their ideal weight and
+                  health goals.
                 </p>
                 <Link to="/services/medical-weight-loss">
                   <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
@@ -171,14 +174,14 @@ function HomePage() {
                 viewport={{
                   once: true,
                 }}
-                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-navy"
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center "
               >
                 <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
                 <p className="text-3xl my-3">Vitamin Injections</p>
                 <p className=" text-center px-3 mb-5 text-xl">
-                  We utilize B12 injections to boost metabolism and incorporate Fat Burners to
-                  support effective weight management, helping you achieve your health and wellness
-                  goals.
+                  We utilize B12 injections in combination with other powerful agents to boost
+                  metabolism to support effective weight management, helping you achieve your health
+                  and wellness goals.
                 </p>
                 <Link to="/services/vitamin-injections">
                   <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
@@ -193,13 +196,13 @@ function HomePage() {
                 viewport={{
                   once: true,
                 }}
-                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center text-navy"
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center"
               >
                 <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
                 <p className="text-3xl my-3">Telehealth</p>
                 <p className=" text-center px-3 mb-5 text-xl">
                   We are proud to offer the convenience of telehealth services, allowing you to
-                  access expert guidance and support for your healthcare needs from anywhere.
+                  access expert guidance and support for your weight-loss needs from anywhere.
                 </p>
                 <Link to="/services/telehealth">
                   <button className=" text-xl bg-periwinkle border-navy border px-4 py-3 rounded-md mt-8">

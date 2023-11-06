@@ -4,9 +4,7 @@ import Footer from "./Footer";
 import { BsTelephone } from "react-icons/bs";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { motion } from "framer-motion";
-import semag from "../assets/semag.jpg";
-import buc from "../assets/buc.jpg";
-import molecules from "../assets/molecules.jpg";
+import running from "../assets/running.jpg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -85,8 +83,8 @@ function WeightLoss() {
           once: true,
         }}
         className=" object-cover h-[375px] sm:h-[650px] w-[1000px]  mx-auto shadow-2xl sm:px-0"
-        src={buc}
-        alt="Woman Measuring Waistline With a Pink Tape Measure"
+        src={running}
+        alt="couple running together"
       ></motion.img>
       <motion.div
         variants={fadeInAnimationVariant}
@@ -95,7 +93,7 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
-        className=" grid sm:gap-14 gap-32 sm:grid-cols-3 sm:w-3/4 2xl:w-2/3 px-3 sm:px-0 sm:mx-auto my-20"
+        className=" grid sm:gap-14 gap-32 sm:grid-cols-2 sm:w-3/4 2xl:w-2/3 px-3 sm:px-0 sm:mx-auto my-20"
       >
         <motion.div
           variants={fadeInAnimationVariant}
@@ -125,7 +123,7 @@ function WeightLoss() {
             </p>
             <Link to="/contact-us">
               <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md -mb-">
-                Request A Free Consultation
+                Contact Us!
               </button>
             </Link>
           </motion.div>
@@ -159,40 +157,7 @@ function WeightLoss() {
             </p>
             <Link to="/contact-us">
               <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md ">
-                Request A Free Consultation
-              </button>
-            </Link>
-          </motion.div>
-        </motion.div>
-        <motion.div
-          variants={fadeInAnimationVariant}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-          className=" flex shadow-xl sm:mt-0 items-center justify-center px-3 sm:px-0"
-        >
-          <motion.div
-            variants={fadeInAnimationVariant}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            className=" h-full text-center py-5 bg-white"
-          >
-            <h2 className=" text-5xl font-semibold">Phentermine</h2>
-            <p className=" text-2xl py-8 px-3 italic">
-              As a component of our holistic strategy to assist you in reaching your healthy weight
-              loss objectives, we provide various medically recognized interventions. One of these
-              interventions is the use of Phentermine, taken as a pill, which works by effectively
-              curbing your appetite, promoting a sense of fullness, and aiding in the reduction of
-              your body fat percentage.
-            </p>
-            <Link to="/contact-us">
-              <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md ">
-                Request A Free Consultation
+                Contact Us!
               </button>
             </Link>
           </motion.div>
@@ -423,7 +388,7 @@ function WeightLoss() {
               </p>
             </Accordion.Content>
           </Accordion.Panel>
-          <Accordion.Panel>
+          {/* <Accordion.Panel>
             <Accordion.Title>What is Phentermine?</Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl">
@@ -464,7 +429,7 @@ function WeightLoss() {
                 important to know that the medication should be used in addition to a healthy diet
               </p>
             </Accordion.Content>
-          </Accordion.Panel>
+          </Accordion.Panel> */}
         </Accordion>
       </motion.div>
 

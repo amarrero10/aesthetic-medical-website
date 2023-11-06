@@ -24,7 +24,7 @@ function Contact() {
         viewport={{
           once: true,
         }}
-        className=" sm:mt-20 bg-navy text-offWhite text-center text-4xl sm:text-[70px] "
+        className=" sm:mt-36 bg-navy text-offWhite text-center text-4xl sm:text-[70px] "
       >
         <motion.h1
           variants={fadeInAnimationVariant}
@@ -47,7 +47,7 @@ function Contact() {
           className=" w-1/3 mx-auto my-4 pb-5"
         />
       </motion.div>
-      <div className="sm:mt-14  mt-5">
+      <div className="sm:mt-14  mt-5 mb-20">
         <p className=" text-center font-bold text-5xl mb-5">Send Us A Message.</p>
         <h2 className=" font-bold text-2xl text-center">
           Fill out the form below to schedule your free consultation and start your jounrey to a
@@ -55,7 +55,7 @@ function Contact() {
         </h2>
         <Form />
       </div>
-      <div className="sm:absolute sm:bottom-0 sm:w-full">
+      <div className=" sm:w-full mt-10">
         <Footer />
       </div>
     </div>
