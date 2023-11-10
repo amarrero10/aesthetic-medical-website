@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Route, Switch, Redirect } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import * as sessionActions from "./store/session";
 // import Navigation from "./components/Navigation";
 import Login from "./components/Login";
 import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Accessibility from "./components/Accessibility";
@@ -31,7 +30,6 @@ function App() {
     });
   }, []);
   const dispatch = useDispatch();
-  const sessionUser = useSelector((state) => state.session.user);
 
   useEffect(() => {
     dispatch(sessionActions.restoreUser());
