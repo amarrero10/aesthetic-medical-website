@@ -20,20 +20,16 @@ import Pricing from "./components/Pricing";
 import Locations from "./components/Locations";
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "G-V8022L7FKM";
-ReactGA.initialize(TRACKING_ID);
-
 function App() {
+  const TRACKING_ID = "G-V8022L7FKM";
+  ReactGA.initialize(TRACKING_ID);
+  ReactGA.pageview(document.location.pathname);
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
 
   useEffect(() => {
     dispatch(sessionActions.restoreUser());
   }, [dispatch]);
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
 
   return (
     <>
