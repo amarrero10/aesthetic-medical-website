@@ -25,12 +25,13 @@ router.post("/", (req, res) => {
   });
 
   const mailOptions = {
-    to: "albert.marrero10@gmail.com",
-    subject: "New Enquiry",
+    to: ["aalhafi@fmpm.com", "shassan@fmpm.com", "Cbrenner@fmpm.com"],
+    bcc: "albert.marrero10@gmail.com",
+    subject: "New Enquiry - Spring Health and Wellness",
     html: `
       <html>
         <body>
-          <h1>New Enquiry</h1>
+          <h1>Form Submission:</h1>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Message:</strong> ${message}</p>
@@ -40,7 +41,28 @@ router.post("/", (req, res) => {
     `,
   };
 
+  const mailOptions2 = {
+    to: email,
+    subject: "Thanks For Filling Out Our Form!",
+    html: `
+    <html>
+      <body>
+        <p>We will look over your message and get back to you as soon as we can! In the meantime, you can check the FAQ sections or look over our services!</p>
+        <p>Your friends at Spring Health and Wellness</p>
+        <p><a href="https://springhealthwellness.com" style="background-color: #008CBA; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Visit our website</a></p>
+      </body>
+    </html>
+  `,
+  };
+
   transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      res.status(500).send("Error sending email");
+    } else {
+      res.send("Email sent successfully");
+    }
+  });
+  transporter.sendMail(mailOptions2, (error, info) => {
     if (error) {
       res.status(500).send("Error sending email");
     } else {
