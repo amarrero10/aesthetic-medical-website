@@ -8,6 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { restoreCSRF, csrfFetch } from "./store/csrf";
 import * as sessionActions from "./store/session";
+import ReactGA from "react-ga4";
+import reportWebVitals from "./reportWebVitals";
 
 import configureStore from "./store";
 
@@ -31,9 +33,19 @@ function Root() {
   );
 }
 
+ReactGA.initialize("G-V8022L7FKM");
 ReactDOM.render(
   <React.StrictMode>
     <Root />
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+const SendAnalytics = () => {
+  ReactGA.send({
+    hitType: "pageview",
+    page: window.location.pathname,
+  });
+};
+
+reportWebVitals(SendAnalytics);
