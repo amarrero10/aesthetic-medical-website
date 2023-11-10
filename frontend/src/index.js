@@ -8,7 +8,6 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { restoreCSRF, csrfFetch } from "./store/csrf";
 import * as sessionActions from "./store/session";
-import ReactGA from "react-ga";
 
 import configureStore from "./store";
 
@@ -21,14 +20,6 @@ if (process.env.NODE_ENV !== "production") {
   window.store = store;
   window.sessionActions = sessionActions;
 }
-
-const TRACKING_ID = "G-V8022L7FKM";
-ReactGA.initialize(TRACKING_ID);
-
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
-});
 
 function Root() {
   return (
