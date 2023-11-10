@@ -7,7 +7,6 @@ const helmet = require("helmet");
 const cookieParser = require("cookie-parser");
 const routes = require("./routes");
 const { ValidationError } = require("sequelize");
-import ReactGA from "react-ga";
 
 const { environment } = require("./config");
 const isProduction = environment === "production";
@@ -76,8 +75,5 @@ app.use((err, _req, res, _next) => {
     stack: isProduction ? null : err.stack,
   });
 });
-
-const TRACKING_ID = "G-V8022L7FKM";
-ReactGA.initialize(TRACKING_ID);
 
 module.exports = app;

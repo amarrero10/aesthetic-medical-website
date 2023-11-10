@@ -18,6 +18,10 @@ import WeightLoss from "./components/WeightLoss";
 import Telehealth from "./components/Telehealth";
 import Pricing from "./components/Pricing";
 import Locations from "./components/Locations";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-V8022L7FKM";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +30,10 @@ function App() {
   useEffect(() => {
     dispatch(sessionActions.restoreUser());
   }, [dispatch]);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <>
