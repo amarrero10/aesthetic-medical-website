@@ -39,7 +39,7 @@ function About() {
             }}
             className="  font-extrabold text-6xl mb-3 text-center sm:text-left"
           >
-            ABOUT US<span className="text-periwinkle font-extrabold text-6xl">.</span>
+            ABOUT US
           </motion.h1>
           <motion.p
             className="mb-3 sm:text-justify tracking-widest sm:text-2xl text-lg text-center"

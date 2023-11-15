@@ -122,9 +122,9 @@ function HomePage() {
               className=" text-center sm:text-2xl sm:w-[550px] px-3 text-offWhite mt-9 text-xl"
             >
               At Spring Health and Wellness, we are your partners in the pursuit of health and
-              beauty. Meet our dedicated Nurse Practitioner, Algery Al-Hafi, and learn more about
-              our mission to empower your journey towards total body health and wellness with
-              medical weight-loss management.
+              beauty. Meet our dedicated Nurse Practitioner Algery Al-Hafi and learn more about our
+              mission to empower your journey towards total body health and wellness with medical
+              weight-loss management.
             </motion.p>
             <Link to="/about">
               <button className=" text-xl text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">

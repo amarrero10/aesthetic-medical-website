@@ -5,7 +5,7 @@ const router = express.Router();
 router.post("/", (req, res) => {
   const { name, email, message, phone } = req.body;
 
-  // // Create a transporter using your custom domain SMTP settings
+  // Create a transporter using your custom domain SMTP settings
   // let transporter = nodemailer.createTransport({
   //   host: "your-custom-domain-smtp-server.com",
   //   port: 587, // or the port provided by your email hosting service
@@ -43,13 +43,16 @@ router.post("/", (req, res) => {
 
   const mailOptions2 = {
     to: email,
-    subject: "Thanks For Filling Out Our Form!",
+    subject: "Your Friends At Spring Health and Wellness",
     html: `
     <html>
       <body>
-        <p>We will look over your message and get back to you as soon as we can! In the meantime, you can check the FAQ sections or look over our services!</p>
+        <p>Thank you for reaching out to us. We are looking forward to helping you in your weight loss goals. A member of our team will be in touch to answer your questions and help schedule a consultation. In the meantime, you may refer to our website to explore our services.</p>
         <p>Your friends at Spring Health and Wellness</p>
+        <p>Telephone: (727) 548-6100 ext. 208 </p>
+        <p>Fax Number: (352) 340-5991 </p>
         <p><a href="https://springhealthwellness.com" style="background-color: #008CBA; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Visit our website</a></p>
+
       </body>
     </html>
   `,
