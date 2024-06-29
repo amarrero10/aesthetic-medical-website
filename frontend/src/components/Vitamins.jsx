@@ -128,10 +128,10 @@ function Vitamins() {
               }}
               className=" text-center text-xl mt-10"
             >
-              Spring Health and Wellness offers vitamin B12 injections because they provide numerous
-              benefits, including boosting energy levels, enhancing brain function, promoting weight
-              loss, and more. Vitamin B12 injections also play a critical role in brain function,
-              DNA production, and red blood cell formation. They can be particularly beneficial for
+              Aura Wellness offers vitamin B12 injections because they provide numerous benefits,
+              including boosting energy levels, enhancing brain function, promoting weight loss, and
+              more. Vitamin B12 injections also play a critical role in brain function, DNA
+              production, and red blood cell formation. They can be particularly beneficial for
               individuals following vegan or vegetarian diets that may be deficient in vitamin B12.
             </motion.p>
             <motion.div
@@ -383,7 +383,7 @@ function Vitamins() {
               className="flex items-center text-navy text-xl mb-6 sm:mb-0  border border-navy  p-3"
             >
               <BsTelephone className="mr-2" />
-              (727) 548-6100 ext. 208
+              727-484 -6999 ext. 101
             </a>
           </motion.div>
           <Link to="/contact-us">

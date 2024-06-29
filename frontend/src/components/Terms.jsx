@@ -144,15 +144,15 @@ function Terms() {
         NOT APPLY TO YOU. IF YOU ARE DISSATISFIED WITH ANY PORTION OF THIS PRACTICE WEB SITE, OR
         WITH ANY OF THESE TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THIS
         PRACTICE WEB SITE. COPYRIGHT AND TRADEMARK NOTICES: All contents of this website are
-        COPYRIGHT &copy; {new Date().getFullYear()} Spring Health and Wellness. All Rights Reserved.
-        All logos are trademarks and service marks of Spring Health and Wellness. All other
-        trademarks, service marks and logos used in this website are the property of their
-        respective owners. TRADEMARKS The names of actual companies and products mentioned herein
-        may be the trademarks of their respective owners. The example companies, organizations,
-        products, people and events depicted herein are fictitious. No association with any real
-        company, organization, product, person, or event is intended or should be inferred. Any
-        rights not expressly granted herein are reserved. NOTICES Please contact us by phone at
-        727-234-8543 or by mail at 6333 54th Ave North, St. Petersburg, FL 33709.
+        COPYRIGHT &copy; {new Date().getFullYear()} Aura Wellness. All Rights Reserved. All logos
+        are trademarks and service marks of Aura Wellness. All other trademarks, service marks and
+        logos used in this website are the property of their respective owners. TRADEMARKS The names
+        of actual companies and products mentioned herein may be the trademarks of their respective
+        owners. The example companies, organizations, products, people and events depicted herein
+        are fictitious. No association with any real company, organization, product, person, or
+        event is intended or should be inferred. Any rights not expressly granted herein are
+        reserved. NOTICES Please contact us by phone at 727-234-8543 or by mail at 6333 54th Ave
+        North, St. Petersburg, FL 33709.
       </p>
 
       <Footer />

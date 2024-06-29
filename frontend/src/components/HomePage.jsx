@@ -27,7 +27,7 @@ function HomePage() {
   return (
     <>
       <motion.div
-        className="hidden sm:block bg-[#015657] fixed top-[146px] left-0 right-0 h-2 origin-[0%]"
+        className="hidden sm:block bg-[#D2B86C] fixed top-[146px] sm:top-[130px] left-0 right-0 h-2 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
       <div className="sm:mt-36 max-w-[2000px] mx-auto">
@@ -55,17 +55,17 @@ function HomePage() {
               className=" h-[300px]  mb-10 grid sm:mr-2 mt-5 2xl:ml-44"
             >
               <div className=" flex justify-center">
-                <p className=" text-2xl font-extrabold sm:text-4xl text-center text-periwinkle">
-                  SPRING INTO YOUR WEIGHT-LOSS JOURNEY TODAY!
+                <p className=" text-2xl font-extrabold sm:text-4xl text-center text-periwinkle uppercase">
+                  Start on Your Wellness Journey with Aura today!
                 </p>
               </div>
 
-              <p className=" text-center text-2xl sm:mb-4 sm:w-[700px] pb-5 sm:pb-0 2xl:ml-28 sm:ml-20">
+              <p className=" text-center text-2xl sm:mb-4 sm:w-[700px] pb-5 sm:pb-0 2xl:ml-28 sm:ml-20 text-darkpurple">
                 Our expert providers are here to guide you in achieving your weight-loss goals. Take
                 your body to the next level and transform your life.
               </p>
               <p className=" text-darkpurple font-semibold text-center text-3xl sm:mb-24">
-                This is Spring Health and Wellness
+                This is Aura Wellness
               </p>
               <div className=" flex justify-center sm:-mt-[80px] mt-5">
                 <Link to="/contact-us" className="  mx-auto ">
@@ -80,7 +80,7 @@ function HomePage() {
                   className="flex items-center text-navy border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0"
                 >
                   <BsTelephone className="mr-2" />
-                  (727) 548-6100 ext. 208
+                  727-484 -6999 ext. 101
                 </a>
               </div>
             </motion.div>
@@ -108,7 +108,7 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center sm:text-6xl text-4xl font-bold text-offWhite pb-2 tracking-wider mt-9"
+              className=" text-center sm:text-6xl text-4xl font-bold text-[#5C7463] pb-2 tracking-wider mt-9"
             >
               About Us
             </motion.p>
@@ -119,12 +119,12 @@ function HomePage() {
               viewport={{
                 once: true,
               }}
-              className=" text-center sm:text-2xl sm:w-[550px] px-3 text-offWhite mt-9 text-xl"
+              className=" text-center sm:text-2xl sm:w-[550px] px-3 text-[#5C7463] mt-9 text-xl"
             >
-              At Spring Health and Wellness, we are your partners in the pursuit of health and
-              beauty. Meet our dedicated Nurse Practitioner Algery Al-Hafi and learn more about our
-              mission to empower your journey towards total body health and wellness with medical
-              weight-loss management.
+              At Aura Wellness, we are your partners in the pursuit of health and beauty. Meet our
+              dedicated Nurse Practitioner Algery Al-Hafi and learn more about our mission to
+              empower your journey towards total body health and wellness with medical weight-loss
+              management.
             </motion.p>
             <Link to="/about">
               <button className=" text-xl text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
@@ -132,7 +132,7 @@ function HomePage() {
               </button>
             </Link>
           </div>
-          <div className=" bg-[#fff] sm:h-[600px] -mt-10">
+          <div className=" bg-darkpurple sm:h-[600px] text-[#5C7463] -mt-10">
             <motion.h2
               variants={fadeInAnimationVariant}
               initial="initial"
@@ -144,7 +144,7 @@ function HomePage() {
             >
               Services
             </motion.h2>
-            <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10 px-2">
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10 px-2 ">
               <motion.div
                 variants={fadeInAnimationVariant}
                 initial="initial"
@@ -242,10 +242,10 @@ function HomePage() {
               once: true,
             }}
             href="tel:727-548-6100p208"
-            className="flex  items-center justify-center mx-auto text-navy text-xl mb-6 sm:mb-3 border border-navy p-3 w-fit"
+            className="flex  items-center justify-center mx-auto text-[#F0E9B0] text-xl mb-6 sm:mb-3 border border-[#F0E9B0] p-3 w-fit"
           >
             <BsTelephone className="mr-2" />
-            (727) 548-6100 ext. 208
+            727-484 -6999 ext. 101
           </motion.a>
           <motion.p
             variants={fadeInAnimationVariant}
@@ -254,7 +254,7 @@ function HomePage() {
             viewport={{
               once: true,
             }}
-            className="sm:text-center px-2 text-xl sm:text-2xl sm:w-[700px] mx-auto text-justify"
+            className="sm:text-center px-2 text-xl sm:text-2xl sm:w-[700px] mx-auto text-justify text-[#F0E9B0]"
           >
             Ready to start your journey to a healthier you? Reach out to us today! We're here to
             help you achieve your weight loss goals. Contact us now and take the first step towards

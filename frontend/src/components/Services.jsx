@@ -127,10 +127,9 @@ function Services() {
               <div className=" text-center">
                 <h2 className=" text-3xl font-semibold mt-4">Telehealth</h2>
                 <p className=" mt-3 px-1">
-                  At Spring Health and Wellness, we understand that your health and well-being are a
-                  top priority. That's why we offer telehealth services, providing you with a
-                  convenient and secure way to access healthcare from the comfort of your home or
-                  office.
+                  At Aura Wellness, we understand that your health and well-being are a top
+                  priority. That's why we offer telehealth services, providing you with a convenient
+                  and secure way to access healthcare from the comfort of your home or office.
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
@@ -378,10 +377,9 @@ function Services() {
                     once: true,
                   }}
                 >
-                  At Spring Health and Wellness, we understand that your health and well-being are a
-                  top priority. That's why we offer telehealth services, providing you with a
-                  convenient and secure way to access healthcare from the comfort of your home or
-                  office.
+                  At Aura Wellness, we understand that your health and well-being are a top
+                  priority. That's why we offer telehealth services, providing you with a convenient
+                  and secure way to access healthcare from the comfort of your home or office.
                 </motion.p>
               </motion.div>
 

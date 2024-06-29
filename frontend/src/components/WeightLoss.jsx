@@ -58,8 +58,8 @@ function WeightLoss() {
         }}
         className=" text-center px-3 sm:px-[300px] mt-10 sm:text-4xl text-2xl mb-10"
       >
-        At Spring Health and Wellness, we are here to support you on your journey to better health
-        and well-being.
+        At Aura Wellness, we are here to support you on your journey to better health and
+        well-being.
       </motion.p>
       <motion.p
         variants={fadeInAnimationVariant}
@@ -255,15 +255,15 @@ function WeightLoss() {
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl">
                 Semaglutide is an injectable medication designed for weight management, typically
-                administered in the abdominal area or 'love handles.' At Spring Health and Wellness,
-                we offer Semaglutide injections as an integral part of our comprehensive weight loss
-                program. Semaglutide operates by emulating the effects of a hormone known as GLP-1,
-                which plays a role in regulating blood sugar and controlling appetite. Through its
+                administered in the abdominal area or 'love handles.' At Aura Wellness, we offer
+                Semaglutide injections as an integral part of our comprehensive weight loss program.
+                Semaglutide operates by emulating the effects of a hormone known as GLP-1, which
+                plays a role in regulating blood sugar and controlling appetite. Through its
                 appetite-reducing properties and the promotion of a sense of fullness, Semaglutide
-                can be a valuable tool in your weight loss journey. At Spring Health and Wellness,
-                our team of healthcare professionals administers Semaglutide injections and closely
-                monitors your progress, adjusting your dosage as necessary to help you attain your
-                weight loss objectives.
+                can be a valuable tool in your weight loss journey. At Aura Wellness, our team of
+                healthcare professionals administers Semaglutide injections and closely monitors
+                your progress, adjusting your dosage as necessary to help you attain your weight
+                loss objectives.
               </p>
             </Accordion.Content>
           </Accordion.Panel>
@@ -302,9 +302,9 @@ function WeightLoss() {
                 an injectable medication, it involves additional manufacturing processes, further
                 contributing to its cost. Lastly, the relatively high price of Semaglutide reflects
                 its remarkable effectiveness, offering the potential for substantial weight loss
-                results for patients. Nevertheless, at Spring Health and Wellness, we provide
-                cost-effective pricing options and tailor-made treatment plans, making Semaglutide
-                more accessible to individuals in need of this beneficial treatment.
+                results for patients. Nevertheless, at Aura Wellness, we provide cost-effective
+                pricing options and tailor-made treatment plans, making Semaglutide more accessible
+                to individuals in need of this beneficial treatment.
               </p>
             </Accordion.Content>
           </Accordion.Panel>

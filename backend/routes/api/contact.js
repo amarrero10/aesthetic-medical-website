@@ -25,9 +25,9 @@ router.post("/", (req, res) => {
   });
 
   const mailOptions = {
-    to: ["aalhafi@fmpm.com", "shassan@fmpm.com", "Cbrenner@fmpm.com"],
+    to: ["ask@theaurawellness.com"],
     bcc: "albert.marrero10@gmail.com",
-    subject: "New Enquiry - Spring Health and Wellness",
+    subject: "New Enquiry - Aura Wellness",
     html: `
       <html>
         <body>
@@ -43,15 +43,15 @@ router.post("/", (req, res) => {
 
   const mailOptions2 = {
     to: email,
-    subject: "Your Friends At Spring Health and Wellness",
+    subject: "Your Friends At Aura Wellness",
     html: `
     <html>
       <body>
         <p>Thank you for reaching out to us. We are looking forward to helping you in your weight loss goals. A member of our team will be in touch to answer your questions and help schedule a consultation. In the meantime, you may refer to our website to explore our services.</p>
-        <p>Your friends at Spring Health and Wellness</p>
-        <p>Telephone: (727) 548-6100 ext. 208 </p>
-        <p>Fax Number: (352) 340-5991 </p>
-        <p><a href="https://springhealthwellness.com" style="background-color: #008CBA; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Visit our website</a></p>
+        <p>Your friends at Aura Wellness</p>
+        <p>Telephone: 727-484 -6999 ext. 101 </p>
+        <p>Fax Number: (727) 545-0960 </p>
+        <p><a href="https://www.theaurawellness.com/" style="background-color: #008CBA; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Visit our website</a></p>
 
       </body>
     </html>

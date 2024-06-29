@@ -20,11 +20,11 @@ function TestimonialSlider() {
       <div class="mx-auto xl:w-full sm:max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
           <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h2 class="text-3xl font-bold tracking-tight text-navy sm:text-5xl">
+            <h2 class="text-3xl font-bold tracking-tight text-[#F0E9B0] sm:text-5xl">
               Don't just take our word for it...
             </h2>
 
-            <p class="mt-4 text-navy sm:text-xl">
+            <p class="mt-4 text-[#F0E9B0] sm:text-xl">
               We're thrilled to share some heartfelt testimonials from our satisfied customers.
               Their kind words speak volumes about their experiences with us.
             </p>
@@ -52,7 +52,7 @@ function TestimonialSlider() {
                   <div class="keen-slider__slide cursor-pointer ">
                     <blockquote class="flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12">
                       <div>
-                        <div class="flex gap-0.5 text-navy">
+                        <div class="flex gap-0.5 text-[#F0E9B0]">
                           <svg
                             class="h-7 w-7"
                             fill="#8a9a5b"
@@ -99,11 +99,11 @@ function TestimonialSlider() {
                           </svg>
                         </div>
                         <div class="mt-4">
-                          <p class="text-xl font-bold  sm:text-4xl text-navy">
+                          <p class="text-xl font-bold  sm:text-4xl text-[#F0E9B0]">
                             {testimonial.title}
                           </p>
 
-                          <p class="mt-4 leading-relaxed sm:w-[600px] text-justify sm:text-left sm:text-xl mr-8 text-navy">
+                          <p class="mt-4 leading-relaxed sm:w-[600px] text-justify sm:text-left sm:text-xl mr-8 text-[#F0E9B0]">
                             {testimonial.quote}
                           </p>
                         </div>
@@ -147,7 +147,7 @@ function Arrow(props) {
         onClick={props.onClick}
         className={`arrow ${
           props.left ? "arrow--left" : "arrow--right"
-        }${disabled} rounded-full border border-offWhite p-4  transition bg-navy`}
+        }${disabled} rounded-full border border-offWhite p-4  transition bg-[#D2B86C]`}
         aria-label={props.left ? "Previous slide" : "Next slide"}
         id={props.left ? "keen-slider-previous" : "keen-slider-next"}
       >
@@ -173,7 +173,7 @@ function DesktopArrow(props) {
         onClick={props.onClick}
         className={`arrow ${
           props.left ? "arrow--left" : "arrow--right"
-        }${disabled} rounded-full border border-offWhite p-4  transition bg-navy hover:text-offWhite`}
+        }${disabled} rounded-full border border-offWhite p-4  transition bg-[#D2B86C] hover:text-offWhite`}
         aria-label={props.left ? "Previous slide" : "Next slide"}
         id={props.left ? "keen-slider-previous" : "keen-slider-next"}
       >
