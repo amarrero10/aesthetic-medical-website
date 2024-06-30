@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import portrait from "../assets/algery-green5.jpg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
-import { FaWeightScale } from "react-icons/fa6";
+import { FaWeightScale, FaCheck } from "react-icons/fa6";
 import { BiSolidInjection } from "react-icons/bi";
 import { BsPersonVideo3 } from "react-icons/bs";
 import TestimonialSlider from "./Testimonials/TestimonialSlider";
@@ -44,43 +44,98 @@ function HomePage() {
           {/* 2xl:w-[1120px] -mt-[262px] */}
         </motion.div>
         <div>
-          <div className="sm:flex grid gap-5 sm:gap-0 w-screen sm:w-full p-2 justify-around items-center sm:h-[800px]">
+          <div className="w-screen sm:w-full p-4 text-center sm:h-[1000px] h-auto sm:flex sm:flex-col sm:justify-center">
             <motion.div
               variants={fadeInAnimationVariant}
               initial="initial"
               whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              className=" h-[300px]  mb-10 grid sm:mr-2 mt-5 2xl:ml-44"
+              viewport={{ once: true }}
+              className="mb-10 grid gap-4"
             >
-              <div className=" flex justify-center">
-                <p className=" text-2xl font-extrabold sm:text-4xl text-center text-periwinkle uppercase">
+              <div className="flex justify-center">
+                <p className="text-2xl sm:text-4xl font-extrabold text-center text-periwinkle uppercase mt-36">
                   Start on Your Wellness Journey with Aura today!
                 </p>
               </div>
-
-              <p className=" text-center text-2xl sm:mb-4 sm:w-[700px] pb-5 sm:pb-0 2xl:ml-28 sm:ml-20 text-darkpurple">
-                Our expert providers are here to guide you in achieving your weight-loss goals. Take
-                your body to the next level and transform your life.
+              <p className="text-xl sm:text-2xl sm:mb-4 text-darkpurple">
+                Optimize your overall health and wellness with weight management treatments
+                including Semaglutide and Tirzepatide. These revolutionary medications can help
+                transform your life while improving:
               </p>
-              <p className=" text-darkpurple font-semibold text-center text-3xl sm:mb-24">
+              <ul className="list-none text-left mx-auto text-darkpurple sm:text-lg">
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Fatigue
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Irritability
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Inflammation
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Joint pain
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Low energy
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Low libido
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Anxiety
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Mood swings
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Cravings
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Overeating
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  Abdominal fat
+                </li>
+                <li className="flex items-center">
+                  <FaCheck className="text-greenTeal mr-2" />
+                  PMS
+                </li>
+              </ul>
+              <p className="text-xl sm:text-2xl sm:mb-4 text-darkpurple">
+                Our expert providers are here to guide you in achieving your weight loss goals. Take
+                your health to the next level and transform your life.
+              </p>
+              <p className="text-2xl sm:text-3xl font-semibold text-darkpurple">
+                Get back to <span className="text-periwinkle">YOU</span>.
+              </p>
+              <p className="text-2xl sm:text-3xl font-semibold text-darkpurple sm:mb-24">
                 This is Aura Wellness
               </p>
-              <div className=" flex justify-center sm:-mt-[80px] mt-5">
-                <Link to="/contact-us" className="  mx-auto ">
-                  <button className=" bg-white py-3 px-5 border border-greenTeal rounded-md text-periwinkle font-semibold sm:bg-periwinkle sm:text-offWhite sm:border-none mx-auto sm:text-xl  ">
+              <div className="flex justify-center sm:mt-8">
+                <Link to="/contact-us" className="mx-auto">
+                  <button className="bg-periwinkle py-3 px-5 border border-transparent rounded-md text-white font-semibold sm:text-xl transition duration-300 ease-in-out hover:bg-offWhite hover:text-periwinkle hover:border-periwinkle">
                     Request Appointment
                   </button>
                 </Link>
               </div>
-              <div className="flex items-center mx-auto ">
+              <div className="flex justify-center sm:mt-4">
                 <a
                   href="tel:727-548-6100p208"
-                  className="flex items-center text-navy border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0"
+                  className="flex items-center text-navy border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0 transition duration-300 ease-in-out hover:bg-navy hover:text-white"
                 >
                   <BsTelephone className="mr-2" />
-                  727-484 -6999 ext. 101
+                  727-484-6999 ext. 101
                 </a>
               </div>
             </motion.div>
@@ -88,49 +143,51 @@ function HomePage() {
               variants={fadeInAnimationVariant}
               initial="initial"
               whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              className=" sm:h-[800px]  px-4 sm:w-[650px] w-[350px] mx-auto rounded-xl"
-            >
+              viewport={{ once: true }}
+              className="sm:h-[800px] px-4 sm:w-[650px] w-[350px] mx-auto rounded-xl"
+            ></motion.div>
+          </div>
+
+          <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[1000px] mt-20">
+            <div className=" flex sm:flex-row flex-col justify-around items-center w-full">
+              <div className=" flex flex-col items-center justify-center">
+                <motion.p
+                  variants={fadeInAnimationVariant}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                    once: true,
+                  }}
+                  className=" text-center sm:text-6xl text-4xl font-bold text-[#5C7463] pb-2 tracking-wider mt-9"
+                >
+                  About Us
+                </motion.p>
+                <motion.p
+                  variants={fadeInAnimationVariant}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                    once: true,
+                  }}
+                  className=" text-center sm:text-2xl sm:w-[550px] px-3 text-[#5C7463] mt-9 text-xl"
+                >
+                  At Aura Wellness, we are your partners in the pursuit of health and beauty. Meet
+                  our dedicated Nurse Practitioner Algery Al-Hafi and learn more about our mission
+                  to empower your journey towards total body health and wellness with medical
+                  weight-loss management.
+                </motion.p>
+                <Link to="/about">
+                  <button className=" text-xl text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
+                    More Information
+                  </button>
+                </Link>
+              </div>
               <img
                 src={portrait}
                 alt="portrait of Algery Al-Hafi"
-                className=" shadow-2xl shadow-navy  sm:h-[800px] sm:w-[650px] w-[350px] mx-auto bg-navy mt-16 sm:mt-10 rounded-xl"
+                className=" shadow-2xl shadow-navy  sm:h-[800px] sm:w-[650px] w-[350px]  bg-navy mt-16 sm:mt-10 rounded-xl"
               ></img>
-            </motion.div>
-          </div>
-          <div className="  flex flex-col items-center bg-darkpurple py-5 sm:h-[500px] mt-20">
-            <motion.p
-              variants={fadeInAnimationVariant}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              className=" text-center sm:text-6xl text-4xl font-bold text-[#5C7463] pb-2 tracking-wider mt-9"
-            >
-              About Us
-            </motion.p>
-            <motion.p
-              variants={fadeInAnimationVariant}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              className=" text-center sm:text-2xl sm:w-[550px] px-3 text-[#5C7463] mt-9 text-xl"
-            >
-              At Aura Wellness, we are your partners in the pursuit of health and beauty. Meet our
-              dedicated Nurse Practitioner Algery Al-Hafi and learn more about our mission to
-              empower your journey towards total body health and wellness with medical weight-loss
-              management.
-            </motion.p>
-            <Link to="/about">
-              <button className=" text-xl text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
-                More Information
-              </button>
-            </Link>
+            </div>
           </div>
           <div className=" bg-darkpurple sm:h-[600px] text-[#5C7463] -mt-10">
             <motion.h2
