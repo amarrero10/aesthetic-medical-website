@@ -24,7 +24,7 @@ function Contact() {
         viewport={{
           once: true,
         }}
-        className=" sm:mt-36 bg-navy text-offWhite text-center text-4xl sm:text-[70px] "
+        className=" sm:mt-32 text-offWhite text-center text-4xl sm:text-[70px] "
       >
         <motion.h1
           variants={fadeInAnimationVariant}
@@ -47,8 +47,8 @@ function Contact() {
           className=" w-1/3 mx-auto my-4 pb-5"
         />
       </motion.div>
-      <div className="sm:mt-14  mt-5 mb-20">
-        <p className=" text-center font-bold text-5xl mb-5">Send Us A Message.</p>
+      <div className="sm:mt-14  mt-5 mb-20 text-offWhite">
+        <p className=" text-center font-bold text-5xl mb-5 ">Send Us A Message.</p>
         <h2 className=" font-bold text-2xl text-center">
           Fill out the form below to schedule your consultation and start your journey to a better
           you!

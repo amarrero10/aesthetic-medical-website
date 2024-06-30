@@ -6,7 +6,7 @@ function ComingSoon() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-[#5C7566] md:mt-20">
       <div className="text-center p-6 sm:p-12 bg-white shadow-md rounded-lg max-w-6xl mx-auto">
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-[#D2B86C] mb-4">Coming Soon</h1>
+        <h1 className="text-3xl sm:text-5xl font-extrabold text-[#D2B86C] mb-4">Coming Soon!</h1>
         <p className="text-xl sm:text-2xl text-gray-700 mb-8">
           Hormone Replacement Therapy & Aesthetic Medicine
         </p>

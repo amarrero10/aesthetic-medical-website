@@ -50,7 +50,7 @@ function Navigation() {
           <img className=" h-14 pl-2" src={logo} alt="logo for Aura Wellness"></img>
         </Link>
         <div className=" flex items-center h-10">
-          <a href="tel:727-548-6100p208">
+          <a href="tel:727-484-6999p101">
             <button className="mr-4   bg-periwinkle text-offWhite px-6 py-4 rounded-md text-lg font-extrabold">
               Get in touch
             </button>
@@ -196,7 +196,7 @@ function Navigation() {
           </Link> */}
         </div>
         <div>
-          <a href="tel:727-548-6100p208">
+          <a href="tel:727-484-6999p101">
             <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md text-lg font-extrabold">
               Limited time promotion now!
             </button>

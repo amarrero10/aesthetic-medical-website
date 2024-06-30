@@ -379,11 +379,11 @@ function Vitamins() {
             className="flex items-center "
           >
             <a
-              href="tel:727-548-6100p208"
+              href="tel:727-484-6999p101"
               className="flex items-center text-navy text-xl mb-6 sm:mb-0  border border-navy  p-3"
             >
               <BsTelephone className="mr-2" />
-              727-484 -6999 ext. 101
+              727-484-6999 ext. 101
             </a>
           </motion.div>
           <Link to="/contact-us">

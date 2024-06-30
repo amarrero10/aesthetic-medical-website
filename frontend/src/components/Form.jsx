@@ -75,7 +75,7 @@ function Form() {
   return (
     <div className="mt-10">
       <form
-        className="flex flex-col sm:w-2/3  w-11/12 mx-auto sm:bg-navy sm:text-offWhite sm:p-10 sm:rounded-lg sm:shadow-lg"
+        className="flex flex-col sm:w-2/3 sm:bg-[#5C7566]  w-11/12 mx-auto sm:text-offWhite sm:p-10 sm:rounded-lg sm:border-[#D2B86C] sm:border"
         onSubmit={submitHandler}
       >
         <label htmlFor="name" className="text-xl sm:text-3xl ml-2">
@@ -170,7 +170,7 @@ function Form() {
         </button>
         <button
           type="submit"
-          className="border border-periwinkle w-1/2 mx-auto mt-5 rounded-lg py-4 text-xl text-navy sm:hidden "
+          className="border border-periwinkle w-1/2 mx-auto mt-5 rounded-lg py-4 text-xl text-offWhite sm:hidden "
           disabled={isSubmitting} // Disable the button when submitting
         >
           {isSubmitting ? "Submitting..." : "Submit"}

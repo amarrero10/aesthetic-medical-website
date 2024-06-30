@@ -29,7 +29,7 @@ function Telehealth() {
         viewport={{
           once: true,
         }}
-        className=" bg-[#015657] text-offWhite text-center text-[70px]"
+        className=" text-offWhite text-center text-[70px]"
       >
         <motion.h2
           variants={fadeInAnimationVariant}
@@ -58,10 +58,10 @@ function Telehealth() {
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              contentStyle={{ background: "#D2B86C", color: "#5C7566" }}
+              contentArrowStyle={{ borderRight: "7px solid  #D2B86C" }}
               iconStyle={{
-                background: "#015657",
+                background: "#5C7566",
                 color: "#fefefe",
                 display: "flex",
                 justifyContent: "center",
@@ -74,9 +74,9 @@ function Telehealth() {
               <h3 className="vertical-timeline-element-title text-3xl">Make An Appointment</h3>
               <p className="vertical-timeline-element-subtitle">
                 Call us at{" "}
-                <a href="tel:727-548-6100p208" className=" underline">
+                <a href="tel:727-484-6999p101" className=" underline">
                   {" "}
-                  727-484 -6999 ext. 101
+                  727-484-6999 ext. 101
                 </a>{" "}
                 and ask for a virtual telehealth appointment, and one will be scheduled for you. Or
                 fill out the form below and we will reach out to you within 24 hours.
@@ -84,10 +84,10 @@ function Telehealth() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              contentStyle={{ background: "#D2B86C", color: "#5C7566" }}
+              contentArrowStyle={{ borderRight: "7px solid  #D2B86C" }}
               iconStyle={{
-                background: "#015657",
+                background: "#5C7566",
                 color: "#fefefe",
                 display: "flex",
                 justifyContent: "center",
@@ -105,10 +105,10 @@ function Telehealth() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              contentStyle={{ background: "#D2B86C", color: "#5C7566" }}
+              contentArrowStyle={{ borderRight: "7px solid  #D2B86C" }}
               iconStyle={{
-                background: "#015657",
+                background: "#5C7566",
                 color: "#fefefe",
                 display: "flex",
                 justifyContent: "center",
@@ -127,10 +127,10 @@ function Telehealth() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "#3f4760", color: "#fefefe" }}
-              contentArrowStyle={{ borderRight: "7px solid  #3f4760" }}
+              contentStyle={{ background: "#D2B86C", color: "#5C7566" }}
+              contentArrowStyle={{ borderRight: "7px solid  #D2B86C" }}
               iconStyle={{
-                background: "#015657",
+                background: "#5C7566",
                 color: "#fefefe",
                 display: "flex",
                 justifyContent: "center",
@@ -196,9 +196,9 @@ function Telehealth() {
           <ul className=" list-disc">
             <li className=" italic ml-10 text-xl sm:text-3xl pb-5 mt-5">
               To schedule, call us at{" "}
-              <a href="tel:727-548-6100p208" className=" underline">
+              <a href="tel:727-484-6999p101" className=" underline">
                 {" "}
-                727-484 -6999 ext. 101
+                727-484-6999 ext. 101
               </a>{" "}
               and ask for a virtual telehealth appointment, and one will be scheduled for you. Or
               fill out the form below and we will reach out to you within 24 hours.

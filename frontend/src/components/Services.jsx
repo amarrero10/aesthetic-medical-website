@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Form from "./Form";
 import weight from "../assets/weight-loss.jpg";
 import virtual from "../assets/virtual.jpg";
-import vial from "../assets/vial.jpg";
+import oldCouple from "../assets/old-couple.jpg";
 import scale from "../assets/scale.jpg";
 import { motion } from "framer-motion";
 import { ReactComponent as Leaves } from "../assets/leaves.svg";
@@ -23,7 +23,7 @@ const fadeInAnimationVariant = {
 function Services() {
   return (
     <>
-      <div className="sm:mt-36 ">
+      <div className="sm:mt-32 ">
         <motion.div
           variants={fadeInAnimationVariant}
           initial="initial"
@@ -31,7 +31,7 @@ function Services() {
           viewport={{
             once: true,
           }}
-          className=" bg-[#015657] text-offWhite text-center text-[70px] "
+          className="  text-offWhite text-center text-[70px] "
         >
           <motion.h2
             variants={fadeInAnimationVariant}
@@ -90,17 +90,17 @@ function Services() {
             <div className=" flex flex-col items-center justify-between h-[800px] shadow-md bg-[#fefefe] rounded-md">
               <div className=" h-1/2 w-full">
                 <img
-                  src={vial}
+                  src={oldCouple}
                   alt="a cardboard sign to promote wight loss"
                   className=" rounded-tl-md rounded-tr-md object-cover h-full w-full"
                 ></img>
               </div>
               <div className=" text-center">
-                <h2 className=" text-3xl font-semibold mt-4">Vitamin Injections</h2>
+                <h2 className=" text-3xl font-semibold mt-4">Coming Soon</h2>
                 <p className=" mt-3 px-1">
-                  At our clinic, we understand that vitality and well-being are essential to living
-                  your best life. Our specialized vitamin injections are designed to give you that
-                  extra boost of energy and support your overall weight loss and health goals.
+                  We're excited to announce that our comprehensive services in hormone replacement
+                  therapy and aesthetic medicine will be launching soon. Stay tuned for more
+                  updates!
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
@@ -261,8 +261,8 @@ function Services() {
               className=" w-1/2 rounded-tr-md rounded-br-md"
             >
               <img
-                className=" h-full object-cover rounded-tr-md rounded-br-md w-full"
-                src={vial}
+                className=" h-full rounded-tr-md rounded-br-md w-full"
+                src={oldCouple}
                 alt="Doctor Inserting Syringe "
               ></img>
             </motion.div>
@@ -284,7 +284,7 @@ function Services() {
                 }}
                 className=" text-6xl font-semibold"
               >
-                Vitamin Injections
+                Coming Soon
               </motion.h2>
               <motion.div
                 variants={fadeInAnimationVariant}
@@ -303,9 +303,9 @@ function Services() {
                     once: true,
                   }}
                 >
-                  At our clinic, we understand that vitality and well-being are essential to living
-                  your best life. Our specialized vitamin injections are designed to give you that
-                  extra boost of energy and support your overall weight loss and health goals.
+                  We're excited to announce that our comprehensive services in hormone replacement
+                  therapy and aesthetic medicine will be launching soon. Stay tuned for more
+                  updates!
                 </motion.p>
               </motion.div>
 

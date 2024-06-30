@@ -142,7 +142,7 @@ function About() {
                 alt="Nurse Practioner at Aura Wellness"
                 className="w-full  mx-auto h-[400px] 2xl:h-[630px] object-contain rounded-md"
               ></img>
-              <div className="   text-center text-3xl py-4 border border-black  mx-auto   2xl:w-[789px] sm:w-[500px] 2xl:-mt-2 sm:mt-0 w-[500px]">
+              <div className="   text-center text-3xl py-4 border border-black  mx-auto   2xl:w-[789px] sm:w-[500px] 2xl:-mt-2 sm:mt-0 max-w-[500px]">
                 <p>Algery Al-Hafi</p>
                 <p>APRN-BC | Board Certfied Practioner</p>
               </div>
@@ -253,11 +253,11 @@ function About() {
           >
             <div className="flex items-center ">
               <a
-                href="tel:727-548-6100p208"
+                href="tel:727-484-6999p101"
                 className="flex items-center text-[#5C7463] border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0"
               >
                 <BsTelephone className="mr-2" />
-                727-484 -6999 ext. 101
+                727-484-6999 ext. 101
               </a>
             </div>
             <Link to="/contact-us">

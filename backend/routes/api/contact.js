@@ -20,7 +20,7 @@ router.post("/", (req, res) => {
     service: "gmail",
     auth: {
       user: "albert.marrero10@gmail.com",
-      pass: "bkpdatdbdkleqxey",
+      pass: "pqcu pwrg bvht watu",
     },
   });
 
@@ -49,7 +49,7 @@ router.post("/", (req, res) => {
       <body>
         <p>Thank you for reaching out to us. We are looking forward to helping you in your weight loss goals. A member of our team will be in touch to answer your questions and help schedule a consultation. In the meantime, you may refer to our website to explore our services.</p>
         <p>Your friends at Aura Wellness</p>
-        <p>Telephone: 727-484 -6999 ext. 101 </p>
+        <p>Telephone: 727-484-6999 ext. 101 </p>
         <p>Fax Number: (727) 545-0960 </p>
         <p><a href="https://www.theaurawellness.com/" style="background-color: #008CBA; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Visit our website</a></p>
 
@@ -60,17 +60,17 @@ router.post("/", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      res.status(500).send("Error sending email");
-    } else {
-      res.send("Email sent successfully");
+      console.error("Error sending email to ask@theaurawellness.com:", error);
+      return res.status(500).send("Error sending email to the administrator");
     }
-  });
-  transporter.sendMail(mailOptions2, (error, info) => {
-    if (error) {
-      res.status(500).send("Error sending email");
-    } else {
-      res.send("Email sent successfully");
-    }
+
+    transporter.sendMail(mailOptions2, (error, info) => {
+      if (error) {
+        console.error("Error sending email to the user:", error);
+        return res.status(500).send("Error sending confirmation email to the user");
+      }
+      res.send("Emails sent successfully");
+    });
   });
 });
 

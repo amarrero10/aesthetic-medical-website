@@ -32,26 +32,26 @@ function Locations() {
       lng: -82.6284413736912,
       name: "Spring Hill Location",
       address: "5270 Applegate Dr, Spring Hill, FL 34606",
-      phone: "727-484 -6999 ext. 101",
+      phone: "727-484-6999 ext. 101",
     },
     {
       lat: 28.208274068627233,
       lng: -82.67745381602516,
       name: "Trinity/New Port Richey Location",
       address: "8139 FL-54, New Port Richey, FL 34655",
-      phone: "727-484 -6999 ext. 101",
+      phone: "727-484-6999 ext. 101",
     },
     {
       lat: 27.821497726533536,
       lng: -82.72277368719645,
       name: "St. Petersburg Location",
       address: "6333 54th Ave N, St. Petersburg, FL 33709",
-      phone: "727-484 -6999 ext. 101",
+      phone: "727-484-6999 ext. 101",
     },
     {
       lat: 27.948626126461225,
       lng: -82.78777134671049,
-      phone: "727-484 -6999 ext. 101",
+      phone: "727-484-6999 ext. 101",
     },
   ];
 
@@ -75,7 +75,7 @@ function Locations() {
           viewport={{
             once: true,
           }}
-          className=" bg-[#015657] text-offWhite text-center text-4xl py-2 mb-4 sm:mb-0 "
+          className="  text-offWhite text-center text-4xl py-2 mb-4 sm:mb-0 "
         >
           <motion.h2
             variants={fadeInAnimationVariant}
@@ -99,7 +99,7 @@ function Locations() {
           />
         </motion.div>
         <div className=" flex sm:flex-row flex-col items-center justify-between  sm:w-full mx-auto sm:mt-20 px-3 sm:px-4">
-          <div className=" text-navy h-full sm:w-1/2 mb-10 sm:mb-0 sm:mr-10 border border-navy py-24 sm:pl-9">
+          <div className=" text-[#5C7566] h-full sm:w-1/2 mb-10 sm:mb-0 sm:mr-10 rounded-md  py-24 sm:pl-9 bg-periwinkle">
             <p className=" text-5xl font-semibold text-center sm:text-center mb-10">
               Start your journey to a better you today with Aura Wellness!
             </p>
@@ -117,14 +117,14 @@ function Locations() {
             </ul>
             <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mx-auto mb-5 sm:mt-14">
               <a
-                href="tel:727-548-6100p208"
+                href="tel:727-484-6999p101"
                 className="flex  items-center text-navy text-2xl mb-6 sm:mb-0 border border-navy p-3 rounded-md"
               >
                 <BsTelephone className="mr-2" />
-                727-484 -6999 ext. 101
+                727-484-6999 ext. 101
               </a>
               <Link to="/contact-us">
-                <button className=" bg-white py-3 px-5 border text-xl  border-greenTeal rounded-md text-periwinkle font-semibold sm:hover:bg-periwinkle sm:hover:border-periwinkle  sm:hover:text-offWhite z-10">
+                <button className=" bg-white py-3 px-5 border text-xl rounded-md text-periwinkle font-semibold z-10">
                   Request Appointment
                 </button>
               </Link>
@@ -159,7 +159,7 @@ function Locations() {
             )}
           </div>
         </div>
-        <p className=" text-center text-4xl w-2/3 mx-auto mt-20">
+        <p className=" text-center text-4xl w-2/3 mx-auto mt-20 text-offWhite">
           Ready to embark on your path to a healthier, happier you? Simply complete the form below
           and we will reach out to you to schedule a consultation with our team at Spring Health and
           Wellness!
