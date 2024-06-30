@@ -18,6 +18,7 @@ import Telehealth from "./components/Telehealth";
 import Pricing from "./components/Pricing";
 import Locations from "./components/Locations";
 import ReactGA from "react-ga4";
+import ComingSoon from "./components/ComingSoon";
 
 const TRACKING_ID = "G-V8022L7FKM";
 ReactGA.initialize(TRACKING_ID);
@@ -71,6 +72,9 @@ function App() {
         </Route>
         <Route exact path="/services/telehealth">
           <Telehealth />
+        </Route>
+        <Route exact path="/services/coming-soon">
+          <ComingSoon />
         </Route>
         <Route exact path="/services/vitamin-injections">
           <Vitamins />

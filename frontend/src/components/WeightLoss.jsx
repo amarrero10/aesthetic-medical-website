@@ -26,7 +26,7 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
-        className=" sm:mt-36 bg-[#015657] text-offWhite text-center text-4xl sm:text-[70px] "
+        className=" sm:mt-32 text-[#5C7566] text-center text-4xl sm:text-[70px] "
       >
         <motion.h2
           variants={fadeInAnimationVariant}
@@ -46,7 +46,7 @@ function WeightLoss() {
           viewport={{
             once: true,
           }}
-          className=" w-1/3 mx-auto my-4 pb-5"
+          className=" w-1/3 mx-auto my-4 pb-5 text-[#5C7566]"
         />
       </motion.div>
       <motion.p
@@ -169,7 +169,7 @@ function WeightLoss() {
         viewport={{
           once: true,
         }}
-        className=" sm:text-[70px] text-4xl sm:text-center font-bold sm:w-full mx-auto mb-1 px-3 sm:px-0 italic text-offWhite bg-darkpurple py-10 "
+        className=" sm:text-[70px] text-4xl sm:text-center font-bold sm:w-full mx-auto mb-1 px-3 sm:px-0 italic text-[#5C7566] bg-darkpurple py-10 "
       >
         <motion.p
           variants={fadeInAnimationVariant}

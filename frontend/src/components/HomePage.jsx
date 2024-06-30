@@ -6,6 +6,7 @@ import { BsTelephone } from "react-icons/bs";
 import { FaWeightScale, FaCheck } from "react-icons/fa6";
 import { BiSolidInjection } from "react-icons/bi";
 import { BsPersonVideo3 } from "react-icons/bs";
+import { FaHeartbeat } from "react-icons/fa";
 import TestimonialSlider from "./Testimonials/TestimonialSlider";
 import Footer from "./Footer";
 import { motion, useScroll } from "framer-motion";
@@ -231,28 +232,6 @@ function HomePage() {
                 viewport={{
                   once: true,
                 }}
-                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center "
-              >
-                <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
-                <p className="text-3xl my-3">Vitamin Injections</p>
-                <p className=" text-center px-3 mb-5 text-xl">
-                  We utilize B12 injections in combination with other powerful agents to boost
-                  metabolism to support effective weight management, helping you achieve your health
-                  and wellness goals.
-                </p>
-                <Link to="/services/vitamin-injections">
-                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
-                    Learn More
-                  </button>
-                </Link>
-              </motion.div>
-              <motion.div
-                variants={fadeInAnimationVariant}
-                initial="initial"
-                whileInView="animate"
-                viewport={{
-                  once: true,
-                }}
                 className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center"
               >
                 <BsPersonVideo3 className=" mx-auto text-6xl mt-5" />
@@ -263,6 +242,25 @@ function HomePage() {
                 </p>
                 <Link to="/services/telehealth">
                   <button className=" text-xl bg-periwinkle border-navy border px-4 py-3 rounded-md mt-8">
+                    Learn More
+                  </button>
+                </Link>
+              </motion.div>
+              <motion.div
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                className="bg-periwinkle rounded-md shadow-xl h-[400px] text-center flex flex-col justify-center items-center p-6"
+              >
+                <FaHeartbeat className="mx-auto text-6xl mb-4" />
+                <p className="text-3xl my-3">Coming Soon</p>
+                <p className=" text-center text-xl px-3 mb-5">
+                  Our comprehensive services in Hormone Replacement Therapy and Aesthetic Medicine
+                  will be launching soon. Stay tuned for more updates!
+                </p>
+                <Link to="/services/coming-soon">
+                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
                     Learn More
                   </button>
                 </Link>

@@ -88,11 +88,11 @@ function Navigation() {
                   </Link>
                   <hr className=" text-periwinkle py-3" />
                   <li>
-                    <Link to="/services/vitamin-injections">- Vitamin Injections</Link>
+                    <Link to="/services/telehealth">- Telehealth</Link>
                   </li>
                   <hr className=" text-periwinkle py-3" />
                   <li>
-                    <Link to="/services/telehealth">- Telehealth</Link>
+                    <Link to="/services/coming-soon">- Coming Soon</Link>
                   </li>
                 </ul>
               )}
@@ -172,14 +172,14 @@ function Navigation() {
                     Medical Weight Loss
                   </li>
                 </Link>
-                <Link to="/services/vitamin-injections" onClick={handleScrollToTop}>
-                  <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
-                    Vitamin Injections
-                  </li>
-                </Link>
                 <Link to="/services/telehealth" onClick={handleScrollToTop}>
                   <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
                     Telehealth
+                  </li>
+                </Link>
+                <Link to="/services/coming-soon" onClick={handleScrollToTop}>
+                  <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
+                    Coming Soon
                   </li>
                 </Link>
               </ul>

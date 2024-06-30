@@ -11,6 +11,7 @@ import { PiPlantFill } from "react-icons/pi";
 import { ReactComponent as Leaves } from "../assets/leaves.svg";
 
 import { motion } from "framer-motion";
+import { FaHeartbeat } from "react-icons/fa";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -105,13 +106,24 @@ function About() {
             className="mb-3 sm:text-justify tracking-widest sm:text-2xl text-lg text-center"
           >
             At Aura Wellness, our unwavering commitment is to your well-being and satisfaction. We
-            understand that every individual is unique, and so are their needs when it comes to
-            medical-weight loss and aesthetics. That's why we take pride in offering personalized
-            treatment plans, thorough consultations, and dedicated follow-up services. Our approach
-            isn't just about achieving results; it's about ensuring your comfort and confidence
-            throughout your journey with us. Your health, happiness, and satisfaction are at the
-            heart of everything we do, and we look forward to partnering with you on your path to a
-            more vibrant and confident you.
+            understand that every individual is unique. That is why we take pride in offering
+            personalized treatment plans, thorough consultations, and dedicated follow-up services
+            to provide you with optimal weight loss solutions.
+          </motion.p>
+          <motion.p
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            animate="animate"
+            // whileInView={}
+            viewport={{
+              once: true,
+            }}
+            className="mb-3 sm:text-justify tracking-widest sm:text-2xl text-lg text-center mt-8"
+          >
+            Our approach isn't just about achieving results; it's about ensuring your comfort and
+            confidence throughout your journey with us. Your health, happiness, and satisfaction are
+            at the heart of everything we do, and we look forward to partnering with you on your
+            path to a more vibrant and confident you.
           </motion.p>
 
           <motion.div
@@ -130,7 +142,7 @@ function About() {
                 alt="Nurse Practioner at Aura Wellness"
                 className="w-full  mx-auto h-[400px] 2xl:h-[630px] object-contain rounded-md"
               ></img>
-              <div className="   text-center text-3xl py-4 border border-black  mx-auto   2xl:w-[789px] sm:w-[500px] 2xl:-mt-2 sm:mt-0 -mt-14">
+              <div className="   text-center text-3xl py-4 border border-black  mx-auto   2xl:w-[789px] sm:w-[500px] 2xl:-mt-2 sm:mt-0 w-[500px]">
                 <p>Algery Al-Hafi</p>
                 <p>APRN-BC | Board Certfied Practioner</p>
               </div>
@@ -179,15 +191,14 @@ function About() {
                 </Link>
               </div>
               <div className=" rounded-md shadow-xl h-[430px] text-center text-[#5C7463] border bg-white">
-                <BiSolidInjection className=" mx-auto text-6xl mt-5 " />
-                <p className="text-3xl my-3">Vitamin Injections</p>
-                <p className=" text-center px-3 mb-5 text-xl">
-                  We utilize B12 injections to boost metabolism and incorporate Fat Burners to
-                  support effective weight management, helping you achieve your health and wellness
-                  goals.
+                <FaHeartbeat className=" mx-auto text-6xl mt-5 " />
+                <p className="text-3xl my-3">Coming Soon</p>
+                <p className=" text-center text-xl px-3 mb-5">
+                  Our comprehensive services in Hormone Replacement Therapy and Aesthetic Medicine
+                  will be launching soon. Stay tuned for more updates!
                 </p>
-                <Link to="/services/vitamin-injections">
-                  <button className=" text-xl text-[#5C7463] bg-periwinkle px-4 py-3 rounded-md mt-2">
+                <Link to="/services/coming-soon">
+                  <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
                     Learn More
                   </button>
                 </Link>

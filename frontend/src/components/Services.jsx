@@ -104,7 +104,7 @@ function Services() {
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
-                <Link to="/services/vitamin-injections">
+                <Link to="/services/coming-soon">
                   <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     More Information
                   </button>
@@ -318,7 +318,7 @@ function Services() {
                 }}
                 className=" flex flex-col items-center justify-between w-full px-2 bg-white"
               >
-                <Link to="/services/vitamin-injections">
+                <Link to="/services/coming-soon">
                   <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
                     More Information
                   </button>
