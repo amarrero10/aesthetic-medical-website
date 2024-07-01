@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import portrait from "../assets/algery-green5.jpg";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
 import { FaWeightScale, FaCheck } from "react-icons/fa6";
@@ -41,11 +42,12 @@ function HomePage() {
           }}
           className=" absolute w-full min-[2000px]:w-[78.55%] -z-10 sm:top-52 top-[610px] "
         >
-          <Vortex className=" sm:-mt-[300px] -mt-[620px] h-[600px] sm:h-full w-full mix-blend-color-dodge opacity-30" />
+          <Vortex className=" sm:-mt-[300px] mt-[60px] h-[600px] sm:h-full w-full mix-blend-color-dodge opacity-30" />
           {/* 2xl:w-[1120px] -mt-[262px] */}
         </motion.div>
         <div>
           <div className="w-screen sm:w-full p-4 text-center sm:h-[1000px] h-auto sm:flex sm:flex-col sm:justify-center">
+            <img className=" sm:hidden w-[400px] h-auto mx-auto" src={logo}></img>
             <motion.div
               variants={fadeInAnimationVariant}
               initial="initial"
