@@ -1,11 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { FiUser, FiMail, FiMessageCircle, FiPhone } from "react-icons/fi";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Form() {
   const [formState, setFormState] = useState({});
+  const [consentSMS, setConsentSMS] = useState(false);
   const changeHandler = (event) => {
-    setFormState({ ...formState, [event.target.name]: event.target.value });
+    const { name, value } = event.target;
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
   };
+
+  const handleCheck = () => {
+    setConsentSMS(!consentSMS);
+  };
+
   const [csrfToken, setCsrfToken] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -50,7 +61,7 @@ function Form() {
           "Content-Type": "application/json",
           "csrf-token": csrfToken,
         },
-        body: JSON.stringify(formState),
+        body: JSON.stringify({ ...formState, consentSMS }),
       });
 
       if (response.ok) {
@@ -69,8 +80,11 @@ function Form() {
       }, 1000); // Adjust the duration as needed
 
       setFormState(""); // Clear the form
+      setConsentSMS(false); // Reset the checkbox
     }
   };
+
+  console.log(formState, consentSMS);
 
   return (
     <div className="mt-10">
@@ -120,7 +134,7 @@ function Form() {
             style={{ resize: "none" }}
             rows={3}
             id="message"
-            placeholder="I am intested in your vitamin injections services."
+            placeholder="I am interested in your vitamin injections services."
             name="message"
             value={formState.message || ""}
             onChange={changeHandler}
@@ -145,6 +159,26 @@ function Form() {
             className="w-full p-3 text-lg sm:text-2xl text-navy focus:outline-none focus:ring-greenTeal focus:ring-1 pl-9"
           />
         </div>
+        <div className="flex items-start w-full p-2">
+          <input
+            type="checkbox"
+            id="consentSMS"
+            name="consentSMS"
+            checked={consentSMS}
+            onChange={handleCheck}
+            className="mr-2 mt-2 rounded-xl sm:p-3 p-2"
+          />
+          <label htmlFor="consentSMS" className="text-xl sm:text-3xl">
+            Check this box to consent to receive SMS text messages from Aura Wellness. Message
+            frequency varies. Standard message and data rates may apply. Text STOP to opt out at any
+            time.
+          </label>
+        </div>
+        <div className=" ml-2 underline mt-2">
+          <Link to="/privacy">
+            <p>Privacy Policy</p>
+          </Link>
+        </div>
         <button
           type="submit"
           class="hidden relative sm:inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-offwhite rounded-md hover:text-offWhite group hover:bg-navy w-[200px] mx-auto mt-10"
@@ -166,7 +200,7 @@ function Form() {
               ></path>
             </svg>
           </span>
-          <span class="relative text-offWhite"> {isSubmitting ? "Submitting..." : "Submit"}</span>
+          <span class="relative text-offWhite">{isSubmitting ? "Submitting..." : "Submit"}</span>
         </button>
         <button
           type="submit"

@@ -3,7 +3,8 @@ const nodemailer = require("nodemailer");
 const router = express.Router();
 
 router.post("/", (req, res) => {
-  const { name, email, message, phone } = req.body;
+  console.log(req.body);
+  const { name, email, message, phone, consentSMS } = req.body;
 
   // Create a transporter using your custom domain SMTP settings
   // let transporter = nodemailer.createTransport({
@@ -24,21 +25,26 @@ router.post("/", (req, res) => {
     },
   });
 
+  // <p>
+  //   <strong>Consent to messages?:</strong> ${consent === true ? "YES" : "NO"}
+  // </p>;
+
   const mailOptions = {
-    to: ["ask@theaurawellness.com"],
+    to: ["theaurawellness@fmpm.com"],
     bcc: ["albert.marrero10@gmail.com", "aalhafi@fmpm.com"],
     subject: "New Enquiry - Aura Wellness",
     html: `
-      <html>
-        <body>
-          <h1>Form Submission:</h1>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Message:</strong> ${message}</p>
-          <p><strong>Phone:</strong> ${phone}</p>
-        </body>
-      </html>
-    `,
+    <html>
+      <body>
+        <h1>Form Submission:</h1>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong> ${message}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Customer consents to text messages:</strong> ${consentSMS ? "Yes" : "No"}</p>
+      </body>
+    </html>
+  `,
   };
 
   const mailOptions2 = {
