@@ -253,11 +253,11 @@ function About() {
           >
             <div className="flex items-center ">
               <a
-                href="tel:727-484-6999p101"
+                href="tel:813-252-0265"
                 className="flex items-center text-[#5C7463] border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0"
               >
                 <BsTelephone className="mr-2" />
-                727-484-6999 ext. 101
+                813-252-0265
               </a>
             </div>
             <Link to="/contact-us">

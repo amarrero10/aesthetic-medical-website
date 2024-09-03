@@ -99,8 +99,7 @@ function Services() {
                 <h2 className=" text-3xl font-semibold mt-4">Coming Soon</h2>
                 <p className=" mt-3 px-1">
                   We're excited to announce that our comprehensive services in hormone replacement
-                  therapy and aesthetic medicine will be launching soon. Stay tuned for more
-                  updates!
+                  therapy will be launching soon. Stay tuned for more updates!
                 </p>
               </div>
               <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">

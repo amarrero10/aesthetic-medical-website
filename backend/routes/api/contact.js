@@ -55,7 +55,7 @@ router.post("/", (req, res) => {
       <body>
         <p>Thank you for reaching out to us. We are looking forward to helping you in your weight loss goals. A member of our team will be in touch to answer your questions and help schedule a consultation. In the meantime, you may refer to our website to explore our services.</p>
         <p>Your friends at Aura Wellness</p>
-        <p>Telephone: 727-484-6999 ext. 101 </p>
+        <p>Telephone: 813-252-0265 </p>
         <p>Fax Number: (727) 545-0960 </p>
         <p><a href="https://www.theaurawellness.com/" style="background-color: #008CBA; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Visit our website</a></p>
 

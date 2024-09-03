@@ -26,6 +26,9 @@ const fadeInAnimationVariant = {
 
 function HomePage() {
   const { scrollYProgress } = useScroll();
+  const handleReviewClick = () => {
+    window.open("https://g.page/r/CcjdLYrPwk6GEAI/review", "_blank");
+  };
   return (
     <>
       <motion.div
@@ -134,11 +137,11 @@ function HomePage() {
               </div>
               <div className="flex justify-center sm:mt-4">
                 <a
-                  href="tel:727-484-6999p101"
+                  href="tel:813-252-0265"
                   className="flex items-center text-navy border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0 transition duration-300 ease-in-out hover:bg-navy hover:text-white"
                 >
                   <BsTelephone className="mr-2" />
-                  727-484-6999 ext. 101
+                  813-252-0265
                 </a>
               </div>
             </motion.div>
@@ -258,8 +261,8 @@ function HomePage() {
                 <FaHeartbeat className="mx-auto text-6xl mb-4" />
                 <p className="text-3xl my-3">Coming Soon</p>
                 <p className=" text-center text-xl px-3 mb-5">
-                  Our comprehensive services in Hormone Replacement Therapy and Aesthetic Medicine
-                  will be launching soon. Stay tuned for more updates!
+                  Our comprehensive services in Hormone Replacement Therapy will be launching soon.
+                  Stay tuned for more updates!
                 </p>
                 <Link to="/services/coming-soon">
                   <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
@@ -298,11 +301,11 @@ function HomePage() {
             viewport={{
               once: true,
             }}
-            href="tel:727-484-6999p101"
+            href="tel:813-252-0265"
             className="flex  items-center justify-center mx-auto text-[#F0E9B0] text-xl mb-6 sm:mb-3 border border-[#F0E9B0] p-3 w-fit"
           >
             <BsTelephone className="mr-2" />
-            727-484-6999 ext. 101
+            813-252-0265
           </motion.a>
           <motion.p
             variants={fadeInAnimationVariant}
@@ -341,6 +344,19 @@ function HomePage() {
           ></img> */}
           </motion.div>
         </div>
+      </div>
+      <div className="bg-[#F0E9B0] p-8 rounded-lg shadow-lg text-center">
+        <h2 className="text-2xl font-bold text-[#5C7463] mb-4">We Value Your Feedback!</h2>
+        <p className="text-[#5C7463] mb-6">
+          Let us know how we're doing by leaving a review. Your feedback helps us improve and serve
+          you better.
+        </p>
+        <button
+          onClick={handleReviewClick}
+          className="bg-periwinkle text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300"
+        >
+          Leave a Google Review
+        </button>
       </div>
       <Footer />
     </>
