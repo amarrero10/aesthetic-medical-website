@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import portrait from "../assets/algery-green5.jpg";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BsTelephone } from "react-icons/bs";
 import { FaWeightScale, FaCheck } from "react-icons/fa6";
@@ -32,7 +32,7 @@ function HomePage() {
   return (
     <>
       <motion.div
-        className="hidden sm:block bg-[#D2B86C] fixed top-[146px] sm:top-[95px] left-0 right-0 h-2 origin-[0%]"
+        className="hidden sm:block bg-[#D2B86C] fixed top-[146px] sm:top-[137px] left-0 right-0 h-2 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
       <div className="sm:mt-36 max-w-[2000px] mx-auto">

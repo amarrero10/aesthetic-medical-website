@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom";
 import Hamburger from "hamburger-react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 
 function Navigation() {
   const [isOpen, setOpen] = useState(false);
