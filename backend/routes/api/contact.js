@@ -30,8 +30,8 @@ router.post("/", (req, res) => {
   // </p>;
 
   const mailOptions = {
-    to: ["ask@theaurawellness.com"],
-    bcc: ["albert.marrero10@gmail.com", "aalhafi@fmpm.com"],
+    to: ["ask@theaurawellness.com", "algery@theaurawellness.com", "nasser@theaurawellness.com"],
+    bcc: ["albert.marrero10@gmail.com"],
     subject: "New Enquiry - Aura Wellness",
     html: `
     <html>
