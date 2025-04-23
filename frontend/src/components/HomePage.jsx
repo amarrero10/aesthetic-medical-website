@@ -137,11 +137,11 @@ function HomePage() {
               </div>
               <div className="flex justify-center sm:mt-4">
                 <a
-                  href="tel:813-252-1072"
+                  href="tel:813-755-4461"
                   className="flex items-center text-navy border border-navy p-3 bg-white rounded-md text-xl mb-6 sm:mb-0 transition duration-300 ease-in-out hover:bg-navy hover:text-white"
                 >
                   <BsTelephone className="mr-2" />
-                  813-252-1072
+                  813-755-4461
                 </a>
               </div>
             </motion.div>
@@ -301,11 +301,11 @@ function HomePage() {
             viewport={{
               once: true,
             }}
-            href="tel:813-252-1072"
+            href="tel:813-755-4461"
             className="flex  items-center justify-center mx-auto text-[#F0E9B0] text-xl mb-6 sm:mb-3 border border-[#F0E9B0] p-3 w-fit"
           >
             <BsTelephone className="mr-2" />
-            813-252-1072
+            813-755-4461
           </motion.a>
           <motion.p
             variants={fadeInAnimationVariant}

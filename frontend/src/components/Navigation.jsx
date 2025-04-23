@@ -50,7 +50,7 @@ function Navigation() {
           <img className=" h-14 pl-2" src={logo} alt="logo for Aura Wellness"></img>
         </Link>
         <div className=" flex items-center h-10">
-          <a href="tel:813-252-1072">
+          <a href="tel:813-755-4461">
             <button className="mr-4   bg-periwinkle text-offWhite px-6 py-4 rounded-md text-lg font-extrabold">
               Get in touch
             </button>
@@ -89,6 +89,10 @@ function Navigation() {
                   <hr className=" text-periwinkle py-3" />
                   <li>
                     <Link to="/services/telehealth">- Telehealth</Link>
+                  </li>
+                  <hr className=" text-periwinkle py-3" />
+                  <li>
+                    <Link to="/services/coolsculpting">- Coolsculpting</Link>
                   </li>
                   <hr className=" text-periwinkle py-3" />
                   <li>
@@ -177,6 +181,11 @@ function Navigation() {
                     Telehealth
                   </li>
                 </Link>
+                <Link to="/services/coolsculpting" onClick={handleScrollToTop}>
+                  <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
+                    Coolsculpting
+                  </li>
+                </Link>
                 <Link to="/services/coming-soon" onClick={handleScrollToTop}>
                   <li className=" text-center py-3 text-lg hover:bg-periwinkle hover:text-offWhite">
                     Coming Soon
@@ -196,7 +205,7 @@ function Navigation() {
           </Link> */}
         </div>
         <div>
-          <a href="tel:813-252-1072">
+          <a href="tel:813-755-4461">
             <button className="mr-4 h-full bg-periwinkle text-offWhite px-6 py-4 rounded-md text-lg font-extrabold">
               Limited time promotion now!
             </button>

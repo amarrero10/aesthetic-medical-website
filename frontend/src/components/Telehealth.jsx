@@ -74,9 +74,9 @@ function Telehealth() {
               <h3 className="vertical-timeline-element-title text-3xl">Make An Appointment</h3>
               <p className="vertical-timeline-element-subtitle">
                 Call us at{" "}
-                <a href="tel:813-252-1072" className=" underline">
+                <a href="tel:813-755-4461" className=" underline">
                   {" "}
-                  813-252-1072
+                  813-755-4461
                 </a>{" "}
                 and ask for a virtual telehealth appointment, and one will be scheduled for you. Or
                 fill out the form below and we will reach out to you within 24 hours.
@@ -196,9 +196,9 @@ function Telehealth() {
           <ul className=" list-disc">
             <li className=" italic ml-10 text-xl sm:text-3xl pb-5 mt-5">
               To schedule, call us at{" "}
-              <a href="tel:813-252-1072" className=" underline">
+              <a href="tel:813-755-4461" className=" underline">
                 {" "}
-                813-252-1072
+                813-755-4461
               </a>{" "}
               and ask for a virtual telehealth appointment, and one will be scheduled for you. Or
               fill out the form below and we will reach out to you within 24 hours.

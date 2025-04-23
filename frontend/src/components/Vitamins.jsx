@@ -379,11 +379,11 @@ function Vitamins() {
             className="flex items-center "
           >
             <a
-              href="tel:813-252-1072"
+              href="tel:813-755-4461"
               className="flex items-center text-navy text-xl mb-6 sm:mb-0  border border-navy  p-3"
             >
               <BsTelephone className="mr-2" />
-              813-252-1072
+              813-755-4461
             </a>
           </motion.div>
           <Link to="/contact-us">

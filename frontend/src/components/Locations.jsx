@@ -32,26 +32,26 @@ function Locations() {
       lng: -82.6284413736912,
       name: "Spring Hill Location",
       address: "5270 Applegate Dr, Spring Hill, FL 34606",
-      phone: "tel:813-252-1072",
+      phone: "tel:813-755-4461",
     },
     {
       lat: 28.208274068627233,
       lng: -82.67745381602516,
       name: "Trinity/New Port Richey Location",
       address: "8139 FL-54, New Port Richey, FL 34655",
-      phone: "tel:813-252-1072",
+      phone: "tel:813-755-4461",
     },
     {
       lat: 27.821497726533536,
       lng: -82.72277368719645,
       name: "St. Petersburg Location",
       address: "6333 54th Ave N, St. Petersburg, FL 33709",
-      phone: "tel:813-252-1072",
+      phone: "tel:813-755-4461",
     },
     {
       lat: 27.948626126461225,
       lng: -82.78777134671049,
-      phone: "tel:813-252-1072",
+      phone: "tel:813-755-4461",
     },
   ];
 
@@ -117,11 +117,11 @@ function Locations() {
             </ul>
             <div className="flex sm:flex-row flex-col items-center sm:justify-between sm:w-[500px] mx-auto mb-5 sm:mt-14">
               <a
-                href="tel:813-252-1072"
+                href="tel:813-755-4461"
                 className="flex  items-center text-navy text-2xl mb-6 sm:mb-0 border border-navy p-3 rounded-md"
               >
                 <BsTelephone className="mr-2" />
-                813-252-1072
+                813-755-4461
               </a>
               <Link to="/contact-us">
                 <button className=" bg-white py-3 px-5 border text-xl rounded-md text-periwinkle font-semibold z-10">
