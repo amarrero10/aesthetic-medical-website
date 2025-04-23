@@ -8,6 +8,7 @@ import oldCouple from "../assets/old-couple.jpg";
 import scale from "../assets/scale.jpg";
 import { motion } from "framer-motion";
 import { ReactComponent as Leaves } from "../assets/leaves.svg";
+import { Helmet } from "react-helmet-async";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -23,6 +24,13 @@ const fadeInAnimationVariant = {
 function Services() {
   return (
     <>
+      <Helmet>
+        <title>Services | Weight Loss, CoolSculpting & Telehealth at Aura Wellness</title>
+        <meta
+          name="description"
+          content="Explore personalized wellness services at Aura Wellness, including medical weight loss with Semaglutide & Tirzepatide, non-surgical CoolSculpting, and convenient telehealth consultations."
+        />
+      </Helmet>
       <div className="sm:mt-32 ">
         <motion.div
           variants={fadeInAnimationVariant}

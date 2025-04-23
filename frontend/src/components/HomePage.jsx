@@ -13,6 +13,7 @@ import Footer from "./Footer";
 import { motion, useScroll } from "framer-motion";
 import { ReactComponent as Vortex } from "../assets/vortex.svg";
 import { Snowflake } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -32,6 +33,13 @@ function HomePage() {
   };
   return (
     <>
+      <Helmet>
+        <title>Transform Your Health & Wellness | Aura Wellness Tampa Bay</title>
+        <meta
+          name="description"
+          content="Reclaim your energy, balance your mood, and manage weight effectively with revolutionary treatments like Semaglutide and Tirzepatide at Aura Wellness in Tampa Bay. Begin your wellness journey today."
+        />
+      </Helmet>
       <motion.div
         className="hidden sm:block bg-[#D2B86C] fixed top-[146px] sm:top-[137px] left-0 right-0 h-2 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
