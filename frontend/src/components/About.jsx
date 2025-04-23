@@ -12,6 +12,7 @@ import { ReactComponent as Leaves } from "../assets/leaves.svg";
 
 import { motion } from "framer-motion";
 import { FaHeartbeat } from "react-icons/fa";
+import { Snowflake } from "lucide-react";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -175,7 +176,7 @@ function About() {
               viewport={{
                 once: true,
               }}
-              className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10"
+              className="grid md:grid-cols-4 grid-cols-1 gap-5 mt-5 mb-10"
             >
               <div className=" rounded-md shadow-xl h-[430px] text-center text-[#5C7463] border bg-white">
                 <FaWeightScale className=" mx-auto text-6xl mt-5 " />
@@ -185,6 +186,22 @@ function About() {
                   personalized approach to help every client achieve their ideal weight.
                 </p>
                 <Link to="/services/medical-weight-loss">
+                  <button className=" text-xl text-[#5C7463] bg-periwinkle px-4 py-3 rounded-md mt-2">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+              <div className=" rounded-md shadow-xl h-[430px] text-center text-[#5C7463] border bg-white">
+                <h2 className=" font-semibold flex items-center justify-center gap-2 mx-auto">
+                  <Snowflake className="  mt-5" size={60} />
+                </h2>
+                <p className="text-3xl my-3">CoolSculpting®</p>
+                <p className="text-center px-3 mb-5 text-xl">
+                  We use cutting-edge CoolSculpting® technology to freeze and eliminate stubborn
+                  fat—no surgery, no downtime. Our personalized approach helps you target the areas
+                  that matter most.
+                </p>
+                <Link to="/services/coolsculpting">
                   <button className=" text-xl text-[#5C7463] bg-periwinkle px-4 py-3 rounded-md mt-2">
                     Learn More
                   </button>

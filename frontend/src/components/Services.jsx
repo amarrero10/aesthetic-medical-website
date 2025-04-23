@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Footer from "./Footer";
 import Form from "./Form";
-import weight from "../assets/weight-loss.jpg";
+import stomach from "../assets/stomach.jpg";
 import virtual from "../assets/virtual.jpg";
 import oldCouple from "../assets/old-couple.jpg";
 import scale from "../assets/scale.jpg";
@@ -144,6 +144,36 @@ function Services() {
                 </Link>
               </div>
             </div>
+
+            <div className=" flex flex-col items-center justify-between h-[800px] shadow-md bg-[#fefefe] rounded-md">
+              <div className=" h-1/2">
+                <img
+                  src={stomach}
+                  alt="a cardboard sign to promote wight loss"
+                  className=" rounded-tl-md rounded-tr-md object-cover h-full"
+                ></img>
+              </div>
+              <div className=" text-center">
+                <h2 className=" text-3xl font-semibold mt-4">CoolSculpting®</h2>
+                <p className=" mt-3 px-1">
+                  At Aura Wellness, we offer CoolSculpting® as a non-invasive solution to help you
+                  reduce stubborn fat and contour your body—without surgery or downtime. Experience
+                  a personalized approach tailored to your goals.
+                </p>
+              </div>
+              <div className=" flex flex-col items-center justify-between w-full px-2 pb-10">
+                <Link to="/services/coolsculpting">
+                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                    More Information
+                  </button>
+                </Link>
+                <Link to="/contact-us">
+                  <button className=" text-lg text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                    Contact Us Today
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         {/* END MOBILE SERVICES */}
@@ -241,6 +271,97 @@ function Services() {
               ></img>
             </motion.div>
           </motion.div>
+
+          <motion.div
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            className=" flex w-2/3 min-[2000px]:w-1/2 mx-auto h-[500px] shadow-2xl rounded-md bg-white my-16"
+          >
+            <motion.div
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" w-1/2 flex flex-col items-center justify-between py-[50px] bg-white"
+            >
+              <motion.h2
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                className=" text-6xl font-semibold text-center"
+              >
+                CoolSculpting®
+              </motion.h2>
+              <motion.div
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                className=" px-5 text-center text-2xl"
+              >
+                <motion.p
+                  variants={fadeInAnimationVariant}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                    once: true,
+                  }}
+                >
+                  At Aura Wellness, we offer CoolSculpting® as a non-invasive solution to help you
+                  reduce stubborn fat and contour your body—without surgery or downtime. Experience
+                  a personalized approach tailored to your goals.
+                </motion.p>
+              </motion.div>
+
+              <motion.div
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                className=" flex flex-col items-center justify-between w-full px-2 bg-white"
+              >
+                <Link to="/services/coolsculpting">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                    More Information
+                  </button>
+                </Link>
+                <Link to="/contact-us">
+                  <button className=" text-2xl text-offWhite bg-periwinkle px-4 py-3 rounded-md mt-2">
+                    Contact Us Today
+                  </button>
+                </Link>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              className=" w-1/2 rounded-tr-md rounded-br-md"
+            >
+              <img
+                className=" h-full object-cover rounded-tr-md rounded-br-md"
+                src={stomach}
+                alt="a cardboard sign to promote wight loss"
+              ></img>
+            </motion.div>
+          </motion.div>
+
           <motion.div
             variants={fadeInAnimationVariant}
             initial="initial"

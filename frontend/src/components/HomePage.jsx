@@ -12,6 +12,7 @@ import TestimonialSlider from "./Testimonials/TestimonialSlider";
 import Footer from "./Footer";
 import { motion, useScroll } from "framer-motion";
 import { ReactComponent as Vortex } from "../assets/vortex.svg";
+import { Snowflake } from "lucide-react";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -207,7 +208,7 @@ function HomePage() {
             >
               Services
             </motion.h2>
-            <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-5 mb-10 px-2 ">
+            <div className="grid sm:grid-cols-4 grid-cols-1 gap-5 mt-5 mb-10 px-2 ">
               <motion.div
                 variants={fadeInAnimationVariant}
                 initial="initial"
@@ -246,6 +247,30 @@ function HomePage() {
                   access expert guidance and support for your weight-loss needs from anywhere.
                 </p>
                 <Link to="/services/telehealth">
+                  <button className=" text-xl bg-periwinkle border-navy border px-4 py-3 rounded-md mt-8">
+                    Learn More
+                  </button>
+                </Link>
+              </motion.div>
+              <motion.div
+                variants={fadeInAnimationVariant}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                className=" bg-periwinkle rounded-md shadow-xl h-[400px] text-center"
+              >
+                <h2 className=" font-semibold flex items-center justify-center gap-2 mx-auto">
+                  <Snowflake className="  mt-5" size={60} />
+                </h2>
+                <p className="text-3xl my-3">CoolSculpting®</p>
+                <p className=" text-center px-3 mb-5 text-xl">
+                  We use cutting-edge CoolSculpting® technology to freeze and eliminate stubborn
+                  fat—no surgery, no downtime. Our personalized approach helps you target the areas
+                  that matter most.
+                </p>
+                <Link to="/services/coolsculpting">
                   <button className=" text-xl bg-periwinkle border-navy border px-4 py-3 rounded-md mt-8">
                     Learn More
                   </button>

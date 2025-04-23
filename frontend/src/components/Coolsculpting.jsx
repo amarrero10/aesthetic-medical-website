@@ -25,7 +25,7 @@ const Coolsculpting = () => {
           </p>
         </section>
 
-        <Card className="bg-[#5C7463] text-[#F0E9B0]">
+        <Card className="bg-[#2e4033] text-[#F0E9B0]">
           <CardContent className="p-6 space-y-4">
             <h2 className="text-2xl font-semibold">✅ What is CoolSculpting?</h2>
             <p>
@@ -41,7 +41,7 @@ const Coolsculpting = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-[#5C7463] text-[#F0E9B0]">
+        <Card className="bg-[#2e4033] text-[#F0E9B0]">
           <CardContent className="p-6">
             <h2 className="text-2xl font-semibold mb-4">🎯 CoolSculpting Targets Areas Like:</h2>
             <ul className="list-disc list-inside grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -56,7 +56,7 @@ const Coolsculpting = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-[#5C7463] text-[#F0E9B0]">
+        <Card className="bg-[#2e4033] text-[#F0E9B0]">
           <CardContent className="p-6 space-y-3">
             <h2 className="text-2xl font-semibold">
               💡 Why Choose Aura Wellness for CoolSculpting in Tampa Bay?
@@ -86,7 +86,7 @@ const Coolsculpting = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-[#5C7463] text-[#F0E9B0]">
+        <Card className="bg-[#2e4033] text-[#F0E9B0]">
           <CardContent className="p-6 space-y-3">
             <h2 className="text-2xl font-semibold">
               🕒 What to Expect During Your CoolSculpting Experience
@@ -112,7 +112,7 @@ const Coolsculpting = () => {
           </CardContent>
         </Card>
 
-        <div className="bg-[#D2B86C] p-6 rounded-2xl shadow-md text-[#5C7463]">
+        <div className="bg-[#2e4033] text-[#F0E9B0] p-6 rounded-2xl shadow-md ">
           <h2 className="text-2xl font-semibold flex items-center gap-2">
             <MapPin /> Now Serving Tampa Bay & Surrounding Areas
           </h2>
