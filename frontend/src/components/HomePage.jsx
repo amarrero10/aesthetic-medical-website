@@ -37,7 +37,7 @@ function HomePage() {
         <title>Transform Your Health & Wellness | Aura Wellness Tampa Bay</title>
         <meta
           name="description"
-          content="Reclaim your energy, balance your mood, and manage weight effectively with revolutionary treatments like Semaglutide and Tirzepatide at Aura Wellness in Tampa Bay. Begin your wellness journey today."
+          content="Reclaim your energy, balance your mood, and manage weight effectively with revolutionary weight loss treatments, hormone optimization, hair growth, and anti-aging therapies at Aura Wellness in Tampa Bay. Begin your wellness journey today."
         />
       </Helmet>
       <motion.div
@@ -74,8 +74,8 @@ function HomePage() {
               </div>
               <p className="text-xl sm:text-2xl sm:mb-4 text-darkpurple">
                 Optimize your overall health and wellness with weight management treatments
-                including Semaglutide and Tirzepatide. These revolutionary medications can help
-                transform your life while improving:
+                personalized to meet your needs and weight loss goals. These revolutionary
+                medications can help transform your life while improving:
               </p>
               <ul className="list-none text-left mx-auto text-darkpurple sm:text-lg">
                 <li className="flex items-center">
@@ -128,8 +128,9 @@ function HomePage() {
                 </li>
               </ul>
               <p className="text-xl sm:text-2xl sm:mb-4 text-darkpurple">
-                Our expert providers are here to guide you in achieving your weight loss goals. Take
-                your health to the next level and transform your life.
+                Our expert providers are here to guide you in achieving your overall health goals by
+                optimizing your hormones, hair health, anti-aging and weight loss goals. Take your
+                health to the next level and transform your life.
               </p>
               <p className="text-2xl sm:text-3xl font-semibold text-darkpurple">
                 Get back to <span className="text-periwinkle">YOU</span>.
@@ -189,7 +190,8 @@ function HomePage() {
                   At Aura Wellness, we are your partners in the pursuit of health and beauty. Meet
                   our dedicated Nurse Practitioner Algery Al-Hafi and learn more about our mission
                   to empower your journey towards total body health and wellness with medical
-                  weight-loss management.
+                  weight-loss, hormone optimization, anti-aging therapies, and hair growth therapies
+                  management.
                 </motion.p>
                 <Link to="/about">
                   <button className=" text-xl text-offWhite bg-periwinkle px-9 py-4 rounded-md mt-10">
@@ -229,9 +231,8 @@ function HomePage() {
                 <FaWeightScale className=" mx-auto text-6xl mt-5 " />
                 <p className="text-3xl my-3">Medical Weight Loss</p>
                 <p className=" text-center text-xl px-3 mb-5">
-                  We harness the power of weight-loss medications like Semaglutide and Tirzepatide
-                  in our personalized approach to help every client achieve their ideal weight and
-                  health goals.
+                  We harness the power of weight-loss treatments with a personalized approach to
+                  help every client achieve their ideal weight and health goals.
                 </p>
                 <Link to="/services/medical-weight-loss">
                   <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
@@ -252,10 +253,11 @@ function HomePage() {
                 <p className="text-3xl my-3">Telehealth</p>
                 <p className=" text-center px-3 mb-5 text-xl">
                   We are proud to offer the convenience of telehealth services, allowing you to
-                  access expert guidance and support for your weight-loss needs from anywhere.
+                  access expert guidance and support for your, hormone optimization, anti-aging,
+                  hair growth and weight-loss needs from anywhere.
                 </p>
                 <Link to="/services/telehealth">
-                  <button className=" text-xl bg-periwinkle border-navy border px-4 py-3 rounded-md mt-8">
+                  <button className=" text-xl bg-periwinkle border-navy border px-4 py-3 rounded-md mt-2">
                     Learn More
                   </button>
                 </Link>
@@ -294,8 +296,7 @@ function HomePage() {
                 <FaHeartbeat className="mx-auto text-6xl mb-4" />
                 <p className="text-3xl my-3">Coming Soon</p>
                 <p className=" text-center text-xl px-3 mb-5">
-                  Our comprehensive services in Hormone Replacement Therapy will be launching soon.
-                  Stay tuned for more updates!
+                  Our comprehensive services in Hormone Replacement Therapy are transorming lives.
                 </p>
                 <Link to="/services/coming-soon">
                   <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
@@ -350,8 +351,8 @@ function HomePage() {
             className="sm:text-center px-2 text-xl sm:text-2xl sm:w-[700px] mx-auto text-justify text-[#F0E9B0]"
           >
             Ready to start your journey to a healthier you? Reach out to us today! We're here to
-            help you achieve your weight loss goals. Contact us now and take the first step towards
-            a better you!
+            help you achieve your wellness and weight loss goals. Contact us now and take the first
+            step towards better you!
           </motion.p>
           <motion.div
             variants={fadeInAnimationVariant}

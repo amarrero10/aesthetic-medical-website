@@ -20,6 +20,7 @@ import Locations from "./components/Locations";
 import ReactGA from "react-ga4";
 import ComingSoon from "./components/ComingSoon";
 import Coolsculpting from "./components/Coolsculpting";
+import AntiAging from "./components/AntiAging";
 
 const TRACKING_ID = "G-V8022L7FKM";
 ReactGA.initialize(TRACKING_ID);
@@ -79,6 +80,9 @@ function App() {
         </Route>
         <Route exact path="/services/coolsculpting">
           <Coolsculpting />
+        </Route>
+        <Route exact path="/services/anti-aging">
+          <AntiAging />
         </Route>
         <Route exact path="/services/vitamin-injections">
           <Vitamins />

@@ -191,8 +191,9 @@ function About() {
                   <FaWeightScale className=" mx-auto text-6xl mt-5 " />
                   <p className="text-3xl my-3">Medical Weight Loss</p>
                   <p className=" text-center px-3 mb-5 text-xl">
-                    We harness the power of medications like semaglutides and tirzepatide in our
-                    personalized approach to help every client achieve their ideal weight.
+                    We harness the power of advanced and exper-led treatmetns in our personalized
+                    approach to help every client achieve their ideal weight and live a healthier
+                    happier life.
                   </p>
                   <Link to="/services/medical-weight-loss">
                     <button className=" text-xl text-[#5C7463] bg-periwinkle px-4 py-3 rounded-md mt-2">
@@ -220,8 +221,8 @@ function About() {
                   <FaHeartbeat className=" mx-auto text-6xl mt-5 " />
                   <p className="text-3xl my-3">Coming Soon</p>
                   <p className=" text-center text-xl px-3 mb-5">
-                    Our comprehensive services in Hormone Replacement Therapy and Aesthetic Medicine
-                    will be launching soon. Stay tuned for more updates!
+                    Our comprehensive services in Hormone Replacement Therapy and Anti-aging and
+                    Regenerative Medicine are transforming lives and redefining wellness.
                   </p>
                   <Link to="/services/coming-soon">
                     <button className=" text-xl bg-periwinkle px-4 py-3 rounded-md mt-2 border-navy border ">
